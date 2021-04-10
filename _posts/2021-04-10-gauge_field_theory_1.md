@@ -21,7 +21,7 @@ modify_date: 2021-04-10
 
 ***
 
-**I. 经典场论中的规范不变性**
+# **I. 经典场论中的规范不变性**
 
 # 整体对称性和定域对称性
 
@@ -33,5 +33,5 @@ modify_date: 2021-04-10
 | 时间-空间平移 | 能量-动量
 | 整体Lorentz变换 | 角动量
 | 整体相位变换 \\( \psi(x)\rightarrow e^{i\theta}\psi(x) \\) | 电荷
-| 同位旋变换 \\( \psi(x)\rightarrow e^{i\bm{\tau}\cdot\bm{\theta}\psi(x) \\) | 同位旋
+| 同位旋变换 \\( \psi(x)\rightarrow e^{i\bm{\tau}}\psi(x) \\) | 同位旋
 |---
