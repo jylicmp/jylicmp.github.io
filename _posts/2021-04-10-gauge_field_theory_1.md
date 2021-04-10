@@ -32,5 +32,5 @@ modify_date: 2021-04-10
 | 时间-空间平移 | 能量-动量
 | 整体Lorentz变换 | 角动量
 | 整体相位变换 \\( \psi(x)\rightarrow e^{i\theta}\psi(x) \\) | 电荷
-| 同位旋变换 \\( \psi(x)\rightarrow e^{i\bf{\tau}\cdot\bf{\theta}}\psi(x) \\) | 同位旋
+| 同位旋变换 \\( \psi(x)\rightarrow e^{i \boldsymbol{\tau} \cdot \boldsymbol{\theta}}\psi(x) \\) | 同位旋
 |---
