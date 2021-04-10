@@ -38,4 +38,4 @@ modify_date: 2021-04-10
 | 同位旋变换 \\( \psi(x)\rightarrow e^{i \boldsymbol{\tau} \cdot \boldsymbol{\theta}}\psi(x) \\) | 同位旋
 |---
 
-[^1]: 这里的角动量守恒有别于普通物理中的角动量守恒。一般认为角动量守恒是与空间旋转不变性对应的，然而空间旋转变换是依赖于空间坐标的（在旋转变换中至少有一个点\\(\mathbf{r}_{0}是不发生变化的\\)），因此不是整体对称性。因此这里所说的是相对论角动量守恒：$$\partial_{\gamma}\mathcal{J}^{\alpha\beta\gamma}=0.$$具体请参考[这里](https://en.wikipedia.org/wiki/Relativistic_angular_momentum)。
+[^1]: 这里的角动量守恒有别于普通物理中的角动量守恒。一般认为角动量守恒是与空间旋转不变性对应的，然而空间旋转变换是依赖于空间坐标的（在旋转变换中至少有一个点\\(\mathbf{r}_{0}\\)是不发生变化的），因此不是整体对称性。因此这里所说的是相对论角动量守恒：\\(\partial_{\gamma}\mathcal{J}^{\alpha\beta\gamma}=0\\)。$$具体可参考[这里](https://en.wikipedia.org/wiki/Relativistic_angular_momentum)。
