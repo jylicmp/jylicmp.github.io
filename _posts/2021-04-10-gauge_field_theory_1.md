@@ -7,7 +7,7 @@ show_author_profile: true
 modify_date: 2021-04-10
 ---
 
-规范场论是研究_全局_和_局部_对称变换下不变的场论，对应于阿贝尔和非阿贝尔规范场论，其中非阿贝尔规范场论的著名例子就是[杨-米尔斯（Yang-Mills）](https://en.wikipedia.org/wiki/Yang%E2%80%93Mills_theory)理论。本系列由本人的课堂笔记整理而成。
+规范场论是研究 _全局_ 和 _局部_ 对称变换下不变的场论，对应于阿贝尔和非阿贝尔规范场论，其中非阿贝尔规范场论的著名例子就是[杨-米尔斯（Yang-Mills）](https://en.wikipedia.org/wiki/Yang%E2%80%93Mills_theory)理论。本系列由本人的课堂笔记整理而成。
 
 本系列主要分成三部分：
 
