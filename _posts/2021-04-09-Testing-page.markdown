@@ -12,20 +12,23 @@ modify_date: 2021-04-10
 <!--more-->
 
 ***
+  `_posts`
 
-# 1.代码片
+# 1.代码
+
+  - 行内代码
 
   `_posts`
 
-# 2.代码段
+  - 高亮代码
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+  {% highlight ruby %}
+  def print_hi(name)
+    puts "Hi, #{name}"
+  end
+  print_hi('Tom')
+  #=> prints 'Hi, Tom' to STDOUT.
+  {% endhighlight %}
 
 # 3.链接
 
