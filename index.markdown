@@ -11,6 +11,7 @@ articles:
   show_readmore: true
   show_info: true
 key: Home
+show_subscribe: true
 ---
 
 JY Li@SUSTech ([ORCID](https://orcid.org/0000-0002-5204-5310)) in [Prof. Q Liu's group](https://liuqh.phy.sustech.edu.cn/).
