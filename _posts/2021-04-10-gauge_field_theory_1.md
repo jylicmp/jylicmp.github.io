@@ -64,7 +64,7 @@ $$
 
 则\\( U(1) \\)群是一个[阿贝尔（Abel）](https://en.wikipedia.org/wiki/Niels_Henrik_Abel)群。
 
-\\(\ddagger\\) gauge transformation原意指**标度变换**，即长度发生变化的变换。历史上源于[外尔（Weyl）](https://en.wikipedia.org/wiki/Hermann_Weyl)对波函数对称变换下不变的前驱研究，但他的工作中的变换为\\(U(x)=e^{-\theta(x)}\\)，是一个衰减因子。故而当波函数在空间完成一个周期演化回到原点后，波函数的模平方会减小，对应于粒子的凭空消失。这使他放弃了进一步的研究。
+\\(\ddagger\\) gauge transformation原意指**标度变换**，即长度发生变化的变换。历史上源于[外尔（Weyl）](https://en.wikipedia.org/wiki/Hermann_Weyl)对波函数对称变换下不变的先驱研究，但他的工作中的变换为\\(U(x)=e^{-\theta(x)}\\)，是一个衰减因子。故而当波函数在空间完成一个周期演化回到原点后，波函数的模平方会减小，对应于粒子的凭空消失。这使他放弃了进一步的研究。
 {:.warning}
 
 自由电子满足[狄拉克（Dirac）](https://en.wikipedia.org/wiki/Paul_Dirac)方程，相应的拉氏量为
