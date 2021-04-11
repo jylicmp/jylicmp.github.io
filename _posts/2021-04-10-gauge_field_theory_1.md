@@ -1,6 +1,6 @@
 ---
 layout: article
-title:  规范场论-I-1
+title:  规范场论-1
 date:   2021-04-10 23:30:00 +0800
 tags: 学习笔记
 show_author_profile: true
@@ -73,10 +73,10 @@ $$
   \mathcal{L} _ {0} = -\bar{\psi} \gamma _ {\mu}\partial_{\mu}\psi - m\bar{\psi}\psi,
 $$
 
-其中\\( \bar{\psi}=\psi^{\dagger}\gamma_{4} \\)。在局域的\\( U(1) \\)变换下
+其中\\( \bar{\psi}=\psi^{\dagger}\gamma_{4} \\)，\\( \mu =0,1,2,3\\)，\\(0\\)是时间分量，重复指标表示求和。在局域的\\( U(1) \\)变换下
 
 $$
-  \psi(x) \rightarrow \psi ^{\prime} = e^{-i\theta(x)}\psi(x), \ \ \bar{\psi}(x) \rightarrow \bar{\psi^{\prime}}(x) = e^{i\theta(x)}\bar{\psi}(x),
+  \psi(x) \rightarrow \psi ^{\prime}(x) = e^{-i\theta(x)}\psi(x), \ \ \bar{\psi}(x) \rightarrow \bar{\psi^{\prime}}(x) = e^{i\theta(x)}\bar{\psi}(x), \label{eq_psi}
 $$
 
 而导数项变为
@@ -85,4 +85,77 @@ $$
   \partial_{\mu} \psi(x) \rightarrow \partial_{\mu} \psi^{\prime}(x) = e^{-i\theta(x)}\left[\partial_{\mu} - i\partial_{\mu} \theta (x) \right] \psi(x).
 $$
 
-则很明显\\( \mathcal{L} _{0} \rightarrow \mathcal{L} _{0}^{\prime} \neq \mathcal{L} _{0} \\)，即在\\( U(1) \\)变换下拉氏量\\( \mathcal{L} _{0} \\)的形式会发生变化，相应的运动方程也会发生变化。这意味着我们可以区分出变换前后的两个波函数，这明显有悖于我们之前的认知。
+则很明显
+
+$$
+  \mathcal{L} _{0} \rightarrow \mathcal{L} _{0}^{\prime} = -\bar{\psi}\gamma _{\mu} \left[ \partial _{\mu} - i \partial _{\mu} \theta  (x) \right] \psi - m \bar{\psi} \psi \neq \mathcal{L} _{0},
+$$
+
+即在\\( U(1) \\)变换下拉氏量\\( \mathcal{L} _{0} \\)的形式会发生变化，相应的运动方程也会发生变化。这意味着我们可以区分出变换前后的两个波函数，这明显有悖于我们之前的认知。
+
+为了使拉氏量在局域\\(U(1)\\)变换下不变，我们需要引入相互作用场\\( A_{\mu} \\)，并将偏导数项替换为协变导数
+
+$$
+  D _{\mu} = \partial _{\mu} - ie A _{\mu}.
+$$
+
+现在的拉氏量变为
+
+$$
+  \begin{equation}
+  \begin{aligned}
+  \mathcal{L} &= - \bar{\psi} \gamma _{\mu} D _{\mu} \psi - m\bar{\psi} \psi \\
+  &= - \bar{\psi} \gamma _{\mu}\partial _{\mu} \psi - m \bar{\psi}\psi  + ie \bar{\psi} \gamma _{\mu} \psi A _{\mu} \\
+  &= \mathcal{L} _{0} + J _{\mu}A _{\mu},
+  \end{aligned}
+  \end{equation} \label{eq_L}
+$$
+
+即引入了电磁相互作用\\( J _{\mu} A _{\mu}\\)，\\( J _{\mu} \\)是电流密度。
+
+现在当我们对\\( \psi (x) \\)做\\( U(1) \\)变换Eq. $\eqref{eq_psi}$时，也需要对相互作用场做变换\\( A _{\mu} \rightarrow A _{\mu}^{\prime} \\)：
+
+$$
+  \mathcal{L} \rightarrow \mathcal{L}^{\prime} = \mathcal{L} _{0} + \bar{\psi} \gamma _{\mu} \left[ i\partial _{\mu} \theta (x) \right]\psi + ie \bar{\psi} \gamma _{\mu} A _{\mu}^{\prime} \psi.
+$$
+
+规范不变性要求上式应和Eq. $\eqref{eq_L}$相同，因此得出相互作用场在\\( U(1) \\)下的变换为
+
+$$
+  A _{\mu} \rightarrow A _{\mu}^{\prime} = A _{\mu} - \frac{1}{e} \partial _{\mu} \theta (x).
+$$
+
+我们称从规范不变性得出的场\\( A _{\mu} \\)为 **规范场** ，由于\\( U(1) \\)是阿贝尔的，所以\\( A _{\mu} \\)是 **阿贝尔规范场** 。
+
+规范场\\( A _{\mu} \\)并不具有规范不变性，因此不是物理上的可观测量，或者说它们的值会随着规范的选取而改变。直观的例子便是谈论标量势和矢量势\\( (\phi , \mathbf{A}) \\)的绝对数值并没有意义，只有它们的时空变化量才能导致可观测的结果（电磁场）。电磁场由[麦克斯韦（Maxwell）方程组](https://en.wikipedia.org/wiki/Maxwell%27s_equations)给出：
+
+$$
+  F _{\mu \nu} = \partial _{\mu} A _{\nu} - \partial _{\nu} A _{\mu},
+$$
+
+同时留意到
+
+$$
+  \begin{equation}
+  \begin{aligned}
+  \left[ D _{\mu}, D _{\nu} \right]\psi &= - ie A _{\mu} (\partial _{\nu}\psi ) +\partial _{\mu} (-ie A _{\nu} \psi) + ie A _{\nu} (\partial _{\mu} \psi) -\partial _{\nu} (-ie A _{\mu} \psi) \\
+  &= \frac{e}{i} \left( \partial _{\mu} A _{\nu} - \partial _{\nu} A _{\mu} \right) \psi ,
+  \end{aligned}
+  \end{equation}
+$$
+
+我们因而可将电磁场改写成协变导数的对易关系
+
+$$
+  F _{\mu \nu} = \frac{i}{e} \left[ D _{\mu}, D _{\nu} \right].
+$$
+
+利用此式，我们很容易发现，在规范变换\\( D _{\mu} \rightarrow D _{\mu}^{\prime} = D _{\mu} + i \partial _{\mu} \theta (x) \\)下，电磁场张量\\( F _{\mu \nu}\\)是规范不变的，因此是可观测量。
+
+
+小结：我们从自由电子满足局域\\( U(1) \\)规范不变性，导出阿贝尔规范场\\( A _{\mu} \\)和相互作用项\\( J _{\mu} A _{\mu} \\)；规范场\\( A _{\mu} \\)因不满足规范不变而不可观测，但其对应的张量场——电磁场\\( F _{\mu \nu} \\)满足规范不变性，因此是可观测量。
+{:.info}
+
+<center>下节预告：从同位旋的非阿贝尔$ SU(2)$规范群出发，导出非阿贝尔规范场。</center>
+
+***
