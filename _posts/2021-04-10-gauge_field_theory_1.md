@@ -160,3 +160,12 @@ $$
 <center>下节预告：从同位旋的非阿贝尔$ SU(2)$规范群出发，导出非阿贝尔规范场。</center>
 
 ***
+
+<script>
+    var valine = new Valine();
+    valine.init({
+        el:'#vcomment',
+        appId: 'tjsjTjQE4bYOxm9kU1VDHIrS-gzGzoHsz',
+        appKey: 'ITU8iWk1Ny9UQ82Koe8rPet1'
+    })
+</script>
