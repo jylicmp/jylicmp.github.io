@@ -31,12 +31,16 @@ articles:
   show_excerpt: true
   show_readmore: true
   show_info: true
+comments: true
 ---
-<div class="layout--home">
-  {%- include paginator.html -%}
-</div>
+
 <script>
   {%- include scripts/home.js -%}
 </script>
+
+<div class="layout--home">
+  {%- include paginator.html -%}
+</div>
+
 
 {{ content }}
