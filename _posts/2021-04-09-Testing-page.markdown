@@ -56,15 +56,17 @@ key: Post_test-page
   -- 默认大小
 
   {% highlight html %}
-    <img class="image image--md" src="/assets/images/logo/logo.svg"/>
+    <figure class="image image--md">
+      <img src="/assets/images/logo/logo.svg">
+      <figcaption>*This is a lemon*</figcaption>
+    </figure>
   {% endhighlight %}
 
   <figure class="image image--md">
     <img src="/assets/images/logo/logo.svg">
-    <figcaption>"This is a lemon"</figcaption>
+    <figcaption>*This is a lemon*</figcaption>
   </figure>
 
-  <img class="image image--md" src="/assets/images/logo/logo.svg" figcaption="This is a lemon"/>
 
 
 
