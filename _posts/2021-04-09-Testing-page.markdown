@@ -44,19 +44,22 @@ key: Post_test-page
 
   {% highlight none %}
     ![测试图1](/assets/pictures/test_fig.png)
+    *This is a lenmon*
   {% endhighlight %}
 
   ![测试图1](/assets/pictures/test_fig.png)
+  *This is a lenmon*
 
   - 方法2
 
   -- 默认大小
 
   {% highlight html %}
-    <img class="image image--md" src="/assets/pictures/test_fig.png" description="This is a lemon"/>
+    <img class="image image--md" src="/assets/pictures/test_fig.png"/>
   {% endhighlight %}
 
-  <img class="image image--md" src="/assets/pictures/test_fig.png" description="This is a lemon"/>
+  <figure>
+  <img class="image image--md" src="/assets/pictures/test_fig.png"/>
 
   -- 调节大小
 
