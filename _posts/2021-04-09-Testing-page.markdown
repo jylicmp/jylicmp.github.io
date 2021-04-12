@@ -42,7 +42,7 @@ key: Post_test-page
 
   - 方法1
 
-  {% highlight none %}
+  {% highlight html %}
     ![测试图1](/assets/images/logo/logo.svg)
     *This is a lemon*
   {% endhighlight %}
@@ -55,18 +55,13 @@ key: Post_test-page
     - 默认大小
 
   {% highlight html %}
-    <figure class="image image--md">
-      <img src="/assets/images/logo/logo.svg">
-      <figcaption>*This is a lemon*</figcaption>
-    </figure>
+    <img class="image image--md" src="/assets/images/logo/logo.svg"/>
+    *This is a lemon*
   {% endhighlight %}
 
-  <figure class="image image--md">
-    <img src="/assets/images/logo/logo.svg">
-    <figcaption>*This is a lemon*</figcaption>
-  </figure>
+  <img class="image image--md" src="/assets/images/logo/logo.svg"/>
 
-
+  *This is a lemon*
 
 
     - 调节大小
