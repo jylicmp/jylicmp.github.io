@@ -9,10 +9,10 @@ key: Post_test-page
 article_header:
   type: overlay
   theme: dark
-  background_color: '#203028'
+  #background_color: '#203028'
   background_image:
-  gradient: 'linear-gradient(135deg, rgba(34, 139, 87 , .4), rgba(139, 34, 139, .4))'
-  #src: https://i.loli.net/2021/04/12/mHhWOQyaAELjCpJ.jpg
+  #gradient: 'linear-gradient(135deg, rgba(34, 139, 87 , .4), rgba(139, 34, 139, .4))'
+  src: https://i.loli.net/2021/04/12/mHhWOQyaAELjCpJ.jpg
 ---
 
   本页面用于测试各种渲染效果。
