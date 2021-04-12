@@ -4,8 +4,7 @@ title:  规范场论-1
 date:   2021-04-10 23:30:00 +0800
 tags: 学习笔记
 show_author_profile: true
-modify_date: 2021-04-11
-comments: true
+modify_date: 2021-04-11s
 key: Post_gauge_1
 ---
 

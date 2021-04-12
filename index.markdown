@@ -6,7 +6,7 @@ layout: articles #articles
 title: 科研小白的零碎学习记录
 articles:
   data_source: posts
-  show_cover: true
+  show_cover: false
   show_excerpt: true
   show_readmore: true
   show_info: true
