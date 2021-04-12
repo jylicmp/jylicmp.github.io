@@ -8,8 +8,8 @@ modify_date: 2021-04-12
 key: Post_test-page
 artical_header:
   type: cover
-  image: https://i.loli.net/2021/04/12/mHhWOQyaAELjCpJ.jpg
-  src: https://i.loli.net/2021/04/12/mHhWOQyaAELjCpJ.jpg
+  image:
+  src: <img src="https://i.loli.net/2021/04/12/mHhWOQyaAELjCpJ.jpg" />
 ---
 
   本页面用于测试各种渲染效果。
