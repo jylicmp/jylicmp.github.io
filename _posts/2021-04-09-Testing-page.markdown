@@ -54,25 +54,24 @@ key: Post_test-page
   - 方法2
     - 默认大小
 
-  {% highlight html %}
+    {% highlight html %}
+      <img class="image image--md" src="/assets/images/logo/logo.svg"/>
+      *This is a lemon*
+    {% endhighlight %}
+
     <img class="image image--md" src="/assets/images/logo/logo.svg"/>
+
     *This is a lemon*
-  {% endhighlight %}
 
-  <img class="image image--md" src="/assets/images/logo/logo.svg"/>
+    - 默认大小
 
-  *This is a lemon*
-
-
-    - 调节大小
-
-  {% highlight html %}
-    <img class="image image--xs" src="/assets/images/logo/logo.svg"/>
-    <img class="image image--sm" src="/assets/images/logo/logo.svg"/>
-    <img class="image image--md" src="/assets/images/logo/logo.svg"/>
-    <img class="image image--lg" src="/assets/images/logo/logo.svg"/>
-    <img class="image image--xl" src="/assets/images/logo/logo.svg"/>
-  {% endhighlight %}
+    {% highlight html %}
+      <img class="image image--xs" src="/assets/images/logo/logo.svg"/>
+      <img class="image image--sm" src="/assets/images/logo/logo.svg"/>
+      <img class="image image--md" src="/assets/images/logo/logo.svg"/>
+      <img class="image image--lg" src="/assets/images/logo/logo.svg"/>
+      <img class="image image--xl" src="/assets/images/logo/logo.svg"/>
+    {% endhighlight %}
 
 
 # 4.公式
