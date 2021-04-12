@@ -53,10 +53,10 @@ key: Post_test-page
   -- 默认大小
 
   {% highlight html %}
-    <img class="image image--md" src="/assets/pictures/test_fig.png" figcaption="This is a lemon"/> #"image image--md"为默认大小
+    <img class="image image--md" src="/assets/pictures/test_fig.png" description="This is a lemon"/>
   {% endhighlight %}
 
-  <img class="image image--md" src="/assets/pictures/test_fig.png" figcaption="This is a lemon"/>
+  <img class="image image--md" src="/assets/pictures/test_fig.png" description="This is a lemon"/>
 
   -- 调节大小
 
