@@ -13,7 +13,6 @@ key: Post_test-page
 <!--more-->
 
 ***
-  `_posts`
 
 # 1.代码
 
@@ -31,19 +30,19 @@ key: Post_test-page
   #=> prints 'Hi, Tom' to STDOUT.
   {% endhighlight %}
 
-# 3.链接
+# 2.链接
 
   [GitHub](https://github.com/jylicmp)
 
   [ORCID](https://orcid.org/0000-0002-5204-5310)
 
-# 4.图片
+# 3.图片
 
   插入图片
 
   ![测试图1](/assets/pictures/test_fig.jpg)
 
-# 5.公式
+# 4.公式
 
   - 行间公式：使用`$$...$$`，如
 
@@ -78,7 +77,7 @@ key: Post_test-page
   - 行内公式：使用`\\( ... \\)`，如 `\\( \alpha +  \beta = \gamma .\\)` 显示为 \\( \alpha +  \beta = \gamma .\\)
 
 
-# 6.引用
+# 5.引用
 
   >这是引用的内容
   >>可以嵌套引用
