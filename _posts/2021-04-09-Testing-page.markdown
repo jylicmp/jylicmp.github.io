@@ -39,39 +39,22 @@ key: Post_test-page
 # 3.图片
 
   插入图片
-
-  - 方法1
-
-  {% highlight markdown %}
-    ![测试图1](/assets/images/logo/logo.svg)
-    *This is a lemon*
+  {% highlight html %}
+  <img class="image image--md" src="/assets/images/logo/logo.svg"/> #image image--md为默认大小
+  This is a lemon
   {% endhighlight %}
 
-  ![测试图1](/assets/images/logo/logo.svg)
+  <img class="image image--md" src="/assets/images/logo/logo.svg"/>
 
   *This is a lemon*
 
-  - 方法2
-    - 默认大小
-
-    {% highlight html %}
-      <img class="image image--md" src="/assets/images/logo/logo.svg"/>
-      *This is a lemon*
-    {% endhighlight %}
-
-    <img class="image image--md" src="/assets/images/logo/logo.svg"/>
-
-    *This is a lemon*
-
-    - 默认大小
-
-    {% highlight html %}
-      <img class="image image--xs" src="/assets/images/logo/logo.svg"/>
-      <img class="image image--sm" src="/assets/images/logo/logo.svg"/>
-      <img class="image image--md" src="/assets/images/logo/logo.svg"/>
-      <img class="image image--lg" src="/assets/images/logo/logo.svg"/>
-      <img class="image image--xl" src="/assets/images/logo/logo.svg"/>
-    {% endhighlight %}
+  {% highlight html %}
+  <img class="image image--xs" src="/assets/images/logo/logo.svg"/>
+  <img class="image image--sm" src="/assets/images/logo/logo.svg"/>
+  <img class="image image--md" src="/assets/images/logo/logo.svg"/>
+  <img class="image image--lg" src="/assets/images/logo/logo.svg"/>
+  <img class="image image--xl" src="/assets/images/logo/logo.svg"/>
+  {% endhighlight %}
 
 
 # 4.公式
