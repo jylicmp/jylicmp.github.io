@@ -43,32 +43,39 @@ key: Post_test-page
   - 方法1
 
   {% highlight none %}
-    ![测试图1](/assets/pictures/test_fig.png)
-    *This is a lenmon*
+    ![测试图1](/assets/images/logo/logo.svg)
+    *This is a lemon*
   {% endhighlight %}
 
-  ![测试图1](/assets/pictures/test_fig.png)
-  *This is a lenmon*
+  ![测试图1](/assets/images/logo/logo.svg)
+
+  *This is a lemon*
 
   - 方法2
 
   -- 默认大小
 
   {% highlight html %}
-    <img class="image image--md" src="/assets/pictures/test_fig.png"/>
+    <img class="image image--md" src="/assets/images/logo/logo.svg"/>
   {% endhighlight %}
 
-  <figure>
-  <img class="image image--md" src="/assets/pictures/test_fig.png"/>
+  <figure class="image image--md">
+    <img src="/assets/images/logo/logo.svg">
+    <figcaption>"This is a lemon"</figcaption>
+  </figure>
+
+  <img class="image image--md" src="/assets/images/logo/logo.svg" figcaption="This is a lemon"/>
+
+
 
   -- 调节大小
 
   {% highlight html %}
-    <img class="image image--xs" src="/assets/pictures/test_fig.png"/>
-    <img class="image image--sm" src="/assets/pictures/test_fig.png"/>
-    <img class="image image--md" src="/assets/pictures/test_fig.png"/>
-    <img class="image image--lg" src="/assets/pictures/test_fig.png"/>
-    <img class="image image--xl" src="/assets/pictures/test_fig.png"/>
+    <img class="image image--xs" src="/assets/images/logo/logo.svg"/>
+    <img class="image image--sm" src="/assets/images/logo/logo.svg"/>
+    <img class="image image--md" src="/assets/images/logo/logo.svg"/>
+    <img class="image image--lg" src="/assets/images/logo/logo.svg"/>
+    <img class="image image--xl" src="/assets/images/logo/logo.svg"/>
   {% endhighlight %}
 
 
