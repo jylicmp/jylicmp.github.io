@@ -52,8 +52,7 @@ key: Post_test-page
   *This is a lemon*
 
   - 方法2
-
-  -- 默认大小
+    - 默认大小
 
   {% highlight html %}
     <figure class="image image--md">
@@ -70,7 +69,7 @@ key: Post_test-page
 
 
 
-  -- 调节大小
+    - 调节大小
 
   {% highlight html %}
     <img class="image image--xs" src="/assets/images/logo/logo.svg"/>
