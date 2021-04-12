@@ -6,10 +6,10 @@ tags: 测试
 show_author_profile: true
 modify_date: 2021-04-12
 key: Post_test-page
-artical_header:
+article_header:
   type: cover
   image:
-    src: /docs/assets/images/cover2.jpg
+    src: https://i.loli.net/2021/04/12/mHhWOQyaAELjCpJ.jpg
 ---
 
   本页面用于测试各种渲染效果。
