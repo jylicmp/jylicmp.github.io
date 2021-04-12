@@ -42,7 +42,7 @@ key: Post_test-page
 
   - 方法1
 
-  {% highlight html %}
+  {% highlight markdown %}
     ![测试图1](/assets/images/logo/logo.svg)
     *This is a lemon*
   {% endhighlight %}
