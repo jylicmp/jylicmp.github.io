@@ -7,7 +7,7 @@ show_author_profile: true
 modify_date: 2021-04-12
 key: Post_test-page
 article_header:
-  type: overlay
+  type: cover
   image:
     src: https://i.loli.net/2021/04/12/mHhWOQyaAELjCpJ.jpg
 ---
