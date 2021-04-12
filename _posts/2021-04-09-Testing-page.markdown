@@ -9,7 +9,7 @@ key: Post_test-page
 artical_header:
   type: cover
   image:
-    src: https://i.loli.net/2021/04/12/mHhWOQyaAELjCpJ.jpg
+    src: /docs/assets/images/cover2.jpg
 ---
 
   本页面用于测试各种渲染效果。
