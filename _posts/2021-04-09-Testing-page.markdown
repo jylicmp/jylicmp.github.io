@@ -52,17 +52,15 @@ key: Post_test-page
 
   -- 默认大小
 
-  {% highlight none %}
-    <img class="image image--md" src="/assets/pictures/test_fig.png"/> #"image image--md"为默认大小
-    <figcaption>\{\{ This is a lemon \}\}</figcaption>
+  {% highlight html %}
+    <img class="image image--md" src="/assets/pictures/test_fig.png" figcaption="This is a lemon"/> #"image image--md"为默认大小
   {% endhighlight %}
 
-  <img class="image image--md" src="/assets/pictures/test_fig.png"/>
-  <figcaption>{{ This is a lemon }}</figcaption>
+  <img class="image image--md" src="/assets/pictures/test_fig.png" figcaption="This is a lemon"/>
 
   -- 调节大小
 
-  {% highlight none %}
+  {% highlight html %}
     <img class="image image--xs" src="/assets/pictures/test_fig.png"/>
     <img class="image image--sm" src="/assets/pictures/test_fig.png"/>
     <img class="image image--md" src="/assets/pictures/test_fig.png"/>
