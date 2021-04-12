@@ -190,4 +190,4 @@ $$
 
 ***
 
-<img class="image image--sm" src="https://i.loli.net/2021/04/12/mHhWOQyaAELjCpJ.jpg"/>
+<img class="image image--md" src="https://i.loli.net/2021/04/12/mHhWOQyaAELjCpJ.jpg"/>
