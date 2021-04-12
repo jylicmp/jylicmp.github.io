@@ -48,6 +48,8 @@ key: Post_test-page
 
   *This is a lemon*
 
+  调整图片大小
+
   {% highlight html %}
   <img class="image image--xs" src="/assets/images/logo/logo.svg"/>
   <img class="image image--sm" src="/assets/images/logo/logo.svg"/>
