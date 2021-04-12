@@ -4,7 +4,7 @@ title:  测试页面
 date:   2021-04-09 14:48:44 +0800
 tags: 测试
 show_author_profile: true
-modify_date: 2021-04-10
+modify_date: 2021-04-12
 key: Post_test-page
 ---
 
@@ -40,7 +40,35 @@ key: Post_test-page
 
   插入图片
 
+  - 方法1
+
+  {% highlight none %}
+    ![测试图1](/assets/pictures/test_fig.png)
+  {% endhighlight %}
+
   ![测试图1](/assets/pictures/test_fig.png)
+
+  - 方法2
+
+  -- 默认大小
+
+  {% highlight none %}
+    <img class="image image--md" src="/assets/pictures/test_fig.png"/> #"image image--md"为默认大小
+    <figcaption>{{ This is a lemon }}</figcaption>
+  {% endhighlight %}
+
+  <img class="image image--md" src="/assets/pictures/test_fig.png"/>
+
+  -- 调节大小
+
+  {% highlight none %}
+    <img class="image image--xs" src="/assets/pictures/test_fig.png"/>
+    <img class="image image--sm" src="/assets/pictures/test_fig.png"/>
+    <img class="image image--md" src="/assets/pictures/test_fig.png"/>
+    <img class="image image--lg" src="/assets/pictures/test_fig.png"/>
+    <img class="image image--xl" src="/assets/pictures/test_fig.png"/>
+  {% endhighlight %}
+
 
 # 4.公式
 
