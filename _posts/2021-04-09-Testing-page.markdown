@@ -104,7 +104,7 @@ This is a lemon
 
 <div class="card">
   <div class="card__image">
-    <img class="image" src="/assets/images/logo/logo.svg"/>
+    <img class="image image--sm" src="/assets/images/logo/logo.svg"/>
   </div>
   <div class="card__content">
     <div class="card__header">
@@ -118,7 +118,9 @@ This is a lemon
 
 # 4.公式
 
-## 行间公式：使用`$$...$$`，如
+## 行间公式
+
+使用`$$...$$`，如
 
 {% highlight latex %}
 $$
@@ -148,7 +150,7 @@ $$
   \notag
 $$
 
-## 行内公式：
+## 行内公式
 
 使用`\\( ... \\)`，如 `\\( \alpha +  \beta = \gamma .\\)` 显示为 \\( \alpha +  \beta = \gamma .\\)
 
