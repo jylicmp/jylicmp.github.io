@@ -54,10 +54,11 @@ key: Post_test-page
 
   {% highlight none %}
     <img class="image image--md" src="/assets/pictures/test_fig.png"/> #"image image--md"为默认大小
-    <figcaption>{{ This is a lemon }}</figcaption>
+    <figcaption>\{\{ This is a lemon \}\}</figcaption>
   {% endhighlight %}
 
   <img class="image image--md" src="/assets/pictures/test_fig.png"/>
+  <figcaption>{{ This is a lemon }}</figcaption>
 
   -- 调节大小
 
