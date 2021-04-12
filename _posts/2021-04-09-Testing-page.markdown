@@ -40,7 +40,7 @@ key: Post_test-page
 
   插入图片
 
-  ![测试图1](/assets/pictures/test_fig.jpg)
+  ![测试图1](/assets/pictures/test_fig.png)
 
 # 4.公式
 
