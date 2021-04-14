@@ -1,5 +1,6 @@
 ---
 layout: page #article
+comment: false
 titles:
   en      : &EN       About
   en-GB   : *EN
@@ -16,7 +17,6 @@ titles:
   ko      : &KO       소개
   ko-KR   : *KO
 key: page-about
-comment: false
 ---
 
 - JY Li@SUSTech in [Prof. Q Liu's group](https://liuqh.phy.sustech.edu.cn/).
