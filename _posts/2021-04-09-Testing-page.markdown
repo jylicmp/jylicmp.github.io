@@ -189,5 +189,3 @@ $$
   >>可以嵌套引用
 
 ***
-
-<img class="image image--md" src="https://i.loli.net/2021/04/12/mHhWOQyaAELjCpJ.jpg"/>
