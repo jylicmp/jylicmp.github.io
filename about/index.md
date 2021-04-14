@@ -1,5 +1,5 @@
 ---
-layout: page #article
+layout: article
 comment: false
 titles:
   en      : &EN       About
