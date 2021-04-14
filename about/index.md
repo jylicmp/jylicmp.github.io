@@ -16,7 +16,7 @@ titles:
   ko      : &KO       소개
   ko-KR   : *KO
 key: page-about
-comments: false
+comment: false
 ---
 
 - JY Li@SUSTech in [Prof. Q Liu's group](https://liuqh.phy.sustech.edu.cn/).
