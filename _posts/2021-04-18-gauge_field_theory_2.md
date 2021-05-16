@@ -87,43 +87,7 @@ $$
 
 ## 局域\\(SU(2)\\)规范变换
 
-现在考虑一个复标量场的拉氏量：
 
-$$
-\mathcal{L} _{0} = - \partial _{\mu} \phi ^{\dagger} \partial _{\mu} \phi + m \phi ^{\dagger} \phi.
-$$
-
-在局域规范变换\\( \phi (x) \rightarrow \phi ^{\prime} (x) = U(x) \phi (x) = e ^{ -i \mathbf{T} \cdot 𝛉 (x) } \phi (x) \\)下，显然有
-
-$$
-\partial_{\mu} \phi^{\dagger} \partial_{\mu} \phi \rightarrow \partial_{\mu} \phi^{\prime \dagger} \partial_{\mu} \phi^{\prime}=\left[\left(\partial_{\mu} \phi^{\dagger}\right) U^{\dagger}+\phi^{\dagger} \partial_{\mu} U^{\dagger}\right]\left[U \partial_{\mu} \phi+\left(\partial_{\mu} U\right) \phi\right] \neq \partial_{\mu} \phi^{\dagger} \partial_{\mu} \phi,
-$$
-
-因此\\( \mathcal{L} _{0} \\)并不具有局域规范不变性。为了使拉氏量具有局域规范不变性，我们引入规范场\\( \mathbf{A} _{\mu} \\)。注意这里\\( \mathbf{A} \\)的矢量分量指内部自由度。按照上节的做法，我们引入协变导数：
-
-$$
-\partial_{ \mu } \rightarrow D_{ \mu } = \partial_{\mu} - i g \mathbf{T} \cdot \mathbf{A} _{ \mu } = \partial_{\mu} - i g T_{i} A _{\mu} ^{i}.
-$$
-
-这里\\(g\\)是场的耦合系数，\\( T _{i}\\)是生成元，满足代数\\( \left[T _{i} , T _{j} \right] = i f _{ijk} T _{k} \\)，\\( f _{ijk} \\)是群结构常数，对下标完全反对称。我们希望引入规范场后满足\\( D _{\mu} \phi \rightarrow D _{\mu} ^{\prime} \phi ^{\prime} = U D _{\mu} \phi \\)，因为这将使得\\( \left( D _{\mu} \phi \right) ^{\dagger}  D _{\mu} \phi \\)是规范不变的。于是我们可以对比
-
-$$
-D_{\mu}^{\prime} \phi^{\prime}=\left(\partial_{\mu}-i g \mathbf{T} \cdot \mathbf{A} _{\mu} ^{\prime}\right)(U \phi)=\left(\partial_{\mu} U\right) \phi+U \partial_{\mu} \phi-i g \mathbf{T} \cdot \mathbf{A}_{\mu}^{\prime} U \phi,
-$$
-
-以及
-
-$$
-U D_{\mu} \phi=U\left(\partial_{\mu}-i g \mathbf{T} \cdot \mathbf{A}_{\mu}\right) \phi=U \partial_{\mu} \phi-i g U \mathbf{T} \cdot \mathbf{A}_{\mu} \phi,
-$$
-
-这两个式子，得出\\( \mathbf{A} _{\mu} \\)需要满足的规范变换为
-
-$$
-\mathbf{T} \cdot \mathbf{A}_{\mu}^{\prime}=U \mathbf{T} \cdot \mathbf{A}_{\mu} U^{-1}-\frac{i}{g}\left(\partial_{\mu} U\right) U^{-1}.
-$$
-
-此时的拉氏量\\( \mathcal{L} = \left( D _{\mu} \phi \right) ^{\dagger}  D _{\mu} \phi + m \phi ^{\dagger} \phi  \\)具有局域规范不变性。
 
 
 
