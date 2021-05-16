@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: articles #articles
-title: 零碎学习记录
+title: 科研小白的零碎学习记录
 articles:
   data_source: posts
   show_cover: false
