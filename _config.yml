@@ -22,7 +22,7 @@ url     : # the base hostname & protocol for your site e.g. https://www.someone.
 baseurl : # does not include hostname
 title   : 短期记录
 description: > # this means to ignore newlines until "Language & timezone"
-科研小白的零碎学习记录
+   科研小白的零碎学习记录
 
 
 ## => Language and Timezone
@@ -63,7 +63,7 @@ repository_tree: master
 ##############################
 paths:
   root    : # title link url, "/" (default)
-  home    : /index.html # home layout url, "/" (default)
+  home    : /index.markdown # home layout url, "/" (default)
   archive : /archive.html # "/archive.html" (default)
   rss     : # "/feed.xml" (default)
 
