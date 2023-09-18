@@ -35,17 +35,17 @@
   <!-- 页面元数据 -->
   <title>利用不变子群的不可约表示构造母群的不可约表示 (1) - 零碎学习记录</title>
   <meta name="keywords" content="null">
-  <meta desc name="description" content="最近需要做群论相关的工作，利用到从不变子群的表示构造母群表示的一些技巧，因此学习了一下BC书[^1]中这部分的内容，发现在诱导表示方面BC书写得会比李新征老师的教材更加顺畅。 - Jiayu Li - 零碎学习记录">
+  <meta desc name="description" content="最近需要做群论相关的工作，利用到从不变子群的表示构造母群表示的一些技巧，因此学习了一下BC书[1]中这部分的内容，发现在诱导表示方面BC书写得会比李新征老师的教材更加顺畅。 - Jiayu Li - 零碎学习记录">
   
 <meta property="og:type" content="article">
 <meta property="og:title" content="利用不变子群的不可约表示构造母群的不可约表示 (1)">
 <meta property="og:url" content="http://example.com/2023/09/14/20230914-invariant-subgroup/index.html">
 <meta property="og:site_name" content="零碎学习记录">
-<meta property="og:description" content="最近需要做群论相关的工作，利用到从不变子群的表示构造母群表示的一些技巧，因此学习了一下BC书[^1]中这部分的内容，发现在诱导表示方面BC书写得会比李新征老师的教材更加顺畅。">
+<meta property="og:description" content="最近需要做群论相关的工作，利用到从不变子群的表示构造母群表示的一些技巧，因此学习了一下BC书[1]中这部分的内容，发现在诱导表示方面BC书写得会比李新征老师的教材更加顺畅。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2023-09-13T16:00:00.000Z">
-<meta property="article:modified_time" content="2023-09-18T05:55:32.492Z">
+<meta property="article:modified_time" content="2023-09-18T12:45:22.524Z">
 <meta property="article:author" content="Jiayu Li">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
@@ -1744,7 +1744,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1695016857014),
+    lastupdate: new Date(1695041643994),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate"],
       for_post: ["toc"],
@@ -2595,7 +2595,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <p>最近需要做群论相关的工作，利用到从不变子群的表示构造母群表示的一些技巧，因此学习了一下BC书[^1]中这部分的内容，发现在诱导表示方面BC书写得会比李新征老师的教材更加顺畅。</p>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>最近需要做群论相关的工作，利用到从不变子群的表示构造母群表示的一些技巧，因此学习了一下BC书<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="C. J. Bradley, A. P. Cracknell, The Mathematical Theory of Symmetry in Solids: Representation Theory for Point Groups and Space Groups. ">[1]</span></a></sup>中这部分的内容，发现在诱导表示方面BC书写得会比李新征老师的教材更加顺畅。</p>
 <span id="more"></span>
 
 <h1 id="1-诱导表示"><a href="#1-诱导表示" class="headerlink" title="1.诱导表示"></a>1.诱导表示</h1><p>设$G$是一个群，$K_1$是$G$的一个子群，但不一定为不变子群。记$K_1$的元素为$k_a$($a&#x3D;1,\cdots,|K_1|$)。可根据$K_1$作$G$的左陪集分解</p>
@@ -2604,8 +2604,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <blockquote>
 <p><strong>定理1.1</strong>：任意$g\in G$都可以唯一分解为$g&#x3D;k_b p_\lambda^{-1}$，其中$b$和$\lambda$都由$g$唯一确定。</p>
 </blockquote>
-<p>证明：根据Eq.(1)有$g^{-1}&#x3D;p_\lambda k_s$，取逆有$g&#x3D;k_s^{-1}p_\lambda^{-1}&#x3D;k_bp_\lambda^{-1}$，其中$k_b &#x3D; k_s^{-1}\in K_1$，因为$K_1$是一个群。注意$p_\lambda^{-1}$本身不一定为陪集代表元。</p>
-<hr>
+<p>证明：根据Eq.(1)有$g^{-1}&#x3D;p_\lambda k_s$，取逆有$g&#x3D;k_s^{-1}p_\lambda^{-1}&#x3D;k_bp_\lambda^{-1}$，其中$k_b &#x3D; k_s^{-1}\in K_1$，因为$K_1$是一个群。注意$p_\lambda^{-1}$本身不一定为陪集代表元。 </p>
+<div class='checkbox'><input type="checkbox" />
+            <hr>
+            </div>
+
+
+
+
 <p>假设$\Omega_1$是一个$d_j$维线性空间，且在$K_1$下是不可约的。取定基函数为$\phi_r$，$r&#x3D;1,\cdots,d_j$，对于任意$k_a\in K_1$，有</p>
 <p>$$\begin{equation}<br>k_a \phi_r &#x3D; \sum_{p&#x3D;1}^{d_j} \phi_p \Gamma^{j}_{pr}(k_a).<br>\end{equation}$$</p>
 <p>该不可约表示的特征标在$k_a$的值记为$\chi^{j} (k_a)$。定义另外一个线性空间$\Omega$，它由$d_j |G|&#x2F;|K_1|$个函数$\phi_{\alpha r}$张成，其中</p>
@@ -2615,7 +2621,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </blockquote>
 <p>证明：考虑任意$g\in G$作用至$\Omega$的基函数上，$g&#x3D;p_\lambda k_s$，则$g\phi_{\tau r}&#x3D;p_\lambda k_s p_\tau \phi_r &#x3D; p_\gamma k_t \phi_r$，其中$\gamma$和$t$由$g$和$\tau$唯一确定，因此</p>
 <p>$$\begin{equation}<br>g\phi_{\tau r} &#x3D; p_\gamma\sum_p\phi_p\Gamma^{j}_{pr}(k_t)&#x3D;\sum_p\phi _{\gamma p}\Gamma^{j} _{pr}(k_t).<br>\end{equation}$$</p>
-<hr>
+<div class='checkbox'><input type="checkbox" />
+            <hr>
+            </div>
+
+
 <p>定理1.2给出$G$的一个表示，称为$\Gamma^{j}$在$G$中的 <strong>诱导表示</strong>，记为$\Gamma^{j}\uparrow G$。诱导表示是一个$d_j |G|&#x2F;|K_1|$维表示。Eq.(4)表明，仅有当$gp_\tau &#x3D; p_\gamma k_t$，即$p_\gamma^{-1}gp_\tau &#x3D;k_t \in K_1$时，$g$的诱导表示矩阵的第$(\gamma,\tau)$块才为$d_j \times d_j$的矩阵$\Gamma^{j}(p_\gamma^{-1}gp_\tau)$，否则该块为零矩阵。由于分解的唯一性，诱导表示的分块矩阵每一行每一列只有一块为非零矩阵。</p>
 <blockquote>
 <p><strong>定理1.3</strong>：定义$\Omega_{\alpha}$是一个$d_j$为线性空间，基函数为$\phi_{\alpha r}$，$r&#x3D;1,\dots, d_j$。固定一个$\alpha$，$\Omega_\alpha$是$K_\alpha$不变且不可约的，其中$K_\alpha &#x3D; \{ p_\alpha k_a p_\alpha^{-1}; \forall k_a \in K_1 \}$是$G$的子群。</p>
@@ -2623,7 +2633,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>证明：显然</p>
 <p>$$\begin{equation}<br>p_\alpha k_a p_\alpha^{-1} \phi_{\alpha r} &#x3D; p_\alpha k_a \phi_r &#x3D; \sum_{s} \phi_{\alpha s} \Gamma^{j}_{sr}(k_a).<br>\end{equation}$$</p>
 <p>因此$p_\alpha k_a p_\alpha^{-1}$在$\phi_{\alpha r}$下的表示矩阵为$\Gamma^{j}(k_a)$，由于$\Gamma^{j}$是不可约的，所以$\Omega_\alpha$对于$K_\alpha$是不可约的。</p>
-<hr>
+<div class='checkbox'><input type="checkbox" />
+            <hr>
+            </div>
+
 <p>子群$K_\alpha$可以写作$p_\alpha K_1 p_\alpha^{-1}$，因此对于每一个这样的子群$K_\alpha$，$\alpha &#x3D; 1,\dots,|G|&#x2F;|K_1|$，都有以下性质：</p>
 <ol>
 <li>$|K_\alpha| &#x3D; |K_1|$；</li>
@@ -2646,7 +2659,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>因此若对于任意$\alpha \neq \beta$，如果</p>
 <p>$$\begin{equation}<br>\sum _{g\in G} \chi _{\alpha} ^* (g) \chi _\beta (g) &#x3D; \sum _{t \in K _{\alpha} \cap K _{\beta}} \chi _{\alpha} ^*(t)\chi _\beta (t) &#x3D; 0，<br>\end{equation}$$</p>
 <p>则$\Gamma^j \uparrow G$是不可约的。</p>
-<hr>
+<div class='checkbox'><input type="checkbox" />
+            <hr>
+            </div>
+
 <h1 id="两个重要推论"><a href="#两个重要推论" class="headerlink" title="两个重要推论"></a>两个重要推论</h1><p>(1) 如果 $K _{1}$ 是$G$的不变子群，则$K _{\alpha}&#x3D;K _{1}$，Eq.(6)变为</p>
 <p>$$\begin{equation}<br>\sum_{k_\alpha \in K_{1}} \chi _{\alpha}^{*}(k_a)\chi _{\beta}(k_a)&#x3D;0,<br>\end{equation}$$</p>
 <p>对任意$\alpha \neq \beta$都成立。由于现在所有$\Omega_{\alpha}$，<br>$\alpha &#x3D; 1,\cdots,|G|&#x2F;|K_{1}|$ 都是 $K_{1}$ 的不可约表示空间，Eq.(12)表示 $K_{1}$ 的这 $|G|&#x2F;|K_{1}|$ 个不可约表示空间都是不等价的。</p>
@@ -2686,8 +2702,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>$$\begin{equation}<br>&#x3D;\frac{1}{|G|}\sum_{k_a\in K_{1}}\sum_{\alpha}\chi^{j}(k_{a})\chi^{\Gamma}(p_{\alpha}k_{a}^{-1}p_{\alpha}^{-1})<br>\end{equation}$$</p>
 <p>$$\begin{equation}<br>&#x3D;\frac{1}{|K_{1}|}\sum_{k_a\in K_{1}}\chi^{j}(k_{a})\chi^{\Gamma}(k_{a}^{-1})<br>\end{equation}$$</p>
 <p>即等于$\Gamma^{j}$在分导表示中在分导表示$\Gamma \downarrow K_{1}$中的重复度。</p>
-<p>[^1]: C. J. Bradley, A. P. Cracknell, The Mathematical Theory of Symmetry in Solids: Representation Theory for Point Groups and Space Groups. </p>
+<div class='checkbox'><input type="checkbox" />
+            <hr>
+            </div>
 
+
+
+
+<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">C. J. Bradley, A. P. Cracknell, The Mathematical Theory of Symmetry in Solids: Representation Theory for Point Groups and Space Groups.<a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>
   </div>
   
   
@@ -2711,7 +2733,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-09-18T13:55:32+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-09-18T20:45:22+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：2023年9月18日</p>
@@ -2733,7 +2755,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2023/09/14/20230914-invariant-subgroup/&title=利用不变子群的不可约表示构造母群的不可约表示 (1) - 零碎学习记录&summary=最近需要做群论相关的工作，利用到从不变子群的表示构造母群表示的一些技巧，因此学习了一下BC书[^1]中这部分的内容，发现在诱导表示方面BC书写得会比李新征老师的教材更加顺畅。"
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2023/09/14/20230914-invariant-subgroup/&title=利用不变子群的不可约表示构造母群的不可约表示 (1) - 零碎学习记录&summary=最近需要做群论相关的工作，利用到从不变子群的表示构造母群表示的一些技巧，因此学习了一下BC书[1]中这部分的内容，发现在诱导表示方面BC书写得会比李新征老师的教材更加顺畅。"
           
           >
           
@@ -2745,7 +2767,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2023/09/14/20230914-invariant-subgroup/&title=利用不变子群的不可约表示构造母群的不可约表示 (1) - 零碎学习记录&summary=最近需要做群论相关的工作，利用到从不变子群的表示构造母群表示的一些技巧，因此学习了一下BC书[^1]中这部分的内容，发现在诱导表示方面BC书写得会比李新征老师的教材更加顺畅。"
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2023/09/14/20230914-invariant-subgroup/&title=利用不变子群的不可约表示构造母群的不可约表示 (1) - 零碎学习记录&summary=最近需要做群论相关的工作，利用到从不变子群的表示构造母群表示的一些技巧，因此学习了一下BC书[1]中这部分的内容，发现在诱导表示方面BC书写得会比李新征老师的教材更加顺畅。"
           
           >
           
@@ -2757,7 +2779,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2023/09/14/20230914-invariant-subgroup/&title=利用不变子群的不可约表示构造母群的不可约表示 (1) - 零碎学习记录&summary=最近需要做群论相关的工作，利用到从不变子群的表示构造母群表示的一些技巧，因此学习了一下BC书[^1]中这部分的内容，发现在诱导表示方面BC书写得会比李新征老师的教材更加顺畅。"
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2023/09/14/20230914-invariant-subgroup/&title=利用不变子群的不可约表示构造母群的不可约表示 (1) - 零碎学习记录&summary=最近需要做群论相关的工作，利用到从不变子群的表示构造母群表示的一些技巧，因此学习了一下BC书[1]中这部分的内容，发现在诱导表示方面BC书写得会比李新征老师的教材更加顺畅。"
           
           >
           
@@ -3305,6 +3327,60 @@ Github
 <!-- pjax 标签必须存在于所有页面 否则 pjax error -->
 <pjax>
 
+        <script>
+  // https://github.com/theme-next/hexo-theme-next/blob/master/layout/_third-party/math/mathjax.swig
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = "https://unpkg.com/volantis-static@0.0.1654736714924/libs/mathjax/es5/tex-mml-chtml.js";
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    // 文章章节标题不能为 “MathJax” ，否则会报错。
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typesetPromise();
+  }
+</script>
+
+
+
 </pjax>
 
 <script>
@@ -3436,7 +3512,7 @@ Github
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"零碎学习记录","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"零碎学习记录"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/群论/","name":"群论"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2023/09/14/20230914-invariant-subgroup/","name":"利用不变子群的不可约表示构造母群的不可约表示 (1)"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"零碎学习记录","url":"http://example.com/","keywords":null,"description":"","author":{"@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":""},"publisher":{"@type":"Organization","name":"零碎学习记录","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"利用不变子群的不可约表示构造母群的不可约表示 (1)","description":"最近需要做群论相关的工作，利用到从不变子群的表示构造母群表示的一些技巧，因此学习了一下BC书[^1]中这部分的内容，发现在诱导表示方面BC书写得会比李新征老师的教材更加顺畅。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/09/14/20230914-invariant-subgroup/"},"author":{"@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"零碎学习记录","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2023/09/14/20230914-invariant-subgroup/","wordCount":87,"datePublished":"2023-09-13T16:00:00.000Z","dateModified":"2023-09-18T05:55:32.492Z","articleSection":"群论","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"零碎学习记录","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"零碎学习记录"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/群论/","name":"群论"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2023/09/14/20230914-invariant-subgroup/","name":"利用不变子群的不可约表示构造母群的不可约表示 (1)"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"零碎学习记录","url":"http://example.com/","keywords":null,"description":"","author":{"@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":""},"publisher":{"@type":"Organization","name":"零碎学习记录","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"利用不变子群的不可约表示构造母群的不可约表示 (1)","description":"最近需要做群论相关的工作，利用到从不变子群的表示构造母群表示的一些技巧，因此学习了一下BC书[1]中这部分的内容，发现在诱导表示方面BC书写得会比李新征老师的教材更加顺畅。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/09/14/20230914-invariant-subgroup/"},"author":{"@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"零碎学习记录","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2023/09/14/20230914-invariant-subgroup/","wordCount":86,"datePublished":"2023-09-13T16:00:00.000Z","dateModified":"2023-09-18T12:45:22.524Z","articleSection":"群论","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
