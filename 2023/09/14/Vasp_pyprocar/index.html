@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="http://example.com/2023/09/15/20230915-invariant-subgroup-2/"/>
+  <link rel="canonical" href="http://example.com/2023/09/14/vasp_pyprocar/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -34,19 +34,23 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>利用不变子群的不可约表示构造母群的不可约表示 (2) - 零碎学习记录</title>
+  <title>pyprocar使用 - 零碎学习记录</title>
   <meta name="keywords" content="null">
-  <meta desc name="description" content="上一部分回顾了从群$G$的子群$K_1$出发构造诱导表示，这一部分考虑当群$G$具有一个不变子群$T$时，群$G$及其表示有什么特殊的性质。 - Jiayu Li - 零碎学习记录">
+  <meta desc name="description" content="pyprocar软件可以处理可以处理PROCAR文件，画能带图、投影能带图等，并且可以挑选特定能带、k点数据。
+
+官网
+Github
+ - Jiayu Li - 零碎学习记录">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="利用不变子群的不可约表示构造母群的不可约表示 (2)">
-<meta property="og:url" content="http://example.com/2023/09/15/20230915-invariant-subgroup-2/index.html">
+<meta property="og:title" content="pyprocar使用">
+<meta property="og:url" content="http://example.com/2023/09/14/Vasp_pyprocar/index.html">
 <meta property="og:site_name" content="零碎学习记录">
-<meta property="og:description" content="上一部分回顾了从群$G$的子群$K_1$出发构造诱导表示，这一部分考虑当群$G$具有一个不变子群$T$时，群$G$及其表示有什么特殊的性质。">
+<meta property="og:description" content="pyprocar软件可以处理可以处理PROCAR文件，画能带图、投影能带图等，并且可以挑选特定能带、k点数据。  官网 Github">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2023-09-14T16:00:00.000Z">
-<meta property="article:modified_time" content="2023-09-20T16:36:47.000Z">
+<meta property="article:published_time" content="2023-09-13T16:00:00.000Z">
+<meta property="article:modified_time" content="2023-09-18T05:55:29.610Z">
 <meta property="article:author" content="Jiayu Li">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
@@ -1745,7 +1749,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1695294575580),
+    lastupdate: new Date(1695383243472),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate","webinfo"],
       for_post: ["toc"],
@@ -2510,7 +2514,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="http://example.com/2023/09/15/20230915-invariant-subgroup-2/">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2023/09/14/Vasp_pyprocar/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="零碎学习记录">
   </span>
@@ -2531,7 +2535,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        利用不变子群的不可约表示构造母群的不可约表示 (2)
+        pyprocar使用
       </h1>
       <div class='new-meta-box'>
         
@@ -2550,10 +2554,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
   <div class='new-meta-item category'>
     <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
-    <a class="category-link" href="/categories/%E7%BE%A4%E8%AE%BA/">群论</a>
+    <a class="category-link" href="/categories/%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E8%AE%A1%E7%AE%97/">第一性原理计算</a>
     
       <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-        <a href="/categories/%E7%BE%A4%E8%AE%BA/" itemprop="url"><span itemprop="name">群论</span></a>
+        <a href="/categories/%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E8%AE%A1%E7%AE%97/" itemprop="url"><span itemprop="name">第一性原理计算</span></a>
       </span>
     
   </div>
@@ -2562,10 +2566,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-09-15T00:00:00+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-09-14T00:00:00+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2023年9月15日</p>
+    <p>发布于：2023年9月14日</p>
   </a>
 </div>
 
@@ -2588,97 +2592,34 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>上一部分回顾了从群$G$的子群$K_1$出发构造诱导表示，这一部分考虑当群$G$具有一个不变子群$T$时，群$G$及其表示有什么特殊的性质。</p>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>pyprocar软件可以处理可以处理PROCAR文件，画能带图、投影能带图等，并且可以挑选特定能带、k点数据。</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://romerogroup.github.io/pyprocar/index.html">官网</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/romerogroup/pyprocar">Github</a></li>
+</ul>
 <span id="more"></span>
 
-<h2 id="2-1-群及其不变子群"><a href="#2-1-群及其不变子群" class="headerlink" title="2.1 群及其不变子群"></a>2.1 群及其不变子群</h2><p>群$G$具有不变子群$T$，则$G$的左陪集分解为</p>
-<p>$$\begin{equation}<br>G&#x3D;\sum_{\alpha}r_{\alpha}T, \tag{2.1}<br>\end{equation}$$</p>
-<p>$r_{\alpha}$是陪集代表元，并且$r_{1}&#x3D;e$是恒等元。</p>
-<p><em><strong>注</strong></em>：若如果存在一种陪集代表元的选取方法，使得这些左陪集代表元可以构成一个群$F$，则默认选取这些陪集代表元。</p>
-<blockquote>
-<p><strong>定义2.1</strong>：如果群$G$关于不变子群$T$的左陪集分解的陪集代表元可以构成一个群$F$，则称$G$是$T$和$F$的半直积群，记作$G&#x3D;T\rtimes F$。</p>
-</blockquote>
-<p><em><strong>注</strong></em>：这是半直积群的另外一种定义方式。</p>
-<p>记群$G$中的元素为$(r_{\alpha} t_{a})$，群乘法关系为</p>
-<p>$$\begin{equation}<br>(r_{\alpha} t_{a})(r_{\beta} t_{b}) &#x3D; (r_{\alpha}r_{\beta})(r_{\beta}^{-1}t_{a}r_{\beta})t_{b} &#x3D; (r_{\alpha \beta} t_{\alpha \beta}[t_{\alpha}]_{\beta}t_b), \tag{2.2}<br>\end{equation}$$</p>
-<p>当中$[t_{\alpha}] _{\beta}&#x3D;r _{\beta}^{-1} t _{a} r _{\beta}\in T$，因为$T$是不变子群，而记</p>
-<p>$$\begin{equation}<br>r_{\alpha}r_{\beta}&#x3D; r_{\alpha \beta} t_{\alpha \beta}, \tag{2.3}<br>\end{equation}$$</p>
-<p>为其唯一分解。注意若$G&#x3D;T\rtimes F$，有$t_{\alpha \beta}&#x3D;t_{1}&#x3D;e$，即$F$具有封闭性。</p>
-<p>$G$中的恒等元表示为$(r_1 t_1)$，并且容易得到以下关系</p>
-<p>$$\begin{equation}<br>[t _{a}] _{1} &#x3D; t _{a}, \quad [t _{1}] _{\alpha} &#x3D; t _{1}, \quad r _{\alpha 1}&#x3D;r _{1 \alpha}&#x3D;r _{\alpha}, \quad t _{\alpha 1}&#x3D;t _{1 \alpha}&#x3D;t _{1}, \tag{2.4}<br>\end{equation}$$</p>
-<p>$$\begin{equation}<br>[t _{a}] _{\alpha}[t _{b}] _{\alpha} &#x3D; [t _{a} t _{b}] _{\alpha}, \tag{2.5}<br>\end{equation}$$</p>
-<p>以及</p>
-<p>$$\begin{equation}<br>[t _a^{-1}] _{\alpha}&#x3D;([t _a] _{\alpha})^{-1}. \tag{2.6}<br>\end{equation}$$</p>
-<p>根据$G$结合律，可以得到对于任意的$a,\alpha,\beta,\gamma$，都有</p>
-<p>$$\begin{equation}<br>r_{\alpha \beta, \gamma} &#x3D; r_{\alpha, \beta \gamma} \tag{2.7}<br>\end{equation}$$</p>
-<p>和</p>
-<p>$$\begin{equation}<br>t _{\alpha \beta, \gamma}[t _{\alpha \beta}] _{\gamma}[[t _{a}] _{\beta}] _{\gamma} &#x3D; t _{\alpha,\beta \gamma} [t _a] _{\beta \gamma}t _{\beta \gamma}. \tag{2.8}<br>\end{equation}$$</p>
-<details cyan><summary> 详细推导 </summary>
-              <div class='content'>
-              <p>一方面</p><p>$$<br>(r _{\alpha} t _{a})(r _{\beta} t _{a})(r _{\gamma} t _{1})<br>&#x3D; r _{\alpha} r _{\beta} [t _{a}] _{\beta} r _{\gamma} [t _a] _{\gamma}<br>&#x3D; r _{\alpha \beta} t _{\alpha \beta} r _{\gamma} [[t _{a}] _{\beta}] _\gamma  [t _a] _{\gamma}<br>&#x3D; r _{\alpha \beta, \gamma} t _{\alpha \beta, \gamma} [t _{\alpha \beta}] _{\gamma}[[t _{a}] _{\beta}] _\gamma  [t _a] _{\gamma}<br>$$</p><p>另一方面</p><p>$$<br>(r _{\alpha} t _{a})(r _{\beta} t _{a})(r _{\gamma} t _{1})<br>&#x3D; (r _{\alpha} t _{a}) r _{\beta} r _{\gamma} [t _{a}] _{\gamma}<br>&#x3D; (r _{\alpha} t _{a}) r _{\beta \gamma} t _{\beta \gamma} [t _{a}] _{\gamma}<br>&#x3D; r _{\alpha} r _{\beta \gamma} [t _{a}] _{\beta \gamma} t _{\beta \gamma} [t _{a}] _{\gamma}<br>&#x3D; r _{\alpha, \beta \gamma} t _{\alpha ,\beta \gamma} [t _{a}] _{\beta \gamma} t _{\beta \gamma} [t _{a}] _{\gamma}<br>$$</p><p>对比两式即得到Eq.(2.7)和(2.8)。</p>
-              </div>
-            </details>
-
-<p>容易验证</p>
-<p>$$\begin{equation}<br>r _{\alpha ,\beta 1} &#x3D; r _{\alpha \beta,1} &#x3D; r _{\alpha \beta} &#x3D; r _{1, \alpha \beta} &#x3D; r _{1\alpha, \beta} &#x3D; r _{\alpha, 1 \beta} &#x3D; r _{\alpha 1, \beta}, \tag{2.9}<br>\end{equation}$$</p>
-<p>$$\begin{equation}<br>t _{\alpha ,\beta 1} &#x3D; t _{1 \alpha ,\beta} &#x3D; t _{\alpha, 1 \beta} &#x3D; t _{ \alpha 1, \beta} &#x3D; t _{\alpha \beta}, \quad  t _{\alpha \beta, 1} &#x3D; t _{1, \alpha \beta} &#x3D; t _{1}. \tag{2.10}<br>\end{equation}$$</p>
-<p>特别地，令$a&#x3D;1$，可得到重要关系</p>
-<p>$$\begin{equation}<br>t _{\alpha \beta, \gamma} [t _{\alpha \beta}] _{\gamma} &#x3D; t _{\alpha ,\beta \gamma} t _{\beta \gamma}. \tag{2.11}<br>\end{equation}$$</p>
-<h2 id="2-2-群元的逆"><a href="#2-2-群元的逆" class="headerlink" title="2.2 群元的逆"></a>2.2 群元的逆</h2><p>我们将任一$G$中的群元记为$(r _{\alpha} t _a)$，群元的逆似乎可写作 </p>
-<p>$$<br>(r _{\alpha} t _a) ^{-1}<br>&#x3D; t _{a}^{-1} r _{\alpha}^{-1}<br>&#x3D; r _{\alpha}^{-1} (r _{\alpha} ^{-1})^{-1} t _{a}^{-1} r _{\alpha}^{-1}<br>$$</p>
-<p>然而这样的定义存在问题，因为虽然$(r _{\alpha} ^{-1})^{-1} t _{a}^{-1} r _{\alpha}^{-1} \in T$，但$r _{\alpha}^{-1}$不一定为陪集代表元。因此需要找出陪集分解与群元的逆的关系。</p>
-<p>首先可以知道$(r _1 t _a)$的逆是$(r _1 t _a^{-1})$，因为$(r _1 t _a)(r _1 t _a^{-1}) &#x3D; r _1 [t _a]_1 t _a^{-1} &#x3D; r _1 t _1&#x3D;(r _1 t _a^{-1})(r _1 t _a)$。其次，给定一个陪集代表元$r _{\alpha}$，存在一个唯一的陪集代表元$r _{\bar{\alpha}}$，使得$r _{\alpha \bar{\alpha}}&#x3D;r _{\bar{\alpha}\alpha} &#x3D; r _{1}$。</p>
-<details cyan><summary> 存在性和唯一性的证明 </summary>
-              <div class='content'>
-              <p>$g &#x3D; r _{\alpha} t _a$作用在任意一个陪集上，都有</p><p>$$<br>gr _{\beta}T<br>&#x3D; r _{\alpha} r _{\beta} [t _a] _{\beta}T<br>&#x3D; r _{\alpha \beta} t _{\alpha \beta} T<br>&#x3D; r _{\alpha \beta} T,<br>$$</p><p>因此，$g$作用至一个陪集上会将其变成一个陪集。由重排定理知，$g$作用到$G$上作用是对所有陪集的重排，因此在$g &#x3D; (r _\alpha t _a)$的作用下，一定存在唯一的一个陪集$r _{\bar{\alpha}}T$，满足$g r _{\bar{\alpha}}T &#x3D; T$， 即$r _{\alpha \bar{\alpha}}&#x3D;r _1$ 。同理利用$T$是不变子群和$Gg &#x3D; G$可得$r _{\bar{\alpha} \alpha}&#x3D;r _1$。</p>
-              </div>
-            </details>
-
-<p>因此$(r _\alpha t _1)$的逆为$(r _{\bar{\alpha}} t _{\alpha \bar{\alpha}}^{-1})$，而且</p>
-<p>$$\begin{equation}<br>t _{\bar{\alpha} \alpha} &#x3D; [t _{\alpha \bar{\alpha}}] _{\alpha}, \tag{2.12}<br>\end{equation}$$</p>
-<p>$$\begin{equation}<br>[[t _a] _\alpha] _{\bar{\alpha}} &#x3D; t _{\alpha \bar{\alpha}} ^{-1} t _a t _{\alpha \bar{\alpha}}.  \tag{2.13}<br>\end{equation}$$</p>
-<p>并且可以验证</p>
-<p>$$\begin{equation}<br>r _\alpha t _a r _\alpha ^{-1} &#x3D; t _{\alpha \bar{\alpha}} [t _a] _{\bar{\alpha}} t _{\alpha \bar{\alpha}} ^{-1} . \tag{2.14}<br>\end{equation}$$</p>
-<p>Eq.(2.14)可以看作是$[t _a] _{\alpha ^{-1}}$的定义，这个定义并不依赖$r _{\alpha} ^{-1}$本身，不会存在前面所说的问题。</p>
-<details cyan><summary> 公式推导 </summary>
-              <div class='content'>
-              <p>Eq.(2.12)：显然$(r _\alpha t _1)(r _{\bar{\alpha}} t _{\alpha \bar{\alpha}}^{-1}) &#x3D; r _{\alpha \bar{\alpha}} t _{\alpha \bar{\alpha}}t _{\alpha \bar{\alpha}}^{-1}&#x3D;r _1 t _1$，注意到$(r _{\bar{\alpha}} t _{\alpha \bar{\alpha}}^{-1})(r _\alpha t _1) &#x3D; r _{\bar{\alpha} \alpha }t _{\bar{\alpha}\alpha}[t _{\alpha \bar{\alpha}} ^{-1}] _{\alpha}&#x3D;r _1 t _1$，因此有</p><p>$$<br>t _{\bar{\alpha}\alpha} &#x3D; ([t _{\alpha \bar{\alpha}} ^{-1}] _{\alpha}) ^ {-1}<br>&#x3D; (r _\alpha ^{-1} t _{\alpha \bar{\alpha}} ^{-1} r _\alpha) ^{-1}<br>&#x3D; r _\alpha ^{-1} t _{\alpha \bar{\alpha}} r _\alpha<br>&#x3D; [t _{\alpha \bar{\alpha}}] _{\alpha}.<br>$$</p><p>Eq.(2.13)：</p><p>$$<br>[[t _a] _\alpha] _{\bar{\alpha}} &#x3D; r _{\bar{\alpha}}^{-1} r _{\alpha}^{-1} t _a r _{\alpha} r _{\bar{\alpha}} &#x3D; (r _{\alpha} r _{\bar{\alpha}}) ^{-1} t _a (r _{\alpha} r _{\bar{\alpha}}) &#x3D; t _{\alpha \bar{\alpha}}^{-1} t _a t _{\alpha \bar{\alpha}}.$$</p><p>Eq.(2.14)：</p><p>$$<br>r _{\alpha}t _{a}r _{\alpha}^{-1}&#x3D;(r _{\alpha}t _{1})t _{a}(r _{\alpha}t _{a})^{-1}&#x3D;(r _{\bar{\alpha}}t _{\alpha\bar{\alpha}}^{-1})^{-1}t _{a}(r _{\bar{\alpha}}t _{\alpha\bar{\alpha}}^{-1})&#x3D;t _{\alpha\bar{\alpha}}r _{\bar{\alpha}}^{-1}t _{a}r _{\bar{\alpha}}t _{\alpha\bar{\alpha}}^{-1}&#x3D;t _{\alpha\bar{\alpha}}[t _{a}] _{\bar{\alpha}}t _{\alpha\bar{\alpha}}^{-1}.$$</p>
-              </div>
-            </details>
-
-<blockquote>
-<p><strong>定理2.1</strong>：$(r _\alpha t _a)$的逆是$(r _{\bar{\alpha}} [t _a ^{-1}] _{\bar{\alpha}} t _{\alpha \bar{\alpha}}^{-1})$。</p>
-</blockquote>
-<p>证明：显然有$(r _\alpha t _a)(r _{\bar{\alpha}} [t _a ^{-1}] _{\bar{\alpha}} t _{\alpha \bar{\alpha}}^{-1}) &#x3D; (r _1 t _1)$。更重要的是证明$(r _{\bar{\alpha}} [t _a ^{-1}] _{\bar{\alpha}} t _{\alpha \bar{\alpha}}^{-1})(r _\alpha t _a) &#x3D; (r _1 t _1)$</p>
-<p>$$<br>(r _{\bar{\alpha}}[t _{a}^{-1}] _{\bar{\alpha}}t _{\alpha\bar{\alpha}}^{-1})(r _{\alpha}t _{a})&#x3D;r _{\bar{\alpha}\alpha}t _{\bar{\alpha}\alpha}[[t _{a}^{-1}] _{\bar{\alpha}}] _{\alpha}[t _{\alpha\bar{\alpha}}^{-1}] _{\alpha}t _{a}$$</p>
-<p>根据Eq.(2.12)和(2.13)有$[[t _a^{-1}] _{\bar{\alpha}}] _{\alpha}&#x3D;t _{\bar{\alpha}\alpha}^{-1}t _{a}^{-1}t _{\bar{\alpha} \alpha}$，$[t _{\alpha \bar{\alpha}} ^{-1}] _{\alpha}&#x3D;t _{\bar{\alpha}\alpha} ^{-1}$，因此上式等于$(r _1 t _1)$。</p>
-<div class='checkbox'><input type="checkbox" />
-            <hr>
-            </div>
-
-<h2 id="2-3-小群与伴随小群"><a href="#2-3-小群与伴随小群" class="headerlink" title="2.3 小群与伴随小群"></a>2.3 小群与伴随小群</h2><blockquote>
-<p><strong>定理2.2</strong>：陪集代表元的指标构成一个阶为$|G|&#x2F;|T|$的群，记作$R$，$R$同构于商群$G&#x2F;T$。</p>
-</blockquote>
-<p>证明：$R$中的群乘法定义为如果$r _{\alpha}r _{\beta} \in r _{\gamma}T$，则$\alpha \beta &#x3D; \gamma$。封闭性是显然的，而Eq.(2.7)表明满足结合律，恒等元为$1$，$\alpha$的逆元为$\bar{\alpha}$。容易证明$R\cong G&#x2F;T$，因为$\alpha$与$r _{\alpha}T$一一对应且满足相同的乘法。</p>
-<div class='checkbox'><input type="checkbox" />
-            <hr>
-            </div>
-
-<p><em><strong>注</strong></em>：若$G&#x3D;T\rtimes F$，则$F \cong R \cong G&#x2F;T$，因为$r _{\alpha} \leftrightarrow \alpha \leftrightarrow r _{\alpha}T$。</p>
-<p>现在将<a href="/2023/09/14/20230914-invariant-subgroup/" title="利用不变子群的不可约表示构造母群的不可约表示 (1)">上一节</a>的结果应用至$T$是$G$的不变子群的情况。设$\Gamma ^{i}$是$T$的一个$d _i$维不可约表示，基函数为$\phi _r$，则</p>
-<p>$$\begin{equation}<br>t _a \phi _p &#x3D; \sum _p \phi _p \Gamma _{pr}^j (t _a). \tag{2.15}<br>\end{equation}$$</p>
-<p>函数$\phi _{\alpha p} &#x3D; r _{\alpha}\phi _p$（$\alpha &#x3D; 1,\cdots, |G|&#x2F;|T|$，$p&#x3D;1,\cdots,d _i$）张成一个线性空间$\Omega$，且$\Omega$是$G$不变的（<strong>定理1.2</strong>）。此时所有子群$T _{\alpha}&#x3D; \{r _{\alpha} t _a r _{\alpha}^{-1} ; t _{a}\in T\} $都等于$T$。<strong>定理1.3</strong>进一步表明$\Omega _{\alpha}$ （固定$\alpha$，只由$\phi _{\alpha 1},\cdots,\phi _{\alpha d _i}$张成）是$T$不变且不可约的，表示矩阵为$\Gamma ^{i}$本身。现在，记由$\Omega _\alpha$承载的$T$的表示为$\Gamma ^{i,\alpha}$，则有</p>
-<p>$$\begin{equation}<br>t _a \phi _{\alpha r}<br>&#x3D; t _a r _{\alpha} \phi _r<br>&#x3D; r _{\alpha} [t _a] _{\alpha}\phi _r<br>&#x3D; r _{\alpha} \sum _p \phi _p \Gamma _{pr}^{i} ([t _a] _\alpha)<br>&#x3D;  \sum _p \phi _{\alpha p} \Gamma _{pr}^{i} ([t _a] _\alpha),\tag{2.16}<br>\end{equation}$$</p>
-<p>因此有</p>
-<p>$$\begin{equation}<br>\Gamma ^{i,\alpha} (t _a) &#x3D;  \Gamma ^{i} ([t _a] _\alpha),\tag{2.17}<br>\end{equation}$$</p>
-<p>对所有$t _a \in T$都成立，故表示$\Gamma ^{i,\alpha}$共轭于表示$\Gamma ^{i}$，即每一个陪集代表元$r _{\alpha}$将表示$\Gamma ^{i}$变换为一个共轭表示$\Gamma ^{i,\alpha}$，所有$|G|&#x2F;|T|$个陪集代表元给出$\Gamma ^{i}$的共轭表示集合。两个共轭表示可能是等价的也可能是不等价的。$\Gamma ^{i}$的共轭表示集合的最大互不等价子集，称为$\Gamma ^{i}$的$G$轨道（orbit），或者星（star）。</p>
-<details cyan><summary> 与空间群的关系 </summary>
-              <div class='content'>
-              <p>$t _a$对应于平移操作$\{ E| \mathbf{t} \}$，$r _{\alpha}$对应于旋转平移操作$\{ R|\mathbf{v} \} \in G$，因此</p><p>$$\begin{equation}<br>[t _{a}] _{\alpha}\rightarrow\{R|\mathbf{v}\}^{-1}\{E|\mathbf{t}\}\{R|\mathbf{v}\}&#x3D;\{E|R^{-1}\mathbf{t}\}. \tag{2.18}<br>\end{equation}$$</p><p>$\Gamma ^{i}$对应于平移群的表示$\Delta ^{\mathbf{k}}$，则</p><p>$$\begin{equation}<br>\Gamma^{i,\alpha}(t _{a})&#x3D;\Gamma^{i}([t _{a}] _{\alpha})\rightarrow\Delta^{\mathbf{k}}(\{E|R^{-1}\mathbf{t}\})&#x3D;\exp(-i\mathbf{k}\cdot R^{-1}\mathbf{t})\mathbf{1}&#x3D;\exp(-iR\mathbf{k}\cdot\mathbf{t})\mathbf{1}&#x3D;\Delta^{R\mathbf{k}}(\{E|\mathbf{t}\}). \tag{2.19}<br>\end{equation}$$</p><p>因此所有不等价波矢$\mathbf{k}$等同于平移群的不等价表示，构成波矢星。</p>
-              </div>
-            </details>
-
-<p>使得$\Gamma ^{i,\gamma}\equiv \Gamma ^{i}$的指标$\gamma \in R$构成的群称为伴随小群（little co-group），记作$\bar{K} ^i$。</p>
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p>可使用pip和conda两种方式安装，分别为<br>pip：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install pyprocar</span><br></pre></td></tr></table></figure>
+<p>conda：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda install -c conda-forge pyprocar</span><br></pre></td></tr></table></figure>
+<p><strong>注意事项</strong>：使用pip安装的版本比较旧，部分功能不能使用，比如无法修改能带图线的粗细（linewidth）；而使用后者安装需要使用conda的第三方库conda-forge，连接比较慢，可以使用<a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/">清华镜像源</a>。（<strong>尚未确认清华镜像源中PyProcar的版本。</strong>）</p>
+<h1 id="准备文件"><a href="#准备文件" class="headerlink" title="准备文件"></a>准备文件</h1><p>以VASP的输出文件为主，需要准备以下文件：</p>
+<ul>
+<li>PROCAR</li>
+<li>OUTCAR（可选）</li>
+<li>KPOINTS（可选）</li>
+</ul>
+<p>PROCAR提供能带数值、轨道投影、自旋分量等，OUTCAR提供费米能、倒格矢量等，KPOINTS提供高对称k点信息。</p>
+<h1 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h1><p>先调用PyProcar</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pyprocar</span><br></pre></td></tr></table></figure>
+<p>直接画能带的代码为</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pyprocar.bandsplot(<span class="string">&#x27;PROCAR&#x27;</span>,elimit=[-<span class="number">2</span>,<span class="number">2</span>],mode=<span class="string">&#x27;plain&#x27;</span>,color=<span class="string">&#x27;blue&#x27;</span>,code=<span class="string">&#x27;vasp&#x27;</span>)</span><br></pre></td></tr></table></figure>
+<p><code>&#39;PROCAR&#39;</code>为PROCAR文件地址，<code>elimit</code>为能量窗口，<code>mode=&#39;plain&#39;</code>表示简单能带画图。也可载入<code>OUTCAR</code>和<code>KPOINTS</code>文件进行画图，代码为</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pyprocar.bandsplot(<span class="string">&#x27;PROCAR&#x27;</span>,outcar=<span class="string">&#x27;OUTCAR&#x27;</span>,kpointsfile=<span class="string">&#x27;KPOINTS&#x27;</span>,elimit=[-<span class="number">2</span>,<span class="number">2</span>],mode=<span class="string">&#x27;plain&#x27;</span>,color=<span class="string">&#x27;blue&#x27;</span>,code=<span class="string">&#x27;vasp&#x27;</span>)</span><br></pre></td></tr></table></figure>
+<p>需要注意，KPOINTS文件需要处理成以下形式：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">UCB (simple cubic) G-X-M-G-R-X M-R</span><br><span class="line">40   ! 40 grids</span><br><span class="line">Line-mode</span><br><span class="line">reciprocal</span><br><span class="line">0.0000   0.0000   0.0000   ! \Gamma</span><br><span class="line">0.0000   0.5000   0.0000   ! X</span><br><span class="line"></span><br><span class="line">0.0000   0.5000   0.0000   ! X</span><br><span class="line">0.5000   0.5000   0.0000   ! M</span><br><span class="line"></span><br><span class="line">0.5000   0.5000   0.0000   ! M</span><br><span class="line">0.0000   0.0000   0.0000   ! \Gamma</span><br><span class="line"></span><br><span class="line">0.0000   0.0000   0.0000   ! \Gamma</span><br><span class="line">0.5000   0.5000   0.5000   ! R</span><br><span class="line"></span><br><span class="line">0.5000   0.5000   0.5000   ! R</span><br><span class="line">0.0000   0.5000   0.0000   ! X</span><br></pre></td></tr></table></figure>
+<p>即高对称点的标号需要用冒号“！”注释，$\Gamma$点需要标注为<code>\Gamma</code>。<br><strong>注意事项</strong>：若KPOINTS是用vaspkit生成时，文件第四行<code>Reciprocal</code>的首字母是大写的<code>R</code>，而旧版本的PyProcar读取时会发生错误，因此需要将<code>Reciprocal</code>改成<code>reciprocal</code>。</p>
 
   </div>
   
@@ -2703,10 +2644,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-09-21T00:36:47+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-09-18T13:55:29+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2023年9月21日</p>
+    <p>更新于：2023年9月18日</p>
   </a>
 </div>
 
@@ -2727,7 +2668,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class='hoverbox'>
           <a class='share'><img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/wechat.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/wechat.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></a>
           <div class='target'>
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATgAAAE4CAAAAADqFLC2AAADrElEQVR42u3aQZLbMAwEQP//08kDUlvmDOgI62reLMsi2byMAb3+GNV4IQAHDhw4Axy4JXCvcvz44MP74gUfriNdX7pfcODAgQMHDhy4bXDpBtLrp9//s9Dw96fX2/2CAwcOHDhw4MBthTvdSLqQNlCnB9au//h+cODAgQMHDhy4L4ObFkLTwJoGZXDgwIEDBw4cOHDd5ynYtEEODhw4cODAgQP37XBxg/YQ5lZwbedZ18kHBw4cOHDgwIG7BNcWIn/r53q/4MCBAwcOHDhwS+Cm43YAbg8ofSGx3i84cODAgQMHDtwSuDYgvgM8hWgLi2ljero/cODAgQMHDhy4bXBtQbANop9qLN9urP84Lzhw4MCBAwcO3FK49IFTkPT6rUB8+v3bhjQ4cODAgQMHDtxDcGkjeBospxBpQTX9/u1+wIEDBw4cOHDglsClG2wnbGE+1QBv5wcHDhw4cODAgdsCl06QBt0p8LTB3RYyf/wdOHDgwIEDBw7cErh0orbxPAWbBuI26L/95wAOHDhw4MCBA/cQ3O0Gb9uAbg/uNMB/7J8DOHDgwIEDBw7cw3Cfaiinhc60If66NI7nAwcOHDhw4MCBWwKXFiDTDbT3f6qw2h4QOHDgwIEDBw7cdrhpsG2D7zQAt+tJC7jgwIEDBw4cOHDb4NLG7/FEYZCePj89+PggwYEDBw4cOHDglsDFATAsDI4D56VC5DQQgwMHDhw4cODAbYWbBtg26LZgjzekwYEDBw4cOHDglsK1gbbd8O1C6bTA+bYhDQ4cOHDgwIEDtwSubRC3je20oDgtTLbzgQMHDhw4cODAbYdrG8Yp+PTFwjYgtwEeHDhw4MCBAwduO1wbNNOC4rQA2c4/XS84cODAgQMHDtx2uNMgmhZAx43gDxVO4/WBAwcOHDhw4MAthztdaBukb0GnATp9XhyAwYEDBw4cOHDgHoJLG89tQbENoGnDug3GcQAGBw4cOHDgwIH7z3DT0UJOG9bpSIP22wAMDhw4cODAgQP3MNythVxr+F4ukE7X9fafAzhw4MCBAwcO3MNwtwNvW9A8fc40YKfzgAMHDhw4cODAbYdrA+W0oHi7gXx7gAMHDhw4cODAfTvcraCcBu/T+8fPAQcOHDhw4MCB+3K42y8ungbgj0ODAwcOHDhw4MAthUuD6On19HfjxnFZ+KwDMDhw4MCBAwcO3ENwdYO2bFhPYdoDmDbSwYEDBw4cOHDgtsAZ4QEhAAcOHDgDHLhnx1/lV4NqITs2XQAAAABJRU5ErkJggg==">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARgAAAEYCAAAAACi5bZQAAADBElEQVR42u3aQXLbMBAEQP3/087dcYqYAURzo8aNMgVjW5epXby+rB/XCwEYMGDAgAEzBuZVru/fv3r+/vlfB7rY5+r9Y/WAAQMGDBgwYMbBLAegxQLaQtv9j9UDBgwYMGDAgBkLkwa63WC3CtT+UHFABQMGDBgwYMB8DMzVe6v7pxDt+cCAAQMGDBgwYNoCTjW2xiRfMGDAgAEDBsxtMOlB0kbT3TC/NokEAwYMGDBgwNwGU18YfuhzXQ8YMGDAgAEDZgzM7koP3gbHU4Hucn8wYMCAAQMGzBiY3Qs/bdBaLXh3n7hOMGDAgAEDBsw4mKsN2yB3+r10n/SHAgMGDBgwYMDMgTkVtK6A0/13g2K6LxgwYMCAAQNmHsypAdkqyO7ALAWJgyUYMGDAgAEDZgxM25BqG1y7DavVoLb698sbVWDAgAEDBgyYx8KcClzpgU8N9NoA+k9IMGDAgAEDBsxYmNUC0qC321hKYWpQMGDAgAEDBsw4mPTCz6mB2u6Ar22wgQEDBgwYMGD+X5hTn6eQKUR7YQgMGDBgwIABMx/mrsLSRlX7vfZiERgwYMCAAQNmHsxuAe0FoXRgl75XQ4EBAwYMGDBgxsCkA65Tg7F3B8QaEgwYMGDAgAEzDiYdYLVBqgXZbkCt/iBgwIABAwYMmDEwaQBKC3hXEDx1rnjgBgYMGDBgwIB5DEw6uDo1eEufTwfFuIMHBgwYMGDAgHkszKmCWtDTg7620QUGDBgwYMCAmQOz+o/bgVgbEHcHaXWjCwwYMGDAgAEzBmZ3rRa0W2A6EEzfAwMGDBgwYMDMg3mVK/3+Lng6GKwDLBgwYMCAAQNmHEzbqEoP0gbBFj4e8IEBAwYMGDBgxsLUg6pyQHZqkLYbSMGAAQMGDBgwnwez2khqB3GnGlDLARAMGDBgwIAB83Ew7XurMGnjKQ2iYMCAAQMGDJj5MG0Aa+HSQk4F0LdPIsGAAQMGDBgwt8GcGmC1QWs32KWNs+WABwYMGDBgwIB5LIwFBgwYMGDAgBm2/gDjNd2GGCibNgAAAABJRU5ErkJggg==">
           </div>
         </div>
       
@@ -2756,13 +2697,18 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-      
-        <a class='next' href='/2023/09/14/20230914-invariant-subgroup/'>
-          <p class='title'>利用不变子群的不可约表示构造母群的不可约表示 (1)<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+        <a class='prev' href='/2023/09/14/Group_invariant-subgroup-1/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>利用不变子群的不可约表示构造母群的不可约表示 (1)</p>
           <p class='content'>最近需要做群论相关的工作，利用到从不变子群的表示构造母群表示的一些技巧，因此学习了一下BC书[1]中这部分的内容，发现在诱导表示方面BC书写得会比李新征老师的教材更加顺畅。
 
 
 1.1 诱导表示...</p>
+        </a>
+      
+      
+        <a class='next' href='/2023/09/13/hello-world/'>
+          <p class='title'>Hello World<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any ...</p>
         </a>
       
     </div>
@@ -2778,7 +2724,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/2023/09/15/20230915-invariant-subgroup-2/index.html#comments">
+      <meta itemprop="discussionUrl" content="/2023/09/14/Vasp_pyprocar/index.html#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -2820,7 +2766,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1-%E7%BE%A4%E5%8F%8A%E5%85%B6%E4%B8%8D%E5%8F%98%E5%AD%90%E7%BE%A4"><span class="toc-text">2.1 群及其不变子群</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2-%E7%BE%A4%E5%85%83%E7%9A%84%E9%80%86"><span class="toc-text">2.2 群元的逆</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-3-%E5%B0%8F%E7%BE%A4%E4%B8%8E%E4%BC%B4%E9%9A%8F%E5%B0%8F%E7%BE%A4"><span class="toc-text">2.3 小群与伴随小群</span></a></li></ol>
+        
     </div>
   </section>
 
@@ -3259,60 +3205,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <!-- pjax 标签必须存在于所有页面 否则 pjax error -->
 <pjax>
 
-        <script>
-  // https://github.com/theme-next/hexo-theme-next/blob/master/layout/_third-party/math/mathjax.swig
-  if (typeof MathJax === 'undefined') {
-    window.MathJax = {
-      loader: {
-        source: {
-          '[tex]/amsCd': '[tex]/amscd',
-          '[tex]/AMScd': '[tex]/amscd'
-        }
-      },
-      tex: {
-        inlineMath: {'[+]': [['$', '$']]},
-        tags: 'ams'
-      },
-      options: {
-        renderActions: {
-          findScript: [10, doc => {
-            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
-              const display = !!node.type.match(/; *mode=display/);
-              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
-              const text = document.createTextNode('');
-              node.parentNode.replaceChild(text, node);
-              math.start = {node: text, delim: '', n: 0};
-              math.end = {node: text, delim: '', n: 0};
-              doc.math.push(math);
-            });
-          }, '', false],
-          insertedScript: [200, () => {
-            document.querySelectorAll('mjx-container').forEach(node => {
-              let target = node.parentNode;
-              if (target.nodeName.toLowerCase() === 'li') {
-                target.parentNode.classList.add('has-jax');
-              }
-            });
-          }, '', false]
-        }
-      }
-    };
-    (function () {
-      var script = document.createElement('script');
-      script.src = "https://unpkg.com/volantis-static@0.0.1654736714924/libs/mathjax/es5/tex-mml-chtml.js";
-      script.defer = true;
-      document.head.appendChild(script);
-    })();
-  } else {
-    // 文章章节标题不能为 “MathJax” ，否则会报错。
-    MathJax.startup.document.state(0);
-    MathJax.texReset();
-    MathJax.typesetPromise();
-  }
-</script>
-
-
-
 </pjax>
 
 <script>
@@ -3444,7 +3336,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"零碎学习记录","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"个人日常"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"零碎学习记录"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/群论/","name":"群论"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2023/09/15/20230915-invariant-subgroup-2/","name":"利用不变子群的不可约表示构造母群的不可约表示 (2)"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"零碎学习记录","url":"http://example.com/","keywords":null,"description":"个人日常","author":{"@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"个人日常"},"publisher":{"@type":"Organization","name":"零碎学习记录","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"利用不变子群的不可约表示构造母群的不可约表示 (2)","description":"上一部分回顾了从群$G$的子群$K_1$出发构造诱导表示，这一部分考虑当群$G$具有一个不变子群$T$时，群$G$及其表示有什么特殊的性质。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/09/15/20230915-invariant-subgroup-2/"},"author":{"@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"零碎学习记录","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2023/09/15/20230915-invariant-subgroup-2/","wordCount":70,"datePublished":"2023-09-14T16:00:00.000Z","dateModified":"2023-09-20T16:36:47.000Z","articleSection":"群论","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"零碎学习记录","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"个人日常"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"零碎学习记录"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/第一性原理计算/","name":"第一性原理计算"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2023/09/14/Vasp_pyprocar/","name":"pyprocar使用"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"零碎学习记录","url":"http://example.com/","keywords":null,"description":"个人日常","author":{"@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"个人日常"},"publisher":{"@type":"Organization","name":"零碎学习记录","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"pyprocar使用","description":"pyprocar软件可以处理可以处理PROCAR文件，画能带图、投影能带图等，并且可以挑选特定能带、k点数据。\n\n官网\nGithub\n","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/09/14/Vasp_pyprocar/"},"author":{"@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"零碎学习记录","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2023/09/14/Vasp_pyprocar/","wordCount":67,"datePublished":"2023-09-13T16:00:00.000Z","dateModified":"2023-09-18T05:55:29.610Z","articleSection":"第一性原理计算","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

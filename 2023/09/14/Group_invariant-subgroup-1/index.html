@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="http://example.com/2023/09/14/20230914-pyprocar/"/>
+  <link rel="canonical" href="http://example.com/2023/09/14/group_invariant-subgroup-1/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -34,23 +34,19 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>pyprocar使用 - 零碎学习记录</title>
+  <title>利用不变子群的不可约表示构造母群的不可约表示 (1) - 零碎学习记录</title>
   <meta name="keywords" content="null">
-  <meta desc name="description" content="pyprocar软件可以处理可以处理PROCAR文件，画能带图、投影能带图等，并且可以挑选特定能带、k点数据。
-
-官网
-Github
- - Jiayu Li - 零碎学习记录">
+  <meta desc name="description" content="最近需要做群论相关的工作，利用到从不变子群的表示构造母群表示的一些技巧，因此学习了一下BC书[1]中这部分的内容，发现在诱导表示方面BC书写得会比李新征老师的教材更加顺畅。 - Jiayu Li - 零碎学习记录">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="pyprocar使用">
-<meta property="og:url" content="http://example.com/2023/09/14/20230914-pyprocar/index.html">
+<meta property="og:title" content="利用不变子群的不可约表示构造母群的不可约表示 (1)">
+<meta property="og:url" content="http://example.com/2023/09/14/Group_invariant-subgroup-1/index.html">
 <meta property="og:site_name" content="零碎学习记录">
-<meta property="og:description" content="pyprocar软件可以处理可以处理PROCAR文件，画能带图、投影能带图等，并且可以挑选特定能带、k点数据。  官网 Github">
+<meta property="og:description" content="最近需要做群论相关的工作，利用到从不变子群的表示构造母群表示的一些技巧，因此学习了一下BC书[1]中这部分的内容，发现在诱导表示方面BC书写得会比李新征老师的教材更加顺畅。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2023-09-13T16:00:00.000Z">
-<meta property="article:modified_time" content="2023-09-18T05:55:29.610Z">
+<meta property="article:modified_time" content="2023-09-22T03:07:34.302Z">
 <meta property="article:author" content="Jiayu Li">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
@@ -1749,7 +1745,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1695294575580),
+    lastupdate: new Date(1695383243472),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate","webinfo"],
       for_post: ["toc"],
@@ -2514,7 +2510,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="http://example.com/2023/09/14/20230914-pyprocar/">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2023/09/14/Group_invariant-subgroup-1/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="零碎学习记录">
   </span>
@@ -2535,7 +2531,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        pyprocar使用
+        利用不变子群的不可约表示构造母群的不可约表示 (1)
       </h1>
       <div class='new-meta-box'>
         
@@ -2554,10 +2550,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
   <div class='new-meta-item category'>
     <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
-    <a class="category-link" href="/categories/%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E8%AE%A1%E7%AE%97/">第一性原理计算</a>
+    <a class="category-link" href="/categories/%E7%BE%A4%E8%AE%BA/">群论</a>
     
       <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-        <a href="/categories/%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E8%AE%A1%E7%AE%97/" itemprop="url"><span itemprop="name">第一性原理计算</span></a>
+        <a href="/categories/%E7%BE%A4%E8%AE%BA/" itemprop="url"><span itemprop="name">群论</span></a>
       </span>
     
   </div>
@@ -2592,35 +2588,121 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>pyprocar软件可以处理可以处理PROCAR文件，画能带图、投影能带图等，并且可以挑选特定能带、k点数据。</p>
-<ul>
-<li><a target="_blank" rel="noopener" href="https://romerogroup.github.io/pyprocar/index.html">官网</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/romerogroup/pyprocar">Github</a></li>
-</ul>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>最近需要做群论相关的工作，利用到从不变子群的表示构造母群表示的一些技巧，因此学习了一下BC书<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="C. J. Bradley, A. P. Cracknell, The Mathematical Theory of Symmetry in Solids: Representation Theory for Point Groups and Space Groups. ">[1]</span></a></sup>中这部分的内容，发现在诱导表示方面BC书写得会比李新征老师的教材更加顺畅。</p>
 <span id="more"></span>
 
-<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p>可使用pip和conda两种方式安装，分别为<br>pip：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install pyprocar</span><br></pre></td></tr></table></figure>
-<p>conda：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda install -c conda-forge pyprocar</span><br></pre></td></tr></table></figure>
-<p><strong>注意事项</strong>：使用pip安装的版本比较旧，部分功能不能使用，比如无法修改能带图线的粗细（linewidth）；而使用后者安装需要使用conda的第三方库conda-forge，连接比较慢，可以使用<a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/">清华镜像源</a>。（<strong>尚未确认清华镜像源中PyProcar的版本。</strong>）</p>
-<h1 id="准备文件"><a href="#准备文件" class="headerlink" title="准备文件"></a>准备文件</h1><p>以VASP的输出文件为主，需要准备以下文件：</p>
-<ul>
-<li>PROCAR</li>
-<li>OUTCAR（可选）</li>
-<li>KPOINTS（可选）</li>
-</ul>
-<p>PROCAR提供能带数值、轨道投影、自旋分量等，OUTCAR提供费米能、倒格矢量等，KPOINTS提供高对称k点信息。</p>
-<h1 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h1><p>先调用PyProcar</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pyprocar</span><br></pre></td></tr></table></figure>
-<p>直接画能带的代码为</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pyprocar.bandsplot(<span class="string">&#x27;PROCAR&#x27;</span>,elimit=[-<span class="number">2</span>,<span class="number">2</span>],mode=<span class="string">&#x27;plain&#x27;</span>,color=<span class="string">&#x27;blue&#x27;</span>,code=<span class="string">&#x27;vasp&#x27;</span>)</span><br></pre></td></tr></table></figure>
-<p><code>&#39;PROCAR&#39;</code>为PROCAR文件地址，<code>elimit</code>为能量窗口，<code>mode=&#39;plain&#39;</code>表示简单能带画图。也可载入<code>OUTCAR</code>和<code>KPOINTS</code>文件进行画图，代码为</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pyprocar.bandsplot(<span class="string">&#x27;PROCAR&#x27;</span>,outcar=<span class="string">&#x27;OUTCAR&#x27;</span>,kpointsfile=<span class="string">&#x27;KPOINTS&#x27;</span>,elimit=[-<span class="number">2</span>,<span class="number">2</span>],mode=<span class="string">&#x27;plain&#x27;</span>,color=<span class="string">&#x27;blue&#x27;</span>,code=<span class="string">&#x27;vasp&#x27;</span>)</span><br></pre></td></tr></table></figure>
-<p>需要注意，KPOINTS文件需要处理成以下形式：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">UCB (simple cubic) G-X-M-G-R-X M-R</span><br><span class="line">40   ! 40 grids</span><br><span class="line">Line-mode</span><br><span class="line">reciprocal</span><br><span class="line">0.0000   0.0000   0.0000   ! \Gamma</span><br><span class="line">0.0000   0.5000   0.0000   ! X</span><br><span class="line"></span><br><span class="line">0.0000   0.5000   0.0000   ! X</span><br><span class="line">0.5000   0.5000   0.0000   ! M</span><br><span class="line"></span><br><span class="line">0.5000   0.5000   0.0000   ! M</span><br><span class="line">0.0000   0.0000   0.0000   ! \Gamma</span><br><span class="line"></span><br><span class="line">0.0000   0.0000   0.0000   ! \Gamma</span><br><span class="line">0.5000   0.5000   0.5000   ! R</span><br><span class="line"></span><br><span class="line">0.5000   0.5000   0.5000   ! R</span><br><span class="line">0.0000   0.5000   0.0000   ! X</span><br></pre></td></tr></table></figure>
-<p>即高对称点的标号需要用冒号“！”注释，$\Gamma$点需要标注为<code>\Gamma</code>。<br><strong>注意事项</strong>：若KPOINTS是用vaspkit生成时，文件第四行<code>Reciprocal</code>的首字母是大写的<code>R</code>，而旧版本的PyProcar读取时会发生错误，因此需要将<code>Reciprocal</code>改成<code>reciprocal</code>。</p>
+<h2 id="1-1-诱导表示"><a href="#1-1-诱导表示" class="headerlink" title="1.1 诱导表示"></a>1.1 诱导表示</h2><p>设$G$是一个群，$K_1$是$G$的一个子群，但不一定为不变子群。记$K_1$的元素为$k_a$($a&#x3D;1,\cdots,|K_1|$)。可根据$K_1$作$G$的左陪集分解</p>
+<p>$$\begin{equation}<br>G&#x3D;\sum_{\alpha} p_\alpha K_1, \tag{1.1}<br>\end{equation}$$</p>
+<p>其中$p_{\alpha}$是陪集代表元，求和指标$\alpha&#x3D;1,\cdots,|G|&#x2F;|K_1|$。陪集代表元在取定后将不再变化。根据Eq.(1.1)，$G$的任意元素$g$可以唯一分解为$p_\lambda k_s$的形式，其中$p_\lambda$为其中一个陪集代表元，$k_s\in K_1$，$p_\lambda$和$k_s$由$g$唯一决定。</p>
+<blockquote>
+<p><strong>定理1.1</strong>：任意$g\in G$都可以唯一分解为$g&#x3D;k_b p_\lambda^{-1}$，其中$b$和$\lambda$都由$g$唯一确定。</p>
+</blockquote>
+<p>证明：根据Eq.(1.1)有$g^{-1}&#x3D;p_\lambda k_s$，取逆有$g&#x3D;k_s^{-1}p_\lambda^{-1}&#x3D;k_bp_\lambda^{-1}$，其中$k_b &#x3D; k_s^{-1}\in K_1$，因为$K_1$是一个群。注意$p_\lambda^{-1}$本身不一定为陪集代表元。 </p>
+<div class='checkbox'><input type="checkbox" />
+            <hr>
+            </div>
 
+
+
+
+<p>假设$\Omega_1$是一个$d_j$维线性空间，且在$K_1$下是不可约的。取定基函数为$\phi_r$，$r&#x3D;1,\cdots,d_j$，对于任意$k_a\in K_1$，有</p>
+<p>$$\begin{equation}<br>k_a \phi_r &#x3D; \sum_{p&#x3D;1}^{d_j} \phi_p \Gamma^{j}_{pr}(k_a). \tag{1.2}<br>\end{equation}$$</p>
+<p>该不可约表示的特征标在$k_a$的值记为$\chi^{j} (k_a)$。定义另外一个线性空间$\Omega$，它由$d_j |G|&#x2F;|K_1|$个函数$\phi_{\alpha r}$张成，其中</p>
+<p>$$\begin{equation}<br>\phi_{\alpha r} &#x3D; p_\alpha \phi_r. \tag{1.3}<br>\end{equation}$$</p>
+<blockquote>
+<p><strong>定理1.2</strong>：$\Omega$是$G$不变的。</p>
+</blockquote>
+<p>证明：考虑任意$g\in G$作用至$\Omega$的基函数上，$g&#x3D;p_\lambda k_s$，则$g\phi_{\tau r}&#x3D;p_\lambda k_s p_\tau \phi_r &#x3D; p_\gamma k_t \phi_r$，其中$\gamma$和$t$由$g$和$\tau$唯一确定，因此</p>
+<p>$$\begin{equation}<br>g\phi_{\tau r} &#x3D; p_\gamma\sum_p\phi_p\Gamma^{j}_{pr}(k_t)&#x3D;\sum_p\phi _{\gamma p}\Gamma^{j} _{pr}(k_t). \tag{1.4}<br>\end{equation}$$</p>
+<div class='checkbox'><input type="checkbox" />
+            <hr>
+            </div>
+
+
+<p>定理1.2给出$G$的一个表示，称为$\Gamma^{j}$在$G$中的 <strong>诱导表示</strong>，记为$\Gamma^{j}\uparrow G$。诱导表示是一个$d_j |G|&#x2F;|K_1|$维表示。Eq.(1.4)表明，仅有当$gp_\tau &#x3D; p_\gamma k_t$，即$p_\gamma^{-1}gp_\tau &#x3D;k_t \in K_1$时，$g$的诱导表示矩阵的第$(\gamma,\tau)$块才为$d_j \times d_j$的矩阵$\Gamma^{j}(p_\gamma^{-1}gp_\tau)$，否则该块为零矩阵。由于分解的唯一性，诱导表示的分块矩阵每一行每一列只有一块为非零矩阵。</p>
+<blockquote>
+<p><strong>定理1.3</strong>：定义$\Omega_{\alpha}$是一个$d_j$为线性空间，基函数为$\phi_{\alpha r}$，$r&#x3D;1,\dots, d_j$。固定一个$\alpha$，$\Omega_\alpha$是$K_\alpha$不变且不可约的，其中$K_\alpha &#x3D; \{ p_\alpha k_a p_\alpha^{-1}; \forall k_a \in K_1 \}$是$G$的子群。</p>
+</blockquote>
+<p>证明：显然</p>
+<p>$$\begin{equation}<br>p_\alpha k_a p_\alpha^{-1} \phi_{\alpha r} &#x3D; p_\alpha k_a \phi_r &#x3D; \sum_{s} \phi_{\alpha s} \Gamma^{j}_{sr}(k_a). \tag{1.5}<br>\end{equation}$$</p>
+<p>因此$p_\alpha k_a p_\alpha^{-1}$在$\phi_{\alpha r}$下的表示矩阵为$\Gamma^{j}(k_a)$，由于$\Gamma^{j}$是不可约的，所以$\Omega_\alpha$对于$K_\alpha$是不可约的。</p>
+<div class='checkbox'><input type="checkbox" />
+            <hr>
+            </div>
+
+<p>子群$K_\alpha$可以写作$p_\alpha K_1 p_\alpha^{-1}$，因此对于每一个这样的子群$K_\alpha$，$\alpha &#x3D; 1,\dots,|G|&#x2F;|K_1|$，都有以下性质：</p>
+<ul>
+<li>$|K_\alpha| &#x3D; |K_1|$；</li>
+<li>$K_\alpha$ 在$G$下共轭于$K_1$，且共轭于其他$K_\beta$；</li>
+<li>如果每个$K_\alpha$各不相同，则每一个子群$K_\alpha$唯一对应于一个陪集$p_\alpha K_1$。</li>
+</ul>
+<p><em><strong>注</strong></em>：定义$\Omega_\alpha$是方便划分诱导表示的表示空间，即<br>$$<br>\underset{\Omega}{\underbrace{\phi_{11},\cdots,\phi_{1d_{j}},\phi_{21},\cdots,\phi_{2d_{j}},\cdots,\phi_{|G|&#x2F;|K_{1}|,1},\cdots,\phi_{|G|&#x2F;|K_{1}|,d_{j}}}}&#x3D;\underset{\Omega_{1}}{\underbrace{\phi_{11},\cdots,\phi_{1d_{j}}}},\underset{\Omega_{2}}{\underbrace{\phi_{21},\cdots,\phi_{2d_{j}}}},\cdots,\underset{\Omega_{|G|&#x2F;|K_{1}|}}{\underbrace{\phi_{|G|&#x2F;|K_{1}|,1},\cdots,\phi_{|G|&#x2F;|K_{1}|,d_{j}}}}<br>$$<br>因此，设诱导表示的特征标为$\chi (g)$，则$\chi (g) &#x3D; \sum_\alpha \chi_\alpha (g)$，其中$\chi_\alpha (g)$为在$\Omega _\alpha$下的特征标。</p>
+<h2 id="1-2-Johnstron不可约判据及推论"><a href="#1-2-Johnstron不可约判据及推论" class="headerlink" title="1.2 Johnstron不可约判据及推论"></a>1.2 Johnstron不可约判据及推论</h2><blockquote>
+<p><strong>定理1.4-Johnstron不可约判据</strong>：记$g$在$\Omega_\alpha$下的特征标为$\chi_\alpha (g)$，诱导表示$\Gamma^{j}\uparrow G$的特征标$\chi (g)$等于$\sum_\alpha \chi_\alpha (g)$，则$\Omega$在$G$下是不可约的，如果<br>$$\begin{equation}<br>\sum_{t} \chi_\alpha^{*}(t)\chi_\beta(t) &#x3D; 0, \tag{1.6}<br>\end{equation}$$</p>
+<p>对任意$\alpha \neq \beta$都成立，其中对于给定的$\alpha$和$\beta$，$t$的求和取遍$K_\alpha \cap K_\beta$的所有元素。</p>
+</blockquote>
+<p>证明：$\Omega$在$G$下是不可约的，当且仅当</p>
+<p>$$\begin{equation}<br>\sum_{g\in G} \chi^*(g)\chi(g) &#x3D; |G|, \tag{1.7}<br>\end{equation}$$</p>
+<p>亦即</p>
+<p>$$\begin{equation}<br>\sum_\alpha \sum_{g\in G} |\chi_\alpha (g)|^2 + \sum_\alpha \sum_{\beta (\neq \alpha)}  \sum_{g\in G} \chi_\alpha^*(g)\chi_\beta (g) &#x3D; |G|. \tag{1.8}<br>\end{equation}$$</p>
+<p>Eq.(1.4)表明仅有当$gp_\tau&#x3D;p_\tau k_t$，即$g&#x3D;p_\tau k_t p_\tau^{-1}$时，$\chi_\tau (g) &#x3D; \chi^{j} (k_t)$，否则$\chi_\tau (g) &#x3D; 0$。因此只有当$g\in K_\tau$时$\chi_\tau (g)$才不为零。因此有</p>
+<p>$$\begin{equation}<br>\sum_\alpha \sum_{g\in G} |\chi_\alpha (g)|^2 &#x3D; \sum_\alpha \sum_{g\in K_\alpha} |\chi_\alpha (g)|^2 &#x3D;  \sum_\alpha \sum_{k_t\in K_1} |\chi^j (k_t)|^2 &#x3D; \sum_\alpha |K_1| &#x3D; |K_1| \frac{|G|}{|K_1|} &#x3D; |G|, \tag{1.9}<br>\end{equation}$$</p>
+<p>其中利用到$\Gamma^j$是$K_1$的不可约表示。因此，$\Omega$在$G$下是不可约的，等价于</p>
+<p>$$\begin{equation}<br>\sum_\alpha \sum_{\beta (\neq \alpha)}  \sum_{g\in G} \chi_\alpha^*(g)\chi_\beta (g) &#x3D; 0. \tag{1.10}<br>\end{equation}$$</p>
+<p>因此若对于任意$\alpha \neq \beta$，如果</p>
+<p>$$\begin{equation}<br>\sum _{g\in G} \chi _{\alpha} ^* (g) \chi _\beta (g) &#x3D; \sum _{t \in K _{\alpha} \cap K _{\beta}} \chi _{\alpha} ^*(t)\chi _\beta (t) &#x3D; 0，\tag{1.11}<br>\end{equation}$$</p>
+<p>则$\Gamma^j \uparrow G$是不可约的。</p>
+<div class='checkbox'><input type="checkbox" />
+            <hr>
+            </div>
+
+<h3 id="推论-i"><a href="#推论-i" class="headerlink" title="推论(i)"></a>推论(i)</h3><p>如果 $K _{1}$ 是$G$的不变子群，则$K _{\alpha}&#x3D;K _{1}$，Eq.(1.6)变为</p>
+<p>$$\begin{equation}<br>\sum_{k_\alpha \in K_{1}} \chi _{\alpha}^{*}(k_a)\chi _{\beta}(k_a)&#x3D;0, \tag{1.12}<br>\end{equation}$$</p>
+<p>对任意$\alpha \neq \beta$都成立。由于现在所有$\Omega_{\alpha}$，<br>$\alpha &#x3D; 1,\cdots,|G|&#x2F;|K_{1}|$ 都是 $K_{1}$ 的不可约表示空间，Eq.(1.12)表示 $K_{1}$ 的这 $|G|&#x2F;|K_{1}|$ 个不可约表示空间都是不等价的。</p>
+<h3 id="推论-ii"><a href="#推论-ii" class="headerlink" title="推论(ii)"></a>推论(ii)</h3><p>Eq.(1.6)的求和取遍子群$K_\alpha \cap K_\beta$中的所有群元，满足这个求和为零的条件是，对于$K_\alpha \cap K_\beta$的所有子群$H_{\alpha \beta}$，都需要有</p>
+<p>$$\begin{equation}<br>\sum_{h\in H_{\alpha \beta}} \chi _{\alpha}^{*} (h)\chi _{\beta} (h) &#x3D; 0. \tag{1.13}<br>\end{equation}$$</p>
+<p>Eq.(1.13)特别适用于当$\alpha$和$\beta$取遍所有可能配对时，$H_{\alpha \beta}$都是$G$的一个特定子群$H$的情形。</p>
+<p>先固定一对$\alpha$和$\beta$，Eq.(1.13)意味着对于群$H_{\alpha \beta}$，两个表示空间$\Omega_{\alpha}$和$\Omega_{\beta}$不具有$H_{\alpha \beta}$的相同的不可约表示。这个求和中只能包括一些正数和零的求和，其中的正数对应着如果$H_{\alpha \beta}$的一个不可约表示既存在于$\Omega_{\alpha}$中又存在于$\Omega_{\beta}$，因此这个求和应该等于$n|H_{\alpha \beta}|$，其中$n$表示这种两个表示空间中子表示对的数目。比如假设$H_{\alpha \beta}$具有三个表示$\Gamma^{i}$，$i&#x3D;1,2,3$，而$\Omega_{\alpha}$和$\Omega_{\beta}$本别包含以下的表示</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>$\Gamma^1$</th>
+<th>$\Gamma^2$</th>
+<th>$\Gamma^3$</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>$\Omega_\alpha$</td>
+<td>2</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td>$\Omega_\beta$</td>
+<td>1</td>
+<td>1</td>
+<td>3</td>
+</tr>
+</tbody></table>
+<p>因此一共有$n&#x3D;2\times 1 + 0\times 1+ 2\times 3 &#x3D; 8$个表示对。有时会把$n$称为关于$H_{\alpha \beta}$的缠绕数（intertwining number，不是winding number）。在这里要求$n&#x3D;0$。但由于$H_{\alpha \beta}$是$K_{\alpha}\cap K_{\beta}$的子群，而$\Omega_{\alpha}$和$\Omega_{\beta}$在$H_{\alpha \beta}$不能包含相同的表示，则在$K_{\alpha}\cap K_{\beta}$下也不能包含$K_{\alpha}\cap K_{\beta}$相同的表示，否则把相同的表示分导至$H_{\alpha \beta}$中就会得到关于$H_{\alpha \beta}$的缠绕数非零，与$n&#x3D;0$矛盾。因此Eq.(1.13)得证。</p>
+<p><em><strong>注</strong></em>：推论(2)对于空间群的表示理论有重要作用，它能确保从$k$点小群诱导到空间群的表示都是不可约的。</p>
+<h2 id="1-3-Frobenius互易定理"><a href="#1-3-Frobenius互易定理" class="headerlink" title="1.3 Frobenius互易定理"></a>1.3 Frobenius互易定理</h2><blockquote>
+<p><strong>定理1.5-Frobenius互易定理</strong>：假设$\Gamma$是$G$的不可约表示，特征标为$\chi^{\Gamma}(g)$，则$\Gamma$在诱导表示$\Gamma^{j}\uparrow G$中的重复度等于$\Gamma^{j}$在分导表示$\Gamma \downarrow K_{1}$中的重复度。</p>
+</blockquote>
+<p>证明：记诱导表示的特征标为$\chi(g)$，$\Gamma$在$\Gamma^{j}\uparrow G$中的重复度为$(1&#x2F;|G|)\sum_g \chi(g)\chi^{\Gamma*}(g)&#x3D;(1&#x2F;|G|)\sum_g \chi(g)\chi^{\Gamma}(g^{-1})$</p>
+<p>$$\begin{equation}<br>&#x3D;\frac{1}{|G|}\sum_{g}\sum_{\alpha}\chi_{\alpha}(g)\chi^{\Gamma}(g^{-1}) \tag{1.14}<br>\end{equation}$$</p>
+<p>$$\begin{equation}<br>&#x3D;\frac{1}{|G|}\sum_{k_a\in K_{1}}\sum_{\alpha}\chi^{j}(k_{a})\chi^{\Gamma}(p_{\alpha}k_{a}^{-1}p_{\alpha}^{-1}) \tag{1.15}<br>\end{equation}$$</p>
+<p>$$\begin{equation}<br>&#x3D;\frac{1}{|K_{1}|}\sum_{k_a\in K_{1}}\chi^{j}(k_{a})\chi^{\Gamma}(k_{a}^{-1}) \tag{1.16}<br>\end{equation}$$</p>
+<p>即等于$\Gamma^{j}$在分导表示中在分导表示$\Gamma \downarrow K_{1}$中的重复度。</p>
+<div class='checkbox'><input type="checkbox" />
+            <hr>
+            </div>
+
+
+
+
+<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">C. J. Bradley, A. P. Cracknell, The Mathematical Theory of Symmetry in Solids: Representation Theory for Point Groups and Space Groups.<a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>
   </div>
   
   
@@ -2644,10 +2726,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-09-18T13:55:29+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-09-22T11:07:34+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2023年9月18日</p>
+    <p>更新于：2023年9月22日</p>
   </a>
 </div>
 
@@ -2668,7 +2750,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class='hoverbox'>
           <a class='share'><img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/wechat.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/wechat.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></a>
           <div class='target'>
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARgAAAEYCAAAAACi5bZQAAADAUlEQVR42u3aS3LcMAwFwLn/pZ194ikBD1QseJo7lX5kc/MK4OvL+Ha8EIABAwYMGDBrYF7h+OeDxftvJ/TX/e71qfWAAQMGDBgwYPbBlANQcYHvFjIF7IK23wcDBgwYMGDArIW5DEAXz3cXkAa39D+X6wEDBgwYMGDAfBxM97pcODq8cWDAgAEDBgwYMGmDa9owq74PBgwYMGDAgPk8mLTBdTdgWqj6sU4kGDBgwIABA+a/wZwKak+5jtcDBgwYMGDAgFkDMx3TQlRaaOoGufJ6wIABAwYMGDBrYNKAlAKebqydnj8YMGDAgAEDZg9MtWFVbbRNg1963YVsF6rAgAEDBgwYMI+DSQtHVz/sFrjSA0HThuBl8gUDBgwYMGDAPBamW1iaBq5pMJx+73IdYMCAAQMGDJj1MOnBnW7AO/XeseAJBgwYMGDAgPm1MNVgFTe8mve7EHEnEgwYMGDAgAHzeJg0wHULT9PnqlDtwhoYMGDAgAEDZi1MtXB0akLT/6RBMy5UgQEDBgwYMGAeA1P9YVpgqsKk0Ol3374HBgwYMGDAgFkDkwaiUws69b1jGwcGDBgwYMCAWQOTBrnuQaG7QLsb2y5UgQEDBgwYMGDWwHQDWXciaVBLgbrfAQMGDBgwYMDshzlVEEqhTz3fPlgEBgwYMGDAgFkLUw5Cw8LWXQeK0o0GAwYMGDBgwOyFOV3wSRtxtzfUruDAgAEDBgwYMGth2oWdYRCsFpimAXIc8MCAAQMGDBgwj4fpFoKqjbcU8NS8yt8DAwYMGDBgwKyBmY7ugZ1TwbEbMMuNPDBgwIABAwbMGphXONKFdAtipw4UlSHBgAEDBgwYMOtg0kCXTvyuAlk6XzBgwIABAwbMfpi7AlQKcnfDrRzwwIABAwYMGDAfB5NeVyGnQfLHAh4YMGDAgAED5vEw1SB2F2y7wQcGDBgwYMCAWQvTbbjdtYBuoEs3FgwYMGDAgAGzHyZtXKXPdd+f/q+8AWDAgAEDBgyYNTAGGDBgwIABA2bZ+AOoA2Sdk4kTNwAAAABJRU5ErkJggg==">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATgAAAE4CAAAAADqFLC2AAADpUlEQVR42u3aS5LiQAwFQO5/6ZkTEC49yVjQWTvcuD5ZvXgh8fpnROOFABw4cOAMcOCWwL3CcblAON+7z+/WvdrP1Xzl/YEDBw4cOHDgwC2DOw6AFwe4C+R03dPn6XnBgQMHDhw4cOC2wqUA4wXDoeCdBmJw4MCBAwcOHLi/Aledp3qg7vfBgQMHDhw4cODAZQG42uCuXkhaEAUHDhw4cODAgfsVuHKDtniw6kWkjelTyMc6+eDAgQMHDhw4cENw1TF18Kc+x+cFBw4cOHDgwIFbAjf1A8C7A20aZKuB93I+cODAgQMHDhy4JXDdQmS1gdxtXKf7654PHDhw4MCBAwduG9xdgbF6IdPBO31++R44cODAgQMHDtwyuNMA2w2aXfA02J6+d/kcHDhw4MCBAwduCdynCoRTQbY7XzcogwMHDhw4cODAbYebCqinG08LmWnDPP2HAQcOHDhw4MCB2wJ3WtBLC4Ep/OUBhhvatzWkwYEDBw4cOHDgboL7FNQpRHrQ7npxQxocOHDgwIEDB+4huGqhbyrQnq4/XbjsFlTBgQMHDhw4cOC2wXULiN2GcFp4rAbeboEUHDhw4MCBAwduC1waBE8LnO3CYfi96vrgwIEDBw4cOHDfDpcG37SBnTa4T/df/Xu7kw8OHDhw4MCBA/cQXApSnSed/66LOg7O4MCBAwcOHDhwS+CmgmP6OW0M310ofbsOOHDgwIEDBw7cErhukJ0qPE4XIrv7AgcOHDhw4MCB+za4uxrV0+9195kGcHDgwIEDBw4cuC1w3cJhNUB3G8tTQODAgQMHDhw4cL8CN1VoTAPzp9ZrB2xw4MCBAwcOHLglcNWDpYG4GkCnfjiYAh03pMGBAwcOHDhw4JbAVRvGU4XOLkh6MeXADA4cOHDgwIEDtxxuqvBYDaLVfaQN6dP1ygEYHDhw4MCBAwfuYbhTkNP30+dpYTOFjBvS4MCBAwcOHDhwH4brjqmgeXWQuxvdx98HBw4cOHDgwIFbAje9kTTwVhvj1ULsVOETHDhw4MCBAwduG1y3gHgaYNNCY7WQ2m24gwMHDhw4cODAfRtcu2EbAk0H5NsKn+DAgQMHDhw4cD8K152nCpAG9bgQCg4cOHDgwIED92Nw1cLjXbDVCy4XOMGBAwcOHDhw4JbCTf1QsBqIu7DdAmc7AIMDBw4cOHDgwD0ElzZsq8/ToF1tWKcXc7kvcODAgQMHDhy4JXBGbYADBw4cOAMcuIfHf58AhFuHXTe5AAAAAElFTkSuQmCC">
           </div>
         </div>
       
@@ -2697,18 +2779,25 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2023/09/14/20230914-invariant-subgroup/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>利用不变子群的不可约表示构造母群的不可约表示 (1)</p>
-          <p class='content'>最近需要做群论相关的工作，利用到从不变子群的表示构造母群表示的一些技巧，因此学习了一下BC书[1]中这部分的内容，发现在诱导表示方面BC书写得会比李新征老师的教材更加顺畅。
+        <a class='prev' href='/2023/09/15/Group_invariant-subgroup-2/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>利用不变子群的不可约表示构造母群的不可约表示 (2)</p>
+          <p class='content'>上一部分回顾了从群$G$的子群$K_1$出发构造诱导表示，这一部分考虑当群$G$具有一个不变子群$T$时，群$G$及其表示有什么特殊的性质。
 
 
-1.1 诱导表示...</p>
+2.1 群及其不变子群群$G$具有不变子群$T$...</p>
         </a>
       
       
-        <a class='next' href='/2023/09/13/hello-world/'>
-          <p class='title'>Hello World<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any ...</p>
+        <a class='next' href='/2023/09/14/Vasp_pyprocar/'>
+          <p class='title'>pyprocar使用<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>pyprocar软件可以处理可以处理PROCAR文件，画能带图、投影能带图等，并且可以挑选特定能带、k点数据。
+
+官网
+Github
+
+
+
+安装可使用pip和conda两种方式安装，分别为pip...</p>
         </a>
       
     </div>
@@ -2724,7 +2813,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/2023/09/14/20230914-pyprocar/index.html#comments">
+      <meta itemprop="discussionUrl" content="/2023/09/14/Group_invariant-subgroup-1/index.html#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -2766,7 +2855,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-1-%E8%AF%B1%E5%AF%BC%E8%A1%A8%E7%A4%BA"><span class="toc-text">1.1 诱导表示</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2-Johnstron%E4%B8%8D%E5%8F%AF%E7%BA%A6%E5%88%A4%E6%8D%AE%E5%8F%8A%E6%8E%A8%E8%AE%BA"><span class="toc-text">1.2 Johnstron不可约判据及推论</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A8%E8%AE%BA-i"><span class="toc-text">推论(i)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A8%E8%AE%BA-ii"><span class="toc-text">推论(ii)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-3-Frobenius%E4%BA%92%E6%98%93%E5%AE%9A%E7%90%86"><span class="toc-text">1.3 Frobenius互易定理</span></a></li></ol>
     </div>
   </section>
 
@@ -3205,6 +3294,60 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <!-- pjax 标签必须存在于所有页面 否则 pjax error -->
 <pjax>
 
+        <script>
+  // https://github.com/theme-next/hexo-theme-next/blob/master/layout/_third-party/math/mathjax.swig
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = "https://unpkg.com/volantis-static@0.0.1654736714924/libs/mathjax/es5/tex-mml-chtml.js";
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    // 文章章节标题不能为 “MathJax” ，否则会报错。
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typesetPromise();
+  }
+</script>
+
+
+
 </pjax>
 
 <script>
@@ -3336,7 +3479,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"零碎学习记录","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"个人日常"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"零碎学习记录"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/第一性原理计算/","name":"第一性原理计算"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2023/09/14/20230914-pyprocar/","name":"pyprocar使用"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"零碎学习记录","url":"http://example.com/","keywords":null,"description":"个人日常","author":{"@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"个人日常"},"publisher":{"@type":"Organization","name":"零碎学习记录","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"pyprocar使用","description":"pyprocar软件可以处理可以处理PROCAR文件，画能带图、投影能带图等，并且可以挑选特定能带、k点数据。\n\n官网\nGithub\n","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/09/14/20230914-pyprocar/"},"author":{"@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"零碎学习记录","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2023/09/14/20230914-pyprocar/","wordCount":67,"datePublished":"2023-09-13T16:00:00.000Z","dateModified":"2023-09-18T05:55:29.610Z","articleSection":"第一性原理计算","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"零碎学习记录","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"个人日常"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"零碎学习记录"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/群论/","name":"群论"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2023/09/14/Group_invariant-subgroup-1/","name":"利用不变子群的不可约表示构造母群的不可约表示 (1)"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"零碎学习记录","url":"http://example.com/","keywords":null,"description":"个人日常","author":{"@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"个人日常"},"publisher":{"@type":"Organization","name":"零碎学习记录","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"利用不变子群的不可约表示构造母群的不可约表示 (1)","description":"最近需要做群论相关的工作，利用到从不变子群的表示构造母群表示的一些技巧，因此学习了一下BC书[1]中这部分的内容，发现在诱导表示方面BC书写得会比李新征老师的教材更加顺畅。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/09/14/Group_invariant-subgroup-1/"},"author":{"@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"零碎学习记录","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2023/09/14/Group_invariant-subgroup-1/","wordCount":86,"datePublished":"2023-09-13T16:00:00.000Z","dateModified":"2023-09-22T03:07:34.302Z","articleSection":"群论","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
