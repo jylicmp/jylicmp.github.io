@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="http://example.com/2023/09/14/group_invariant-subgroup-1/"/>
+  <link rel="canonical" href="http://example.com/notes/normal_subgroup/2_little_cogroup.html"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -34,19 +34,19 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>利用不变子群的不可约表示构造母群的不可约表示 (1) - 零碎学习记录</title>
+  <title>不变子群: 伴随小群 - 零碎学习记录</title>
   <meta name="keywords" content="null">
-  <meta desc name="description" content="最近需要做群论相关的工作，利用到从不变子群的表示构造母群表示的一些技巧，因此学习了一下BC书[1]中这部分的内容，发现在诱导表示方面BC书写得会比李新征老师的教材更加顺畅。 - Jiayu Li - 零碎学习记录">
+  <meta desc name="description" content="个人日常 - Jiayu Li - 零碎学习记录">
   
-<meta property="og:type" content="article">
-<meta property="og:title" content="利用不变子群的不可约表示构造母群的不可约表示 (1)">
-<meta property="og:url" content="http://example.com/2023/09/14/Group_invariant-subgroup-1/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="零碎学习记录">
+<meta property="og:url" content="http://example.com/notes/normal_subgroup/2_little_cogroup">
 <meta property="og:site_name" content="零碎学习记录">
-<meta property="og:description" content="最近需要做群论相关的工作，利用到从不变子群的表示构造母群表示的一些技巧，因此学习了一下BC书[1]中这部分的内容，发现在诱导表示方面BC书写得会比李新征老师的教材更加顺畅。">
+<meta property="og:description" content="2.伴随小群   1 群及其不变子群群$G$具有不变子群$T$，则$G$的左陪集分解为 $$\begin{equation}G&#x3D;\sum_{\alpha}r_{\alpha}T, \tag{2.1}\end{equation}$$ $r_{\alpha}$是陪集代表元，并且$r_{1}&#x3D;e$是恒等元。 注：若如果存在一种陪集代表元的选取方法，使得这些左陪集代表元可以构成一个群$">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2023-09-13T16:00:00.000Z">
-<meta property="article:modified_time" content="2023-09-25T12:58:23.000Z">
+<meta property="article:published_time" content="2023-09-14T16:00:00.000Z">
+<meta property="article:modified_time" content="2023-10-02T02:46:27.000Z">
 <meta property="article:author" content="Jiayu Li">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
@@ -111,8 +111,8 @@ html {
   font-size: 16px;
 }
 html >::-webkit-scrollbar {
-  height: 4px;
-  width: 4px;
+  height: 10px;
+  width: 10px;
 }
 html >::-webkit-scrollbar-track-piece {
   background: transparent;
@@ -1745,7 +1745,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1696162367183),
+    lastupdate: new Date(1696297775958),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate","webinfo"],
       for_post: ["toc"],
@@ -2236,6 +2236,23 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
+                href="/notes/" title="笔记"
+                  
+                  
+                  
+                    active-action="action-notes"
+                  >
+                  <i class='fa-solid fa-book fa-fw'></i>笔记
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
                 href="/categories/" title="分类"
                   
                   
@@ -2359,6 +2376,23 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
+                href="/notes/" title="笔记"
+                  
+                  
+                  
+                    active-action="action-notes"
+                  >
+                  <i class='fa-solid fa-book fa-fw'></i>笔记
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
                 href="/categories/" title="分类"
                   
                   
@@ -2446,7 +2480,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="none" class='cover-wrapper post dock' style="display: none;">
+      <div id="none" class='cover-wrapper docs dock' style="display: none;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://gcore.jsdelivr.net/gh/jylicmp/blog_static/images/wallpapers/wallpaper_1.jpg"></div>
 
@@ -2469,28 +2503,28 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
               
               active-action="action-home">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f4f0.svg'><p>文档</p>
+              <img src='https://gcore.jsdelivr.net/gh/jylicmp/blog_static/images/icons/logos/files/icons8-document-100.png'><p>文档</p>
             </a>
           
             <a href="/archives/"
               
               
               active-action="action-archives">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f5c3.svg'><p>归档</p>
+              <img src='https://gcore.jsdelivr.net/gh/jylicmp/blog_static/images/icons/logos/files/icons8-product-documents-100.png'><p>归档</p>
             </a>
           
-            <a target="_blank" rel="noopener" href="https://scholar.google.com/citations?user=XHvrW1sAAAAJ&amp;hl=en"
+            <a href="/about/"
               
               
-              active-action="action-https:scholargooglecomcitations?user=XHvrW1sAAAAJ&amp;hl=en">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f393.svg'><p>学术</p>
+              active-action="action-about">
+              <img src='https://gcore.jsdelivr.net/gh/jylicmp/blog_static/images/icons/logos/files/icons8-user-100.png'><p>关于</p>
             </a>
           
             <a target="_blank" rel="noopener" href="https://github.com/jylicmp/"
               
               
               active-action="action-https:githubcomjylicmp">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f9ec.svg'><p>Github</p>
+              <img src='https://gcore.jsdelivr.net/gh/jylicmp/blog_static/images/icons/logos/social/icons8-github-2-100.png'><p>Github</p>
             </a>
           
         
@@ -2509,8 +2543,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="http://example.com/2023/09/14/Group_invariant-subgroup-1/">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-docs" id="docs" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="http://example.com/notes/normal_subgroup/2_little_cogroup">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="零碎学习记录">
   </span>
@@ -2530,177 +2564,121 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
     
-      <h1 class="title" itemprop="name headline">
-        利用不变子群的不可约表示构造母群的不可约表示 (1)
-      </h1>
-      <div class='new-meta-box'>
+      <span hidden itemprop="name headline">
         
-          
-            
-<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <a itemprop="url" class='author' href="/" rel="nofollow">
-    <img itemprop="image" src="https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/547413.svg" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/547413.svg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-    <p itemprop="name">Jiayu Li</p>
-  </a>
-</div>
-
-          
-        
-          
-            
-  <div class='new-meta-item category'>
-    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
-    <a class="category-link" href="/categories/%E7%BE%A4%E8%AE%BA/">群论</a>
-    
-      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-        <a href="/categories/%E7%BE%A4%E8%AE%BA/" itemprop="url"><span itemprop="name">群论</span></a>
       </span>
-    
-  </div>
-
-
-          
-        
-          
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-09-14T00:00:00+08:00">
-  <a class='notlink'>
-    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2023年9月14日</p>
-  </a>
-</div>
-
-          
-        
-          
-            
-
-
-
-          
-        
-        <!-- Custom Files topMeta begin-->
-        
-        <!-- Custom Files topMeta end-->
-      </div>
     
   </div>
 
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>最近需要做群论相关的工作，利用到从不变子群的表示构造母群表示的一些技巧，因此学习了一下BC书<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="C. J. Bradley, A. P. Cracknell, The Mathematical Theory of Symmetry in Solids: Representation Theory for Point Groups and Space Groups. ">[1]</span></a></sup>中这部分的内容，发现在诱导表示方面BC书写得会比李新征老师的教材更加顺畅。</p>
-<span id="more"></span>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><span class='p logo large center'>2.伴随小群</span>
 
-<h2 id="1-1-诱导表示"><a href="#1-1-诱导表示" class="headerlink" title="1.1 诱导表示"></a>1.1 诱导表示</h2><p>设$G$是一个群，$K_1$是$G$的一个子群，但不一定为不变子群。记$K_1$的元素为$k_a$($a&#x3D;1,\cdots,|K_1|$)。可根据$K_1$作$G$的左陪集分解</p>
-<p>$$\begin{equation}<br>G&#x3D;\sum_{\alpha} p_\alpha K_1, \tag{1.1}<br>\end{equation}$$</p>
-<p>其中$p_{\alpha}$是陪集代表元，求和指标$\alpha&#x3D;1,\cdots,|G|&#x2F;|K_1|$。陪集代表元在取定后将不再变化。根据Eq.(1.1)，$G$的任意元素$g$可以唯一分解为$p_\lambda k_s$的形式，其中$p_\lambda$为其中一个陪集代表元，$k_s\in K_1$，$p_\lambda$和$k_s$由$g$唯一决定。</p>
+
+<h2 id="1-群及其不变子群"><a href="#1-群及其不变子群" class="headerlink" title="1 群及其不变子群"></a>1 群及其不变子群</h2><p>群$G$具有不变子群$T$，则$G$的左陪集分解为</p>
+<p>$$\begin{equation}<br>G&#x3D;\sum_{\alpha}r_{\alpha}T, \tag{2.1}<br>\end{equation}$$</p>
+<p>$r_{\alpha}$是陪集代表元，并且$r_{1}&#x3D;e$是恒等元。</p>
+<p><em><strong>注</strong></em>：若如果存在一种陪集代表元的选取方法，使得这些左陪集代表元可以构成一个群$F$，则默认选取这些陪集代表元。</p>
 <blockquote>
-<p><strong>定理1.1</strong>：任意$g\in G$都可以唯一分解为$g&#x3D;k_b p_\lambda^{-1}$，其中$b$和$\lambda$都由$g$唯一确定。</p>
+<p><strong>定义2.1</strong>：如果群$G$关于不变子群$T$的左陪集分解的陪集代表元可以构成一个群$F$，则称$G$是$T$和$F$的半直积群，记作$G&#x3D;T\rtimes F$。</p>
 </blockquote>
-<p>证明：根据Eq.(1.1)有$g^{-1}&#x3D;p_\lambda k_s$，取逆有$g&#x3D;k_s^{-1}p_\lambda^{-1}&#x3D;k_bp_\lambda^{-1}$，其中$k_b &#x3D; k_s^{-1}\in K_1$，因为$K_1$是一个群。注意$p_\lambda^{-1}$本身不一定为陪集代表元。 </p>
-<div class='checkbox'><input type="checkbox" />
-            <hr>
-            </div>
+<p><em><strong>注</strong></em>：这是半直积群的另外一种定义方式。</p>
+<p>记群$G$中的元素为$(r_{\alpha} t_{a})$，群乘法关系为</p>
+<p>$$\begin{equation}<br>(r_{\alpha} t_{a})(r_{\beta} t_{b}) &#x3D; (r_{\alpha}r_{\beta})(r_{\beta}^{-1}t_{a}r_{\beta})t_{b} &#x3D; (r_{\alpha \beta} t_{\alpha \beta}[t_{\alpha}]_{\beta}t_b), \tag{2.2}<br>\end{equation}$$</p>
+<p>当中$[t_{\alpha}] _{\beta}&#x3D;r _{\beta}^{-1} t _{a} r _{\beta}\in T$，因为$T$是不变子群，而记</p>
+<p>$$\begin{equation}<br>r_{\alpha}r_{\beta}&#x3D; r_{\alpha \beta} t_{\alpha \beta}, \tag{2.3}<br>\end{equation}$$</p>
+<p>为其唯一分解。注意若$G&#x3D;T\rtimes F$，有$t_{\alpha \beta}&#x3D;t_{1}&#x3D;e$，即$F$具有封闭性。</p>
+<p>$G$中的恒等元表示为$(r_1 t_1)$，并且容易得到以下关系</p>
+<p>$$\begin{equation}<br>[t _{a}] _{1} &#x3D; t _{a}, \quad [t _{1}] _{\alpha} &#x3D; t _{1}, \quad r _{\alpha 1}&#x3D;r _{1 \alpha}&#x3D;r _{\alpha}, \quad t _{\alpha 1}&#x3D;t _{1 \alpha}&#x3D;t _{1}, \tag{2.4}<br>\end{equation}$$</p>
+<p>$$\begin{equation}<br>[t _{a}] _{\alpha}[t _{b}] _{\alpha} &#x3D; [t _{a} t _{b}] _{\alpha}, \tag{2.5}<br>\end{equation}$$</p>
+<p>以及</p>
+<p>$$\begin{equation}<br>[t _a^{-1}] _{\alpha}&#x3D;([t _a] _{\alpha})^{-1}. \tag{2.6}<br>\end{equation}$$</p>
+<p>根据$G$结合律，可以得到对于任意的$a,\alpha,\beta,\gamma$，都有</p>
+<p>$$\begin{equation}<br>r_{\alpha \beta, \gamma} &#x3D; r_{\alpha, \beta \gamma} \tag{2.7}<br>\end{equation}$$</p>
+<p>和</p>
+<p>$$\begin{equation}<br>t _{\alpha \beta, \gamma}[t _{\alpha \beta}] _{\gamma}[[t _{a}] _{\beta}] _{\gamma} &#x3D; t _{\alpha,\beta \gamma} [t _a] _{\beta \gamma}t _{\beta \gamma}. \tag{2.8}<br>\end{equation}$$</p>
+<details cyan><summary> 详细推导 </summary>
+              <div class='content'>
+              <p>一方面</p><p>$$<br>(r _{\alpha} t _{a})(r _{\beta} t _{a})(r _{\gamma} t _{1})<br>&#x3D; r _{\alpha} r _{\beta} [t _{a}] _{\beta} r _{\gamma} [t _a] _{\gamma}<br>&#x3D; r _{\alpha \beta} t _{\alpha \beta} r _{\gamma} [[t _{a}] _{\beta}] _\gamma  [t _a] _{\gamma}<br>&#x3D; r _{\alpha \beta, \gamma} t _{\alpha \beta, \gamma} [t _{\alpha \beta}] _{\gamma}[[t _{a}] _{\beta}] _\gamma  [t _a] _{\gamma}<br>$$</p><p>另一方面</p><p>$$<br>(r _{\alpha} t _{a})(r _{\beta} t _{a})(r _{\gamma} t _{1})<br>&#x3D; (r _{\alpha} t _{a}) r _{\beta} r _{\gamma} [t _{a}] _{\gamma}<br>&#x3D; (r _{\alpha} t _{a}) r _{\beta \gamma} t _{\beta \gamma} [t _{a}] _{\gamma}<br>&#x3D; r _{\alpha} r _{\beta \gamma} [t _{a}] _{\beta \gamma} t _{\beta \gamma} [t _{a}] _{\gamma}<br>&#x3D; r _{\alpha, \beta \gamma} t _{\alpha ,\beta \gamma} [t _{a}] _{\beta \gamma} t _{\beta \gamma} [t _{a}] _{\gamma}<br>$$</p><p>对比两式即得到Eq.(2.7)和(2.8)。</p>
+              </div>
+            </details>
 
+<p>容易验证</p>
+<p>$$\begin{equation}<br>r _{\alpha ,\beta 1} &#x3D; r _{\alpha \beta,1} &#x3D; r _{\alpha \beta} &#x3D; r _{1, \alpha \beta} &#x3D; r _{1\alpha, \beta} &#x3D; r _{\alpha, 1 \beta} &#x3D; r _{\alpha 1, \beta}, \tag{2.9}<br>\end{equation}$$</p>
+<p>$$\begin{equation}<br>t _{\alpha ,\beta 1} &#x3D; t _{1 \alpha ,\beta} &#x3D; t _{\alpha, 1 \beta} &#x3D; t _{ \alpha 1, \beta} &#x3D; t _{\alpha \beta}, \quad  t _{\alpha \beta, 1} &#x3D; t _{1, \alpha \beta} &#x3D; t _{1}. \tag{2.10}<br>\end{equation}$$</p>
+<p>特别地，令$a&#x3D;1$，可得到重要关系</p>
+<p>$$\begin{equation}<br>t _{\alpha \beta, \gamma} [t _{\alpha \beta}] _{\gamma} &#x3D; t _{\alpha ,\beta \gamma} t _{\beta \gamma}. \tag{2.11}<br>\end{equation}$$</p>
+<h2 id="2-群元的逆"><a href="#2-群元的逆" class="headerlink" title="2 群元的逆"></a>2 群元的逆</h2><p>我们将任一$G$中的群元记为$(r _{\alpha} t _a)$，群元的逆似乎可写作 </p>
+<p>$$<br>(r _{\alpha} t _a) ^{-1}<br>&#x3D; t _{a}^{-1} r _{\alpha}^{-1}<br>&#x3D; r _{\alpha}^{-1} (r _{\alpha} ^{-1})^{-1} t _{a}^{-1} r _{\alpha}^{-1}<br>$$</p>
+<p>然而这样的定义存在问题，因为虽然$(r _{\alpha} ^{-1})^{-1} t _{a}^{-1} r _{\alpha}^{-1} \in T$，但$r _{\alpha}^{-1}$不一定为陪集代表元。因此需要找出陪集分解与群元的逆的关系。</p>
+<p>首先可以知道$(r _1 t _a)$的逆是$(r _1 t _a^{-1})$，因为$(r _1 t _a)(r _1 t _a^{-1}) &#x3D; r _1 [t _a]_1 t _a^{-1} &#x3D; r _1 t _1&#x3D;(r _1 t _a^{-1})(r _1 t _a)$。其次，给定一个陪集代表元$r _{\alpha}$，存在一个唯一的陪集代表元$r _{\bar{\alpha}}$，使得$r _{\alpha \bar{\alpha}}&#x3D;r _{\bar{\alpha}\alpha} &#x3D; r _{1}$。</p>
+<details cyan><summary> 存在性和唯一性的证明 </summary>
+              <div class='content'>
+              <p>$g &#x3D; r _{\alpha} t _a$作用在任意一个陪集上，都有</p><p>$$<br>gr _{\beta}T<br>&#x3D; r _{\alpha} r _{\beta} [t _a] _{\beta}T<br>&#x3D; r _{\alpha \beta} t _{\alpha \beta} T<br>&#x3D; r _{\alpha \beta} T,<br>$$</p><p>因此，$g$作用至一个陪集上会将其变成一个陪集。由重排定理知，$g$作用到$G$上作用是对所有陪集的重排，因此在$g &#x3D; (r _\alpha t _a)$的作用下，一定存在唯一的一个陪集$r _{\bar{\alpha}}T$，满足$g r _{\bar{\alpha}}T &#x3D; T$， 即$r _{\alpha \bar{\alpha}}&#x3D;r _1$ 。同理利用$T$是不变子群和$Gg &#x3D; G$可得$r _{\bar{\alpha} \alpha}&#x3D;r _1$。</p>
+              </div>
+            </details>
 
+<p>因此$(r _\alpha t _1)$的逆为$(r _{\bar{\alpha}} t _{\alpha \bar{\alpha}}^{-1})$，而且</p>
+<p>$$\begin{equation}<br>t _{\bar{\alpha} \alpha} &#x3D; [t _{\alpha \bar{\alpha}}] _{\alpha}, \tag{2.12}<br>\end{equation}$$</p>
+<p>$$\begin{equation}<br>[[t _a] _\alpha] _{\bar{\alpha}} &#x3D; t _{\alpha \bar{\alpha}} ^{-1} t _a t _{\alpha \bar{\alpha}}.  \tag{2.13}<br>\end{equation}$$</p>
+<p>并且可以验证</p>
+<p>$$\begin{equation}<br>r _\alpha t _a r _\alpha ^{-1} &#x3D; t _{\alpha \bar{\alpha}} [t _a] _{\bar{\alpha}} t _{\alpha \bar{\alpha}} ^{-1} . \tag{2.14}<br>\end{equation}$$</p>
+<p>Eq.(2.14)可以看作是$[t _a] _{\alpha ^{-1}}$的定义，这个定义并不依赖$r _{\alpha} ^{-1}$本身，不会存在前面所说的问题。</p>
+<details cyan><summary> 公式推导 </summary>
+              <div class='content'>
+              <p>Eq.(2.12)：显然$(r _\alpha t _1)(r _{\bar{\alpha}} t _{\alpha \bar{\alpha}}^{-1}) &#x3D; r _{\alpha \bar{\alpha}} t _{\alpha \bar{\alpha}}t _{\alpha \bar{\alpha}}^{-1}&#x3D;r _1 t _1$，注意到$(r _{\bar{\alpha}} t _{\alpha \bar{\alpha}}^{-1})(r _\alpha t _1) &#x3D; r _{\bar{\alpha} \alpha }t _{\bar{\alpha}\alpha}[t _{\alpha \bar{\alpha}} ^{-1}] _{\alpha}&#x3D;r _1 t _1$，因此有</p><p>$$<br>t _{\bar{\alpha}\alpha} &#x3D; ([t _{\alpha \bar{\alpha}} ^{-1}] _{\alpha}) ^ {-1}<br>&#x3D; (r _\alpha ^{-1} t _{\alpha \bar{\alpha}} ^{-1} r _\alpha) ^{-1}<br>&#x3D; r _\alpha ^{-1} t _{\alpha \bar{\alpha}} r _\alpha<br>&#x3D; [t _{\alpha \bar{\alpha}}] _{\alpha}.<br>$$</p><p>Eq.(2.13)：</p><p>$$<br>[[t _a] _\alpha] _{\bar{\alpha}} &#x3D; r _{\bar{\alpha}}^{-1} r _{\alpha}^{-1} t _a r _{\alpha} r _{\bar{\alpha}} &#x3D; (r _{\alpha} r _{\bar{\alpha}}) ^{-1} t _a (r _{\alpha} r _{\bar{\alpha}}) &#x3D; t _{\alpha \bar{\alpha}}^{-1} t _a t _{\alpha \bar{\alpha}}.$$</p><p>Eq.(2.14)：</p><p>$$<br>r _{\alpha}t _{a}r _{\alpha}^{-1}&#x3D;(r _{\alpha}t _{1})t _{a}(r _{\alpha}t _{a})^{-1}&#x3D;(r _{\bar{\alpha}}t _{\alpha\bar{\alpha}}^{-1})^{-1}t _{a}(r _{\bar{\alpha}}t _{\alpha\bar{\alpha}}^{-1})&#x3D;t _{\alpha\bar{\alpha}}r _{\bar{\alpha}}^{-1}t _{a}r _{\bar{\alpha}}t _{\alpha\bar{\alpha}}^{-1}&#x3D;t _{\alpha\bar{\alpha}}[t _{a}] _{\bar{\alpha}}t _{\alpha\bar{\alpha}}^{-1}.$$</p>
+              </div>
+            </details>
 
-
-<p>假设$\Omega_1$是一个$d_j$维线性空间，且在$K_1$下是不可约的。取定基函数为$\phi_r$，$r&#x3D;1,\cdots,d_j$，对于任意$k_a\in K_1$，有</p>
-<p>$$\begin{equation}<br>k_a \phi_r &#x3D; \sum_{p&#x3D;1}^{d_j} \phi_p \Gamma^{j}_{pr}(k_a). \tag{1.2}<br>\end{equation}$$</p>
-<p>该不可约表示的特征标在$k_a$的值记为$\chi^{j} (k_a)$。定义另外一个线性空间$\Omega$，它由$d_j |G|&#x2F;|K_1|$个函数$\phi_{\alpha r}$张成，其中</p>
-<p>$$\begin{equation}<br>\phi_{\alpha r} &#x3D; p_\alpha \phi_r. \tag{1.3}<br>\end{equation}$$</p>
 <blockquote>
-<p><strong>定理1.2</strong>：$\Omega$是$G$不变的。</p>
+<p><strong>定理2.1</strong>：$(r _\alpha t _a)$的逆是$(r _{\bar{\alpha}} [t _a ^{-1}] _{\bar{\alpha}} t _{\alpha \bar{\alpha}}^{-1})$。</p>
 </blockquote>
-<p>证明：考虑任意$g\in G$作用至$\Omega$的基函数上，$g&#x3D;p_\lambda k_s$，则$g\phi_{\tau r}&#x3D;p_\lambda k_s p_\tau \phi_r &#x3D; p_\gamma k_t \phi_r$，其中$\gamma$和$t$由$g$和$\tau$唯一确定，因此</p>
-<p>$$\begin{equation}<br>g\phi_{\tau r} &#x3D; p_\gamma\sum_p\phi_p\Gamma^{j}_{pr}(k_t)&#x3D;\sum_p\phi _{\gamma p}\Gamma^{j} _{pr}(k_t). \tag{1.4}<br>\end{equation}$$</p>
+<p>证明：显然有$(r _\alpha t _a)(r _{\bar{\alpha}} [t _a ^{-1}] _{\bar{\alpha}} t _{\alpha \bar{\alpha}}^{-1}) &#x3D; (r _1 t _1)$。更重要的是证明$(r _{\bar{\alpha}} [t _a ^{-1}] _{\bar{\alpha}} t _{\alpha \bar{\alpha}}^{-1})(r _\alpha t _a) &#x3D; (r _1 t _1)$</p>
+<p>$$<br>(r _{\bar{\alpha}}[t _{a}^{-1}] _{\bar{\alpha}}t _{\alpha\bar{\alpha}}^{-1})(r _{\alpha}t _{a})&#x3D;r _{\bar{\alpha}\alpha}t _{\bar{\alpha}\alpha}[[t _{a}^{-1}] _{\bar{\alpha}}] _{\alpha}[t _{\alpha\bar{\alpha}}^{-1}] _{\alpha}t _{a}$$</p>
+<p>根据Eq.(2.12)和(2.13)有$[[t _a^{-1}] _{\bar{\alpha}}] _{\alpha}&#x3D;t _{\bar{\alpha}\alpha}^{-1}t _{a}^{-1}t _{\bar{\alpha} \alpha}$，$[t _{\alpha \bar{\alpha}} ^{-1}] _{\alpha}&#x3D;t _{\bar{\alpha}\alpha} ^{-1}$，因此上式等于$(r _1 t _1)$。</p>
 <div class='checkbox'><input type="checkbox" />
             <hr>
             </div>
 
-
-<p>定理1.2给出$G$的一个表示，称为$\Gamma^{j}$在$G$中的 <strong>诱导表示</strong>，记为$\Gamma^{j}\uparrow G$。诱导表示是一个$d_j |G|&#x2F;|K_1|$维表示。Eq.(1.4)表明，仅有当$gp_\tau &#x3D; p_\gamma k_t$，即$p_\gamma^{-1}gp_\tau &#x3D;k_t \in K_1$时，$g$的诱导表示矩阵的第$(\gamma,\tau)$块才为$d_j \times d_j$的矩阵$\Gamma^{j}(p_\gamma^{-1}gp_\tau)$，否则该块为零矩阵。由于分解的唯一性，诱导表示的分块矩阵每一行每一列只有一块为非零矩阵。</p>
-<blockquote>
-<p><strong>定理1.3</strong>：定义$\Omega_{\alpha}$是一个$d_j$为线性空间，基函数为$\phi_{\alpha r}$，$r&#x3D;1,\dots, d_j$。固定一个$\alpha$，$\Omega_\alpha$是$K_\alpha$不变且不可约的，其中$K_\alpha &#x3D; \{ p_\alpha k_a p_\alpha^{-1}; \forall k_a \in K_1 \}$是$G$的子群。</p>
+<h2 id="3-小群与伴随小群"><a href="#3-小群与伴随小群" class="headerlink" title="3 小群与伴随小群"></a>3 小群与伴随小群</h2><blockquote>
+<p><strong>定理2.2</strong>：陪集代表元的指标构成一个阶为$|G|&#x2F;|T|$的群，记作$R$，$R$同构于商群$G&#x2F;T$。</p>
 </blockquote>
-<p>证明：显然</p>
-<p>$$\begin{equation}<br>p_\alpha k_a p_\alpha^{-1} \phi_{\alpha r} &#x3D; p_\alpha k_a \phi_r &#x3D; \sum_{s} \phi_{\alpha s} \Gamma^{j}_{sr}(k_a). \tag{1.5}<br>\end{equation}$$</p>
-<p>因此$p_\alpha k_a p_\alpha^{-1}$在$\phi_{\alpha r}$下的表示矩阵为$\Gamma^{j}(k_a)$，由于$\Gamma^{j}$是不可约的，所以$\Omega_\alpha$对于$K_\alpha$是不可约的。</p>
+<p>证明：$R$中的群乘法定义为如果$r _{\alpha}r _{\beta} \in r _{\gamma}T$，则$\alpha \beta &#x3D; \gamma$。封闭性是显然的，而Eq.(2.7)表明满足结合律，恒等元为$1$，$\alpha$的逆元为$\bar{\alpha}$。容易证明$R\cong G&#x2F;T$，因为$\alpha$与$r _{\alpha}T$一一对应且满足相同的乘法。</p>
 <div class='checkbox'><input type="checkbox" />
             <hr>
             </div>
 
-<p>子群$K_\alpha$可以写作$p_\alpha K_1 p_\alpha^{-1}$，因此对于每一个这样的子群$K_\alpha$，$\alpha &#x3D; 1,\dots,|G|&#x2F;|K_1|$，都有以下性质：</p>
-<p>① $|K_\alpha| &#x3D; |K_1|$；</p>
-<p>② $K_\alpha$ 在$G$下共轭于$K_1$，且共轭于其他$K_\beta$；</p>
-<p>③ 如果每个$K_\alpha$各不相同，则每一个子群$K_\alpha$唯一对应于一个陪集$p_\alpha K_1$。</p>
-<p><em><strong>注</strong></em>：定义$\Omega_\alpha$是方便划分诱导表示的表示空间，即<br>$$<br>\underset{\Omega}{\underbrace{\phi_{11},\cdots,\phi_{1d_{j}},\phi_{21},\cdots,\phi_{2d_{j}},\cdots,\phi_{|G|&#x2F;|K_{1}|,1},\cdots,\phi_{|G|&#x2F;|K_{1}|,d_{j}}}}&#x3D;\underset{\Omega_{1}}{\underbrace{\phi_{11},\cdots,\phi_{1d_{j}}}},\underset{\Omega_{2}}{\underbrace{\phi_{21},\cdots,\phi_{2d_{j}}}},\cdots,\underset{\Omega_{|G|&#x2F;|K_{1}|}}{\underbrace{\phi_{|G|&#x2F;|K_{1}|,1},\cdots,\phi_{|G|&#x2F;|K_{1}|,d_{j}}}}<br>$$<br>因此，设诱导表示的特征标为$\chi (g)$，则$\chi (g) &#x3D; \sum_\alpha \chi_\alpha (g)$，其中$\chi_\alpha (g)$为在$\Omega _\alpha$下的特征标。</p>
-<h2 id="1-2-Johnstron不可约判据及推论"><a href="#1-2-Johnstron不可约判据及推论" class="headerlink" title="1.2 Johnstron不可约判据及推论"></a>1.2 Johnstron不可约判据及推论</h2><blockquote>
-<p><strong>定理1.4-Johnstron不可约判据</strong>：记$g$在$\Omega_\alpha$下的特征标为$\chi_\alpha (g)$，诱导表示$\Gamma^{j}\uparrow G$的特征标$\chi (g)$等于$\sum_\alpha \chi_\alpha (g)$，则$\Omega$在$G$下是不可约的，如果<br>$$\begin{equation}<br>\sum_{t} \chi_\alpha^{*}(t)\chi_\beta(t) &#x3D; 0, \tag{1.6}<br>\end{equation}$$</p>
-<p>对任意$\alpha \neq \beta$都成立，其中对于给定的$\alpha$和$\beta$，$t$的求和取遍$K_\alpha \cap K_\beta$的所有元素。</p>
-</blockquote>
-<p>证明：$\Omega$在$G$下是不可约的，当且仅当</p>
-<p>$$\begin{equation}<br>\sum_{g\in G} \chi^*(g)\chi(g) &#x3D; |G|, \tag{1.7}<br>\end{equation}$$</p>
-<p>亦即</p>
-<p>$$\begin{equation}<br>\sum_\alpha \sum_{g\in G} |\chi_\alpha (g)|^2 + \sum_\alpha \sum_{\beta (\neq \alpha)}  \sum_{g\in G} \chi_\alpha^*(g)\chi_\beta (g) &#x3D; |G|. \tag{1.8}<br>\end{equation}$$</p>
-<p>Eq.(1.4)表明仅有当$gp_\tau&#x3D;p_\tau k_t$，即$g&#x3D;p_\tau k_t p_\tau^{-1}$时，$\chi_\tau (g) &#x3D; \chi^{j} (k_t)$，否则$\chi_\tau (g) &#x3D; 0$。因此只有当$g\in K_\tau$时$\chi_\tau (g)$才不为零。因此有</p>
-<p>$$\begin{equation}<br>\sum_\alpha \sum_{g\in G} |\chi_\alpha (g)|^2 &#x3D; \sum_\alpha \sum_{g\in K_\alpha} |\chi_\alpha (g)|^2 &#x3D;  \sum_\alpha \sum_{k_t\in K_1} |\chi^j (k_t)|^2 &#x3D; \sum_\alpha |K_1| &#x3D; |K_1| \frac{|G|}{|K_1|} &#x3D; |G|, \tag{1.9}<br>\end{equation}$$</p>
-<p>其中利用到$\Gamma^j$是$K_1$的不可约表示。因此，$\Omega$在$G$下是不可约的，等价于</p>
-<p>$$\begin{equation}<br>\sum_\alpha \sum_{\beta (\neq \alpha)}  \sum_{g\in G} \chi_\alpha^*(g)\chi_\beta (g) &#x3D; 0. \tag{1.10}<br>\end{equation}$$</p>
-<p>因此若对于任意$\alpha \neq \beta$，如果</p>
-<p>$$\begin{equation}<br>\sum _{g\in G} \chi _{\alpha} ^* (g) \chi _\beta (g) &#x3D; \sum _{t \in K _{\alpha} \cap K _{\beta}} \chi _{\alpha} ^*(t)\chi _\beta (t) &#x3D; 0，\tag{1.11}<br>\end{equation}$$</p>
-<p>则$\Gamma^j \uparrow G$是不可约的。</p>
-<div class='checkbox'><input type="checkbox" />
-            <hr>
-            </div>
+<p><em><strong>注</strong></em>：若$G&#x3D;T\rtimes F$，则$F \cong R \cong G&#x2F;T$，因为$r _{\alpha} \leftrightarrow \alpha \leftrightarrow r _{\alpha}T$。</p>
+<p>现在将<a href="1_induced_representation">上一节</a>的结果应用至$T$是$G$的不变子群的情况。设$\Gamma ^{i}$是$T$的一个$d _i$维不可约表示，基函数为$\phi _r$，则</p>
+<p>$$\begin{equation}<br>t _a \phi _p &#x3D; \sum _p \phi _p \Gamma _{pr}^j (t _a). \tag{2.15}<br>\end{equation}$$</p>
+<p>函数$\phi _{\alpha p} &#x3D; r _{\alpha}\phi _p$（$\alpha &#x3D; 1,\cdots, |G|&#x2F;|T|$，$p&#x3D;1,\cdots,d _i$）张成一个线性空间$\Omega$，且$\Omega$是$G$不变的（<strong>定理1.2</strong>）。此时所有子群$T _{\alpha}&#x3D; \{r _{\alpha} t _a r _{\alpha}^{-1} ; t _{a}\in T\} $都等于$T$。<strong>定理1.3</strong>进一步表明$\Omega _{\alpha}$ （固定$\alpha$，只由$\phi _{\alpha 1},\cdots,\phi _{\alpha d _i}$张成）是$T$不变且不可约的，表示矩阵为$\Gamma ^{i}$本身。现在，记由$\Omega _\alpha$承载的$T$的表示为$\Gamma ^{i,\alpha}$，则有</p>
+<p>$$\begin{equation}<br>t _a \phi _{\alpha r}<br>&#x3D; t _a r _{\alpha} \phi _r<br>&#x3D; r _{\alpha} [t _a] _{\alpha}\phi _r<br>&#x3D; r _{\alpha} \sum _p \phi _p \Gamma _{pr}^{i} ([t _a] _\alpha)<br>&#x3D;  \sum _p \phi _{\alpha p} \Gamma _{pr}^{i} ([t _a] _\alpha),\tag{2.16}<br>\end{equation}$$</p>
+<p>因此有</p>
+<p>$$\begin{equation}<br>\Gamma ^{i,\alpha} (t _a) &#x3D;  \Gamma ^{i} ([t _a] _\alpha),\tag{2.17}<br>\end{equation}$$</p>
+<p>对所有$t _a \in T$都成立，故表示$\Gamma ^{i,\alpha}$共轭于表示$\Gamma ^{i}$，即每一个陪集代表元$r _{\alpha}$将表示$\Gamma ^{i}$变换为一个共轭表示$\Gamma ^{i,\alpha}$，所有$|G|&#x2F;|T|$个陪集代表元给出$\Gamma ^{i}$的共轭表示集合。两个共轭表示可能是等价的也可能是不等价的。$\Gamma ^{i}$的共轭表示集合的最大互不等价子集，称为$\Gamma ^{i}$的$G$轨道（orbit），或者星（star）。</p>
+<details cyan><summary> 与空间群的关系 </summary>
+              <div class='content'>
+              <p>$t _a$对应于平移操作$\{ E| \mathbf{t} \}$，$r _{\alpha}$对应于旋转平移操作$\{ R|\mathbf{v} \} \in G$，因此</p><p>$$\begin{equation}<br>[t _{a}] _{\alpha}\rightarrow\{R|\mathbf{v}\}^{-1}\{E|\mathbf{t}\}\{R|\mathbf{v}\}&#x3D;\{E|R^{-1}\mathbf{t}\}. \tag{2.18}<br>\end{equation}$$</p><p>$\Gamma ^{i}$对应于平移群的表示$\Delta ^{\mathbf{k}}$，则</p><p>$$\begin{equation}<br>\Gamma^{i,\alpha}(t _{a})&#x3D;\Gamma^{i}([t _{a}] _{\alpha})\rightarrow\Delta^{\mathbf{k}}(\{E|R^{-1}\mathbf{t}\})&#x3D;\exp(-i\mathbf{k}\cdot R^{-1}\mathbf{t})\mathbf{1}&#x3D;\exp(-iR\mathbf{k}\cdot\mathbf{t})\mathbf{1}&#x3D;\Delta^{R\mathbf{k}}(\{E|\mathbf{t}\}). \tag{2.19}<br>\end{equation}$$</p><p>因此所有不等价波矢$\mathbf{k}$等同于平移群的不等价表示，构成波矢星。</p>
+              </div>
+            </details>
 
-<h3 id="推论-i"><a href="#推论-i" class="headerlink" title="推论(i)"></a>推论(i)</h3><p>如果 $K _{1}$ 是$G$的不变子群，则$K _{\alpha}&#x3D;K _{1}$，Eq.(1.6)变为</p>
-<p>$$\begin{equation}<br>\sum_{k_\alpha \in K_{1}} \chi _{\alpha}^{*}(k_a)\chi _{\beta}(k_a)&#x3D;0, \tag{1.12}<br>\end{equation}$$</p>
-<p>对任意$\alpha \neq \beta$都成立。由于现在所有$\Omega_{\alpha}$，<br>$\alpha &#x3D; 1,\cdots,|G|&#x2F;|K_{1}|$ 都是 $K_{1}$ 的不可约表示空间，Eq.(1.12)表示 $K_{1}$ 的这 $|G|&#x2F;|K_{1}|$ 个不可约表示空间都是不等价的。</p>
-<h3 id="推论-ii"><a href="#推论-ii" class="headerlink" title="推论(ii)"></a>推论(ii)</h3><p>Eq.(1.6)的求和取遍子群$K_\alpha \cap K_\beta$中的所有群元，满足这个求和为零的条件是，对于$K_\alpha \cap K_\beta$的所有子群$H_{\alpha \beta}$，都需要有</p>
-<p>$$\begin{equation}<br>\sum_{h\in H_{\alpha \beta}} \chi _{\alpha}^{*} (h)\chi _{\beta} (h) &#x3D; 0. \tag{1.13}<br>\end{equation}$$</p>
-<p>Eq.(1.13)特别适用于当$\alpha$和$\beta$取遍所有可能配对时，$H_{\alpha \beta}$都是$G$的一个特定子群$H$的情形。</p>
-<p>先固定一对$\alpha$和$\beta$，Eq.(1.13)意味着对于群$H_{\alpha \beta}$，两个表示空间$\Omega_{\alpha}$和$\Omega_{\beta}$不具有$H_{\alpha \beta}$的相同的不可约表示。这个求和中只能包括一些正数和零的求和，其中的正数对应着如果$H_{\alpha \beta}$的一个不可约表示既存在于$\Omega_{\alpha}$中又存在于$\Omega_{\beta}$，因此这个求和应该等于$n|H_{\alpha \beta}|$，其中$n$表示这种两个表示空间中子表示对的数目。比如假设$H_{\alpha \beta}$具有三个表示$\Gamma^{i}$，$i&#x3D;1,2,3$，而$\Omega_{\alpha}$和$\Omega_{\beta}$本别包含以下的表示</p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>$\Gamma^1$</th>
-<th>$\Gamma^2$</th>
-<th>$\Gamma^3$</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>$\Omega_\alpha$</td>
-<td>2</td>
-<td>0</td>
-<td>2</td>
-</tr>
-<tr>
-<td>$\Omega_\beta$</td>
-<td>1</td>
-<td>1</td>
-<td>3</td>
-</tr>
-</tbody></table>
-<p>因此一共有$n&#x3D;2\times 1 + 0\times 1+ 2\times 3 &#x3D; 8$个表示对。有时会把$n$称为关于$H_{\alpha \beta}$的缠绕数（intertwining number，不是winding number）。在这里要求$n&#x3D;0$。但由于$H_{\alpha \beta}$是$K_{\alpha}\cap K_{\beta}$的子群，而$\Omega_{\alpha}$和$\Omega_{\beta}$在$H_{\alpha \beta}$不能包含相同的表示，则在$K_{\alpha}\cap K_{\beta}$下也不能包含$K_{\alpha}\cap K_{\beta}$相同的表示，否则把相同的表示分导至$H_{\alpha \beta}$中就会得到关于$H_{\alpha \beta}$的缠绕数非零，与$n&#x3D;0$矛盾。因此Eq.(1.13)得证。</p>
-<p><em><strong>注</strong></em>：推论(2)对于空间群的表示理论有重要作用，它能确保从$k$点小群诱导到空间群的表示都是不可约的。</p>
-<h2 id="1-3-Frobenius互易定理"><a href="#1-3-Frobenius互易定理" class="headerlink" title="1.3 Frobenius互易定理"></a>1.3 Frobenius互易定理</h2><blockquote>
-<p><strong>定理1.5-Frobenius互易定理</strong>：假设$\Gamma$是$G$的不可约表示，特征标为$\chi^{\Gamma}(g)$，则$\Gamma$在诱导表示$\Gamma^{j}\uparrow G$中的重复度等于$\Gamma^{j}$在分导表示$\Gamma \downarrow K_{1}$中的重复度。</p>
-</blockquote>
-<p>证明：记诱导表示的特征标为$\chi(g)$，$\Gamma$在$\Gamma^{j}\uparrow G$中的重复度为$(1&#x2F;|G|)\sum_g \chi(g)\chi^{\Gamma*}(g)&#x3D;(1&#x2F;|G|)\sum_g \chi(g)\chi^{\Gamma}(g^{-1})$</p>
-<p>$$\begin{equation}<br>&#x3D;\frac{1}{|G|}\sum_{g}\sum_{\alpha}\chi_{\alpha}(g)\chi^{\Gamma}(g^{-1}) \tag{1.14}<br>\end{equation}$$</p>
-<p>$$\begin{equation}<br>&#x3D;\frac{1}{|G|}\sum_{k_a\in K_{1}}\sum_{\alpha}\chi^{j}(k_{a})\chi^{\Gamma}(p_{\alpha}k_{a}^{-1}p_{\alpha}^{-1}) \tag{1.15}<br>\end{equation}$$</p>
-<p>$$\begin{equation}<br>&#x3D;\frac{1}{|K_{1}|}\sum_{k_a\in K_{1}}\chi^{j}(k_{a})\chi^{\Gamma}(k_{a}^{-1}) \tag{1.16}<br>\end{equation}$$</p>
-<p>即等于$\Gamma^{j}$在分导表示中在分导表示$\Gamma \downarrow K_{1}$中的重复度。</p>
-<div class='checkbox'><input type="checkbox" />
-            <hr>
-            </div>
-
-
-
-
-<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">C. J. Bradley, A. P. Cracknell, The Mathematical Theory of Symmetry in Solids: Representation Theory for Point Groups and Space Groups.<a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>
+<p>使得$\Gamma ^{i,\gamma}\equiv \Gamma ^{i}$的指标$\gamma \in R$构成的群称为伴随小群（little co-group）<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="通常也被称作小共群，但我个人觉得把“co”翻译成“共”有点奇怪，而little co-group是辅助我们构建little group，即小群的，co-group总是<span class='p blue bold'>伴随</span>另一个群出现。因此我倾向将其称为伴随小群，感觉更像小群的跟班。同样的问题也出现在磁群的co-representation中，BC书的中译本（[Bradley, Cracknell, 2013](https://book.douban.com/subject/26139962/)）也将其称作“共表示”。这里暂时不涉及到磁群，因此先不讨论磁群co-representation的翻译问题。">[1]</span></a></sup>，记作$\bar{K} ^i$。这里的$\equiv$代表两个表示是等价的。同理可以证明$\bar{K} ^{i,\alpha}$是$\Gamma ^{i, \alpha}$在$G$中的伴随小群。如果共轭表示集合中所有的表示互不等价，则伴随小群只包含元素$1$。这对应于$\mathbf{k}$是布里渊区中一般点的情况。</p>
+<p>定义群$K^{i}$为</p>
+<p>$$\begin{equation}<br>K^{i} &#x3D; \sum _{\gamma \in \bar{K} ^{i}} r _{\gamma} T, \tag{2.20}<br>\end{equation}$$</p>
+<p>其中$\gamma$的求和取遍伴随小群。$K ^{i}$称为$i$在$G$中的小群（little group）。小群同构于商群$K^{i}&#x2F;T$。</p>
+<p>现在考察在以$\Omega$为表示空间的诱导表示$\Gamma ^{i} \uparrow G$。基函数的变换为</p>
+<p>$$\begin{equation}<br>(r _{\alpha}t _{a})\phi _{\tau r}&#x3D;r _{\alpha}t _{a}r _{\tau}\phi _{r}&#x3D;r _{\alpha\tau}t _{\alpha\tau}[t _{a}] _{\tau}\phi _{r}&#x3D;\sum _{p}\phi _{\sigma p}\Gamma _{pr}^{i}(t _{\alpha\tau}[t _{a}] _{\tau}), \tag{2.21}<br>\end{equation}$$</p>
+<p>其中$\sigma &#x3D; \alpha \tau$。相应的特征标为</p>
+<p>$$\begin{equation}<br>\chi(r _{\alpha}t _{a})&#x3D;\delta _{\alpha1}\sum _{\tau}\chi {i,\tau}(t _{a}), \tag{2.22}<br>\end{equation}$$</p>
+<p>其中$\delta _{\alpha 1}$的因子来自于$\tau &#x3D; \sigma &#x3D; \alpha \tau$，$\alpha&#x3D;1$时，$\Gamma _{pr}^{i}([t _{a}] _{\tau}) &#x3D; \Gamma _{pr}^{i,\tau}(t _{a})$。因此在$\Gamma ^i \uparrow G$中只有$T$中的元素有非零特征标，并且每个非零特征标都是$\Gamma ^i$的等价表示集合中的所有表示的特征标的求和。</p>
+<p>因为$T$是不变子群，由<a href="1_induced_representation#2-Johnstron%E4%B8%8D%E5%8F%AF%E7%BA%A6%E5%88%A4%E6%8D%AE%E5%8F%8A%E6%8E%A8%E8%AE%BA">Johnstron不可约判据的推论(i)</a>知如果$\Gamma ^i$的等价表示集合中任意两个表示都是不等价的，则$\gamma ^i \uparrow G$是不可约的。</p>
+<p>由Eq.(2.22)可以发现</p>
+<p>$$\begin{equation}<br>(\Gamma ^i \uparrow G) \downarrow T &#x3D; \sum _{\tau} \Gamma ^{i,\tau}. \tag{2.23}<br>\end{equation}$$</p>
+<p>(1) 当$\gamma ^i \uparrow G$是不可约时，所有$\Gamma ^{i,\tau}$（$\tau &#x3D; 1,\cdots, |G|&#x2F;|T|$）都是不等价的，因此Eq.(2.23)等号右边为$\Gamma ^i$的轨道。由Frobenius互易定理，$\Gamma ^i \uparrow G$分导至$T$包含一次$\Gamma ^{i,\tau}$，因此$\Gamma ^{i,\tau}$诱导至$G$，即$\Gamma ^{i,\tau}\uparrow G$包含一次$\Gamma ^i \uparrow G$，由于两者都是不可约且维数相等，因此$\Gamma ^i \uparrow G$与$\Gamma ^{i,\tau} \uparrow G$等价。</p>
+<p>(2) 一般情况下$\Gamma ^i \uparrow G$是可约的，则伴随小群$\bar{K} ^i$包含不止$1$的元素。此时Eq.(2.20)包含$\bar{K} ^i &#x3D; |K^i|&#x2F;|T|$个陪集，则$\sum _\tau \Gamma ^{i,\tau}$的求和中将出现$|K^i|&#x2F;|T|$次$\Gamma ^i$的轨道，即在所有指标$\tau &#x3D; 1,2,\cdots,|G|&#x2F;|T|$中，有$|K^i|&#x2F;|T|$个指标将$\Gamma ^i$变为其等价的表示。</p>
+<p>至此可知当伴随小群只有一个元素时，$\Gamma ^i \uparrow G$是不可约的，而且这个不可约表示可由$\Gamma ^i$轨道中任意一个表示诱导出来。这样一个诱导表示在分导至$T$中时包含所有$\Gamma ^i$轨道的表示各一次。然而并非$G$的所有表示都是这样诱导出的，因为$T$的一些表示的轨道可以包含等价表示，此时表示的伴随小群不止包含一个元素。这种情况对应于$\mathbf{k}$是高对称点、线、或面，这种情况将在下节完整讨论。</p>
+<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">通常也被称作小共群，但我个人觉得把“co”翻译成“共”有点奇怪，而little co-group是辅助我们构建little group，即小群的，co-group总是<span class='p blue bold'>伴随</span>另一个群出现。因此我倾向将其称为伴随小群，感觉更像小群的跟班。同样的问题也出现在磁群的co-representation中，BC书的中译本（<a target="_blank" rel="noopener" href="https://book.douban.com/subject/26139962/">Bradley, Cracknell, 2013</a>）也将其称作“共表示”。这里暂时不涉及到磁群，因此先不讨论磁群co-representation的翻译问题。<a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>
   </div>
   
   
@@ -2724,10 +2702,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-09-25T20:58:23+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-10-02T10:46:27+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2023年9月25日</p>
+    <p>更新于：2023年10月2日</p>
   </a>
 </div>
 
@@ -2735,32 +2713,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         
           
-
-        
-      
-        
-          
-  <div class="new-meta-item share -mob-share-list">
-  <div class="-mob-share-list share-body">
-    
-      
-        
-        <div class='hoverbox'>
-          <a class='share'><img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/wechat.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/wechat.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></a>
-          <div class='target'>
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATgAAAE4CAAAAADqFLC2AAADpUlEQVR42u3aS5LiQAwFQO5/6ZkTEC49yVjQWTvcuD5ZvXgh8fpnROOFABw4cOAMcOCWwL3CcblAON+7z+/WvdrP1Xzl/YEDBw4cOHDgwC2DOw6AFwe4C+R03dPn6XnBgQMHDhw4cOC2wqUA4wXDoeCdBmJw4MCBAwcOHLi/Aledp3qg7vfBgQMHDhw4cODAZQG42uCuXkhaEAUHDhw4cODAgfsVuHKDtniw6kWkjelTyMc6+eDAgQMHDhw4cENw1TF18Kc+x+cFBw4cOHDgwIFbAjf1A8C7A20aZKuB93I+cODAgQMHDhy4JXDdQmS1gdxtXKf7654PHDhw4MCBAwduG9xdgbF6IdPBO31++R44cODAgQMHDtwyuNMA2w2aXfA02J6+d/kcHDhw4MCBAwduCdynCoRTQbY7XzcogwMHDhw4cODAbYebCqinG08LmWnDPP2HAQcOHDhw4MCB2wJ3WtBLC4Ep/OUBhhvatzWkwYEDBw4cOHDgboL7FNQpRHrQ7npxQxocOHDgwIEDB+4huGqhbyrQnq4/XbjsFlTBgQMHDhw4cOC2wXULiN2GcFp4rAbeboEUHDhw4MCBAwduC1waBE8LnO3CYfi96vrgwIEDBw4cOHDfDpcG37SBnTa4T/df/Xu7kw8OHDhw4MCBA/cQXApSnSed/66LOg7O4MCBAwcOHDhwS+CmgmP6OW0M310ofbsOOHDgwIEDBw7cErhukJ0qPE4XIrv7AgcOHDhw4MCB+za4uxrV0+9195kGcHDgwIEDBw4cuC1w3cJhNUB3G8tTQODAgQMHDhw4cL8CN1VoTAPzp9ZrB2xw4MCBAwcOHLglcNWDpYG4GkCnfjiYAh03pMGBAwcOHDhw4JbAVRvGU4XOLkh6MeXADA4cOHDgwIEDtxxuqvBYDaLVfaQN6dP1ygEYHDhw4MCBAwfuYbhTkNP30+dpYTOFjBvS4MCBAwcOHDhwH4brjqmgeXWQuxvdx98HBw4cOHDgwIFbAje9kTTwVhvj1ULsVOETHDhw4MCBAwduG1y3gHgaYNNCY7WQ2m24gwMHDhw4cODAfRtcu2EbAk0H5NsKn+DAgQMHDhw4cD8K152nCpAG9bgQCg4cOHDgwIED92Nw1cLjXbDVCy4XOMGBAwcOHDhw4JbCTf1QsBqIu7DdAmc7AIMDBw4cOHDgwD0ElzZsq8/ToF1tWKcXc7kvcODAgQMHDhy4JXBGbYADBw4cOAMcuIfHf58AhFuHXTe5AAAAAElFTkSuQmCC">
-          </div>
-        </div>
-      
-    
-      
-    
-      
-    
-  </div>
-</div>
-
-
 
         
       
@@ -2773,35 +2725,31 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   
   
+    
+    
+      <div class="prev-next">
+        
+          <a class='prev' href='/notes/normal_subgroup/1_induced_representation'>
+            <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>诱导表示</p>
+            <p class='content'>1.诱导表示
 
+1 诱导表示设$G$是一个群，$K_1$是$G$的一个子群，但不一定为不变子群。记$K_1$的元素为$k_a$($a&#x3D;1,\cdots,|K_1|$)。可根据$K_1$...</p>
+          </a>
+        
+        
+          <a class='next' href='/notes/normal_subgroup/3_little_group_theory'>
+            <p class='title'>小群理论<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+            <p class='content'>3.小群理论
+
+1 小群理论这里先列出利用小群理论得到母群$G$的所有不可约表示的手续如下：
+① 将不变子群$T$的不可约表示以轨道划分。
+② 对于一个轨道$i$，任选一个其中的表示$\Gamm...</p>
+          </a>
+        
+      </div>
+    
   
-    <div class="prev-next">
-      
-        <a class='prev' href='/2023/09/15/Group_invariant-subgroup-2/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>利用不变子群的不可约表示构造母群的不可约表示 (2)</p>
-          <p class='content'>上一部分回顾了从母群的子群出发构造诱导表示，这一部分考虑当母群具有一个不变子群时，母群及其表示有什么特殊的性质。
 
-
-2.1 群及其不变子群群$G$具有不变子群$T$，则$G$的左陪集分解为
-$...</p>
-        </a>
-      
-      
-        <a class='next' href='/2023/09/14/pyprocar/'>
-          <p class='title'>pyprocar使用<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>pyprocar软件可以处理可以处理PROCAR文件，画能带图、投影能带图等，并且可以挑选特定能带、k点数据。
-
-主页
-
-
-
-
-
-安装可使用pip和conda两种方式安装，分别为pip：
-1$ ...</p>
-        </a>
-      
-    </div>
   
   <!-- Custom Files postEnd begin-->
   
@@ -2814,7 +2762,7 @@ $...</p>
 
   <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/2023/09/14/Group_invariant-subgroup-1/index.html#comments">
+      <meta itemprop="discussionUrl" content="/notes/normal_subgroup/2_little_cogroup#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -2830,6 +2778,82 @@ $...</p>
 
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
+  
+
+  
+    
+    
+      
+
+
+  
+<section class="widget list group desktop mobile pjax">
+  
+  <header>
+    
+      <i class="fa fa-book fa-fw" aria-hidden="true"></i><span class='name'>从不变子群构造不可约表示</span>
+    
+  </header>
+
+
+  <div class='content'>
+    <ul class="list entry navigation">
+      
+        <li><a class="flat-box" title="/notes/normal_subgroup/0_introduction" href="/notes/normal_subgroup/0_introduction"
+          
+          
+          active-action="action-notesnormal_subgroup0_introduction"
+          >
+          <div class='name'>
+            
+            0.导言
+          </div>
+          
+        </a></li>
+      
+        <li><a class="flat-box" title="/notes/normal_subgroup/1_induced_representation" href="/notes/normal_subgroup/1_induced_representation"
+          
+          
+          active-action="action-notesnormal_subgroup1_induced_representation"
+          >
+          <div class='name'>
+            
+            1.诱导表示
+          </div>
+          
+        </a></li>
+      
+        <li><a class="flat-box" title="/notes/normal_subgroup/2_little_cogroup" href="/notes/normal_subgroup/2_little_cogroup"
+          
+          
+          active-action="action-notesnormal_subgroup2_little_cogroup"
+          >
+          <div class='name'>
+            
+            2.伴随小群
+          </div>
+          
+        </a></li>
+      
+        <li><a class="flat-box" title="/notes/normal_subgroup/3_little_group_theory" href="/notes/normal_subgroup/3_little_group_theory"
+          
+          
+          active-action="action-notesnormal_subgroup3_little_group_theory"
+          >
+          <div class='name'>
+            
+            3.小群理论
+          </div>
+          
+        </a></li>
+      
+    </ul>
+  </div>
+</section>
+
+
+
+    
   
 
   
@@ -2856,7 +2880,7 @@ $...</p>
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-1-%E8%AF%B1%E5%AF%BC%E8%A1%A8%E7%A4%BA"><span class="toc-text">1.1 诱导表示</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2-Johnstron%E4%B8%8D%E5%8F%AF%E7%BA%A6%E5%88%A4%E6%8D%AE%E5%8F%8A%E6%8E%A8%E8%AE%BA"><span class="toc-text">1.2 Johnstron不可约判据及推论</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A8%E8%AE%BA-i"><span class="toc-text">推论(i)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A8%E8%AE%BA-ii"><span class="toc-text">推论(ii)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-3-Frobenius%E4%BA%92%E6%98%93%E5%AE%9A%E7%90%86"><span class="toc-text">1.3 Frobenius互易定理</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E7%BE%A4%E5%8F%8A%E5%85%B6%E4%B8%8D%E5%8F%98%E5%AD%90%E7%BE%A4"><span class="toc-text">1 群及其不变子群</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E7%BE%A4%E5%85%83%E7%9A%84%E9%80%86"><span class="toc-text">2 群元的逆</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E5%B0%8F%E7%BE%A4%E4%B8%8E%E4%BC%B4%E9%9A%8F%E5%B0%8F%E7%BE%A4"><span class="toc-text">3 小群与伴随小群</span></a></li></ol>
     </div>
   </section>
 
@@ -2912,7 +2936,7 @@ $...</p>
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=true;
+  pdata.ispage=false;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3480,7 +3504,7 @@ $...</p>
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"零碎学习记录","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"个人日常"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"零碎学习记录"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/群论/","name":"群论"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2023/09/14/Group_invariant-subgroup-1/","name":"利用不变子群的不可约表示构造母群的不可约表示 (1)"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"零碎学习记录","url":"http://example.com/","keywords":null,"description":"个人日常","author":{"@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"个人日常"},"publisher":{"@type":"Organization","name":"零碎学习记录","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"利用不变子群的不可约表示构造母群的不可约表示 (1)","description":"最近需要做群论相关的工作，利用到从不变子群的表示构造母群表示的一些技巧，因此学习了一下BC书[1]中这部分的内容，发现在诱导表示方面BC书写得会比李新征老师的教材更加顺畅。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/09/14/Group_invariant-subgroup-1/"},"author":{"@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"零碎学习记录","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2023/09/14/Group_invariant-subgroup-1/","wordCount":86,"datePublished":"2023-09-13T16:00:00.000Z","dateModified":"2023-09-25T12:58:23.000Z","articleSection":"群论","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"零碎学习记录","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"个人日常"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"零碎学习记录"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"零碎学习记录","url":"http://example.com/","keywords":null,"description":"个人日常","author":{"@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"个人日常"},"publisher":{"@type":"Organization","name":"零碎学习记录","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"伴随小群","description":"个人日常","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/notes/normal_subgroup/2_little_cogroup"},"author":{"@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"零碎学习记录","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/notes/normal_subgroup/2_little_cogroup","wordCount":0,"datePublished":"2023-09-14T16:00:00.000Z","dateModified":"2023-10-02T02:46:27.000Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

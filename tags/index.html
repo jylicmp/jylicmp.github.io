@@ -109,8 +109,8 @@ html {
   font-size: 16px;
 }
 html >::-webkit-scrollbar {
-  height: 4px;
-  width: 4px;
+  height: 10px;
+  width: 10px;
 }
 html >::-webkit-scrollbar-track-piece {
   background: transparent;
@@ -1743,7 +1743,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1696162367183),
+    lastupdate: new Date(1696297775958),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate","webinfo"],
       for_post: ["toc"],
@@ -2234,6 +2234,23 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
+                href="/notes/" title="笔记"
+                  
+                  
+                  
+                    active-action="action-notes"
+                  >
+                  <i class='fa-solid fa-book fa-fw'></i>笔记
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
                 href="/categories/" title="分类"
                   
                   
@@ -2357,6 +2374,23 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
+                href="/notes/" title="笔记"
+                  
+                  
+                  
+                    active-action="action-notes"
+                  >
+                  <i class='fa-solid fa-book fa-fw'></i>笔记
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
                 href="/categories/" title="分类"
                   
                   
@@ -2467,28 +2501,28 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
               
               active-action="action-home">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f4f0.svg'><p>文档</p>
+              <img src='https://gcore.jsdelivr.net/gh/jylicmp/blog_static/images/icons/logos/files/icons8-document-100.png'><p>文档</p>
             </a>
           
             <a href="/archives/"
               
               
               active-action="action-archives">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f5c3.svg'><p>归档</p>
+              <img src='https://gcore.jsdelivr.net/gh/jylicmp/blog_static/images/icons/logos/files/icons8-product-documents-100.png'><p>归档</p>
             </a>
           
-            <a target="_blank" rel="noopener" href="https://scholar.google.com/citations?user=XHvrW1sAAAAJ&amp;hl=en"
+            <a href="/about/"
               
               
-              active-action="action-https:scholargooglecomcitations?user=XHvrW1sAAAAJ&amp;hl=en">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f393.svg'><p>学术</p>
+              active-action="action-about">
+              <img src='https://gcore.jsdelivr.net/gh/jylicmp/blog_static/images/icons/logos/files/icons8-user-100.png'><p>关于</p>
             </a>
           
             <a target="_blank" rel="noopener" href="https://github.com/jylicmp/"
               
               
               active-action="action-https:githubcomjylicmp">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f9ec.svg'><p>Github</p>
+              <img src='https://gcore.jsdelivr.net/gh/jylicmp/blog_static/images/icons/logos/social/icons8-github-2-100.png'><p>Github</p>
             </a>
           
         
@@ -2551,6 +2585,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
