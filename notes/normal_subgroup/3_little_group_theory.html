@@ -27,7 +27,7 @@
   <!-- Custom Files headBegin end-->
   <!-- front-matter head_begin begin -->
   <!-- front-matter head_begin end -->
-    <link rel="shortcut icon" type='image/x-icon' href="https://gcore.jsdelivr.net/gh/jylicmp/blog_static/images/icons/lemon_icon.ico">
+    <link rel="shortcut icon" type='image/x-icon' href="https://gcore.jsdelivr.net/gh/jylicmp/blog_static/images/icons/logos/characters/icons8-stich-100.png">
   <link rel="preload" href="/css/style.css" as="style">
   <link rel="preload" href="https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
@@ -42,11 +42,11 @@
 <meta property="og:title" content="零碎学习记录">
 <meta property="og:url" content="http://example.com/notes/normal_subgroup/3_little_group_theory">
 <meta property="og:site_name" content="零碎学习记录">
-<meta property="og:description" content="3.小群理论  1 小群理论这里先列出利用小群理论得到母群$G$的所有不可约表示的手续如下： ① 将不变子群$T$的不可约表示以轨道划分。 ② 对于一个轨道$i$，任选一个其中的表示$\Gamma ^i$。 ③ 求出$\Gamma ^i$在$G$中的小群$K^i$：$K ^i &#x3D; \sum _{\gamma} r _{\gamma}T$，其中$\gamma \in \bar{K}^i$取">
+<meta property="og:description" content="3.小群理论  1 小群理论框架这里先列出利用小群理论得到母群$G$的所有不可约表示的手续如下： ① 将不变子群$T$的不可约表示以轨道划分。 ② 对于一个轨道$i$，任选一个其中的表示$\Gamma ^i$。 ③ 求出$\Gamma ^i$在$G$中的小群$K^i$：$K ^i &#x3D; \sum _{\gamma} r _{\gamma}T$，其中$\gamma \in \bar{K}^i">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2023-09-21T16:00:00.000Z">
-<meta property="article:modified_time" content="2023-10-02T02:24:38.000Z">
+<meta property="article:modified_time" content="2023-10-03T15:55:46.000Z">
 <meta property="article:author" content="Jiayu Li">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
@@ -1745,7 +1745,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1696297775958),
+    lastupdate: new Date(1696404197011),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate","webinfo"],
       for_post: ["toc"],
@@ -2575,14 +2575,68 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div id="post-body" itemprop="articleBody">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><span class='p logo large center'>3.小群理论</span>
 
-<h2 id="1-小群理论"><a href="#1-小群理论" class="headerlink" title="1 小群理论"></a>1 小群理论</h2><p>这里先列出利用小群理论得到母群$G$的所有不可约表示的手续如下：</p>
+<h2 id="1-小群理论框架"><a href="#1-小群理论框架" class="headerlink" title="1 小群理论框架"></a>1 小群理论框架</h2><p>这里先列出利用小群理论得到母群$G$的所有不可约表示的手续如下：</p>
 <p>① 将不变子群$T$的不可约表示以轨道划分。</p>
 <p>② 对于一个轨道$i$，任选一个其中的表示$\Gamma ^i$。</p>
-<p>③ 求出$\Gamma ^i$在$G$中的小群$K^i$：$K ^i &#x3D; \sum _{\gamma} r _{\gamma}T$，其中$\gamma \in \bar{K}^i$取遍伴随小群，满足$\Gamma ^{i,\alpha} \equiv \Gamma ^i$。</p>
+<p>③ 求出$\Gamma ^i$在$G$中的小群$K^i$：$K ^i &#x3D; \sum _{\gamma} r _{\gamma}T$，其中$\gamma \in \bar{K}^i$取遍伴随小群，满足$\Gamma ^{i,\gamma} \equiv \Gamma ^i$。</p>
 <p>④ $G$以$K^i$为子群做左陪集分解$G&#x3D;\sum _{\alpha} p _{\alpha} K^i$，小群的构造使得$\Gamma ^{i,\alpha }$（$\alpha &#x3D; 1,\cdots,|G|&#x2F;|K^{i}|$）是互不等价的表示，因此构成$\Gamma ^{i}$的轨道。</p>
 <p>⑤ 求出$K^i$的不可约表示$\Gamma _j ^i$，这些表示$\Gamma _j ^i$分导至$T$中都只包含数倍的$\Gamma ^i$。这些表示$\Gamma _j ^i$称为$K^i$的小表示（little representations）。</p>
 <p>⑥ 对所有的$j$，求出$\Gamma _j ^i \uparrow G$。</p>
 <p>⑦ 对于所有轨道$i$，重复步骤②至⑥。</p>
+<p>这里面①-④在前文已经加以讨论，因此从⑤开始讨论。为了探究⑤，先证明以下引理。</p>
+<blockquote>
+<p><strong>引理3.1</strong>：若$K ^{i}$的不可约表示$\Gamma ^{i,j}$满足$\Gamma ^{i,j} \downarrow T$包含$\Gamma ^{i}$，那么$\Gamma ^{i,j} \downarrow T$只包含$\Gamma ^{i}$（重复度可以大于1）。</p>
+</blockquote>
+<details cyan><summary> 符号含义 </summary>
+              <div class='content'>
+              <p>注意这里$\Gamma ^{i}$是$T$的一个不可约表示，可以认为是轨道$i$的某一个元素；$\Gamma ^{i,j}$是$K ^{i}$的第$j$个不可约表示。</p>
+              </div>
+            </details>
+
+<p>证明：首先由Frobenisu互易定理知$\Gamma ^{i,j} \downarrow T$包含$\Gamma ^{i}$当且仅当$\Gamma ^{i} \uparrow K ^{i}$包含$\Gamma ^{i,j}$。假设$\Gamma ^{i} \uparrow K ^{i} &#x3D; \sum _{j} \lambda ^{i,j} \Gamma ^{i,j} \equiv \Gamma$，我们需要证明$\Gamma ^{i,j} \downarrow T &#x3D; \lambda ^{i,j} \Gamma ^{i}$。因为$K ^{i} &#x3D; \sum _{\gamma} r _{\gamma}T$而$\gamma \in \bar{K} ^{i}$，因此根据<a href="2_little_cogroup">上一节</a>Eq.(2.23)有$\Gamma \downarrow T &#x3D; \sum _{\gamma} \Gamma ^{i,\gamma}$。显然对任意$\gamma \in \bar{K} ^{i}$，$\Gamma ^{i,\gamma} \equiv \Gamma ^{i}$（伴随小群的定义），因此$\Gamma \downarrow T &#x3D; |\bar{K} ^{i}| \Gamma ^{i} &#x3D; ( |K ^{i}| &#x2F; |T| ) \Gamma ^{i}$，意味着即便考虑$K ^{i}$所有不可约表示的直和，分导到$T$都只包含$\Gamma ^{i}$。可见$K ^{i}$的任意一个不可约表示$\Gamma ^{i,j}$分导至$T$要么不包含$\Gamma ^{i}$，要么只包含$\Gamma ^{i}$。所以$\Gamma ^{i,j} \downarrow T &#x3D; \lambda ^{i,j} \Gamma ^{i}$。</p>
+<div class='checkbox'><input type="checkbox" />
+            <hr>
+            </div>
+
+
+<p>同时，我们证明了$|\bar{K} ^{i}| \Gamma ^{i} &#x3D; \gamma \downarrow T &#x3D; (\sum _{j} \lambda ^{i,j} \Gamma ^{i,j}) \downarrow T &#x3D;\sum _{j} (\lambda ^{i,j}) ^2 \Gamma ^{i}$，即$\sum _{j} (\lambda ^{i,j}) ^2 &#x3D; |\bar{K} ^{i}|$。因此，$K ^{i}$所有不可约表示维度的平方和为$\sum _{j} (\lambda ^{i,j}d _{i})^2 &#x3D; |\bar{K} ^{i}| d _{i}^{2}$。</p>
+<h2 id="2-所有不可约表示的构造"><a href="#2-所有不可约表示的构造" class="headerlink" title="2 所有不可约表示的构造"></a>2 所有不可约表示的构造</h2><blockquote>
+<p><strong>定理3.1</strong>：诱导表示$\Gamma ^{i,j} \uparrow G$是$G$的一个不可约表示，并且当$i$取遍$T$所有轨道、$j$取遍$K ^{i}$所有小表示时，给出$G$的所有不等价不可约表示各一次。</p>
+</blockquote>
+<p>证明：首先证明$\Gamma ^{i,j} \uparrow G$是不可约的。依照定义，$ G&#x3D; \sum _{\alpha} p _{\alpha} K ^{i}$，注意到当$\alpha \neq 1$时$\alpha \notin |\bar{K} ^{i}|$，因此$\Gamma ^{i,\alpha}$不是$\Gamma ^{i}$的等价表示，故所有$\Gamma ^{i,\alpha}$（$\alpha &#x3D; 1, \cdots |G|&#x2F;|K ^{i}|$）构成$\Gamma ^{i}$的轨道。于是，根据<strong>定理1.4</strong>的<a href="1_induced_representation#2-johnstron%E4%B8%8D%E5%8F%AF%E7%BA%A6%E5%88%A4%E6%8D%AE%E5%8F%8A%E6%8E%A8%E8%AE%BA">推论(ii)</a>，取$H _{\alpha \beta} &#x3D; T$为所有$K ^{i,\alpha} \cap K ^{i,\beta}$的共同子群（对于所有的$\alpha \neq \beta$表示对），即若</p>
+<p>$$\begin{equation}<br>\sum _{t _{a}\in T} \chi ^{i,\alpha *}(t _a)\chi ^{i,\beta}(t _b) \neq 0, \tag{3.1}<br>\end{equation}$$</p>
+<p>则$\Gamma ^{i,j} \uparrow G$是不可约的。此处$\chi ^{i,\alpha}(t _a)$是群元$t _a \in T$在$\Omega _{\alpha}$的特征标，由于</p>
+<p>$$<br>((\Gamma ^{i,j} \uparrow G)\downarrow K ^{i}) \downarrow T &#x3D; (\sum _{\alpha} \Gamma ^{i,j;\alpha}) \downarrow T &#x3D; \sum _{\alpha} \lambda ^{i,j} \Gamma ^{i,\alpha},<br>$$</p>
+<p>因此$\Omega _{\alpha}$承载$T$的$\lambda ^{i,j} \Gamma ^{i,\alpha}$表示，同理$\Omega _{\beta}$承载$\lambda ^{i,j} \Gamma ^{i,\beta}$表示。由于$\Gamma ^{i,\alpha}$和$\Gamma ^{i,\beta}$不等价，因此Eq.(3.1)成立，即$\Gamma ^{i,j} \uparrow G$是不可约表示。</p>
+<p>接下来需要证明当取遍所有轨道$i$和小表示$j$，这个诱导过程给出$G$的所有不等价不可约表示各一次。这里需要排除两种可能，一是这种过程会缺失$G$的一些不可约表示，二是这种诱导过程会不止一次给出同一个不可约表示。排除第二种可能性我们需要证明$\Gamma ^{i,j} \uparrow G$是互相不等价的，而排除第一种可能性需要证明所有$\Gamma ^{i,j} \uparrow G$的维度平方和等于$G$。为此需要用到以下三个引理，这里我们简记$\Delta ^{i,j} &#x3D; \Gamma ^{i,j} \uparrow G$。</p>
+<blockquote>
+<p><strong>引理3.2</strong>：分导表示的传递性</p>
+<p>$$\begin{equation}<br>(\Delta ^{i,j} \downarrow K^{i}) \downarrow T &#x3D; \Delta ^{i,j} \downarrow T. \tag{3.2}<br>\end{equation}$$</p>
+<p>证明是显然的，因为都等于$\sum _{\alpha} \lambda ^{i,j} \Gamma ^{i,\alpha}$。</p>
+</blockquote>
+<blockquote>
+<p><strong>引理3.3</strong>：诱导表示的传递性</p>
+<p>$$\begin{equation}<br>(\Gamma ^{i} \uparrow K ^{i}) \uparrow G \equiv \Gamma ^{i} \uparrow G, \tag{3.3}<br>\end{equation}$$</p>
+<p>其中等号左边等于$(\Gamma ^{i} \uparrow K ^{i}) \uparrow G &#x3D; (\sum _{j} \lambda ^{i,j}\Gamma ^{i,j}) \uparrow G &#x3D; \sum _{j} \lambda ^{i,j}\Delta ^{i,j}$。</p>
+</blockquote>
+<details cyan><summary> 引理3.3证明 </summary>
+              <div class='content'>
+              <p>证明：Eq.(3.2)等号右侧$\Gamma ^{i} \uparrow G$的基函数为$\phi _{\alpha p }&#x3D;r _{\alpha}\phi _p$（$\alpha&#x3D;1,\cdots,|G|&#x2F;|T|$，$p&#x3D;1,\cdots,d _{i}$），$\phi _{p}$是$\Gamma ^{i}$的基函数。而$\Gamma ^{i} \uparrow K ^{i}$的基函数为$\phi _{\gamma p} &#x3D; r _{\gamma} \phi _{p}$（$p&#x3D;1,\cdots,|K ^{i}|&#x2F;|T|$），注意到$G &#x3D; \sum _{\beta} p _{\beta} K ^{i}$（$\beta &#x3D; 1,\cdots,|G|&#x2F;|K ^{i}|$），因此等号左边$(\Gamma ^{i} \uparrow K ^{i}) \uparrow G$一共有$d _{i} |G|&#x2F;|T|$个基函数$p _{\beta}\phi _{\gamma p}$。因此，总可以选择一种陪集代表元$p _{\beta}$的取法使得集合$\{ p _{\beta}r _{\gamma} \} &#x3D; \{ r _{\alpha} \}$，因为等号两边的表示空间都由$d _{i} |G|&#x2F;|T|$个基函数$\phi _{\alpha p}$张成。</p>
+              </div>
+            </details>
+
+<p>显然</p>
+<p>$$\begin{equation}<br>\Gamma ^{i} \uparrow G \equiv \sum _{j} \lambda ^{i,j} \Delta ^{i,j}, \tag{3.4}<br>\end{equation}$$</p>
+<p>又因为$\Delta ^{i,j}$是不可约的，因此由Frobenius互易定理知$\Delta ^{i,j} \downarrow T$包含$\Gamma ^{j}$的次数为$\lambda ^{i,j}$，与<strong>引理3.2</strong>相符。</p>
+<blockquote>
+<p><strong>引理3.4</strong>：<br>$$\begin{equation}<br>\Delta ^{i,j} \downarrow T &#x3D; \sum _{\alpha } \lambda ^{i,j} \Gamma ^{i,\alpha}, \tag{3.5}<br>\end{equation}$$<br>其中$\Gamma ^{i,\alpha}$构成$\Gamma ^{i}$的轨道。证明已在前文给出。</p>
+</blockquote>
+<h3 id="证明不可约表示互不等价"><a href="#证明不可约表示互不等价" class="headerlink" title="证明不可约表示互不等价"></a>证明不可约表示互不等价</h3><p>证明$\Delta ^{i,j}$在取遍所有$i$和$j$时得到的不可约表示互不等价。考虑$\Delta ^{i _1 , j _1}$和$\Delta ^{i _2 , j _2}$，当$i _1 \neq i _2$时，由<strong>引理3.4</strong>知$\Delta ^{i _1 , j _1}$和$\Delta ^{i _2 , j _2}$分导至$T$分别仅包含$\Gamma ^{i _1}$的轨道和$\Gamma ^{i _2}$的轨道。而两个不同轨道的不可约表示是不等价的，因此$\Delta ^{i _1 , j _1}$和$\Delta ^{i _2 , j _2}$也是不等价的，参见<a href="1_induced_representation#2-johnstron%E4%B8%8D%E5%8F%AF%E7%BA%A6%E5%88%A4%E6%8D%AE%E5%8F%8A%E6%8E%A8%E8%AE%BA"><strong>定理1.4</strong>推论(ii)的证明</a>。</p>
+<p>其次，当$i _1 &#x3D; i _2 &#x3D; i$，但$j _1 \neq j _2$时，由于$\Gamma ^{i, j _1} \uparrow G &#x3D; \Delta ^{i, j _1}$是不可约的，根据互易定理有$\Delta ^{i,j _1} \downarrow K ^{i}$包含$\Gamma ^{i, j _1}$一次，同理$\Delta ^{i,j _2} \downarrow K ^{i}$也包含$\Gamma ^{i, j _2}$一次。假设$\Delta ^{i,j _1} \equiv \Delta ^{i,j _2}$，则$\Delta ^{i,j _1} \downarrow K ^{i}$必须包含$\Gamma ^{i,j _1}$和$\Gamma ^{i,j _2}$各一次，因为$j _1 \neq j _2$所以$\Gamma ^{i,j _1}$和$\Gamma ^{i,j _2}$并不等价，而根据<strong>引理3.2</strong>，$\Delta ^{i,j _1} \downarrow T$包含$\Gamma ^{i}$至少$\lambda ^{i,j _1} + \lambda ^{i,j _2}$次，与<strong>引理3.4</strong>矛盾。因此所有不可约表示$\Delta ^{i,j}$是互不等价的。</p>
+<h3 id="证明得到所有不可约表示"><a href="#证明得到所有不可约表示" class="headerlink" title="证明得到所有不可约表示"></a>证明得到所有不可约表示</h3><p>现在我们计算所有不可约表示的维度平方和，根据<strong>引理3.4</strong>有$\dim \Delta ^{i,j} &#x3D; \lambda ^{i,j} d _i q _i$，其中$q _{i}$是每个轨道$i$中的不可约表示数，因此$q _{i} &#x3D; |G|&#x2F;|K ^{i}|$ （因为$G &#x3D; \sum _{\alpha} r _{\alpha} K ^{i}$），因此</p>
+<p>$$\sum _{i,j} (\dim \Delta ^{i,j}) ^2 &#x3D; \sum _{i,j} (\lambda ^{i,j}) ^2 d _{i}^2 q _{i} ^2 &#x3D; \sum _{i} \frac{|G| }{|K ^{i}| } |\bar{K} ^{i}| d _{i}^2 q _{i} &#x3D; \frac{|G| }{|T| } \sum _{i} q _{i} d _{i}^2 &#x3D; \frac{|G| }{|T| } |T| &#x3D; |G|. $$</p>
+<p>其中利用到$\sum _{i} q _{i} d _{i}^2 &#x3D; \sum _{k} d _{k}^2 &#x3D; |T|$，即将对轨道求和变为对$T$所有的不可约表示求和。</p>
+<p>至此，我们完成了<strong>定理3.1</strong>的证明。</p>
 
   </div>
   
@@ -2607,10 +2661,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-10-02T10:24:38+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-10-03T23:55:46+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2023年10月2日</p>
+    <p>更新于：2023年10月3日</p>
   </a>
 </div>
 
@@ -2778,7 +2832,7 @@ $$\begin{equation}G&#x3D;\sum_{\alpha}r_{\alpha}T, \t...</p>
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%B0%8F%E7%BE%A4%E7%90%86%E8%AE%BA"><span class="toc-text">1 小群理论</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%B0%8F%E7%BE%A4%E7%90%86%E8%AE%BA%E6%A1%86%E6%9E%B6"><span class="toc-text">1 小群理论框架</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E6%89%80%E6%9C%89%E4%B8%8D%E5%8F%AF%E7%BA%A6%E8%A1%A8%E7%A4%BA%E7%9A%84%E6%9E%84%E9%80%A0"><span class="toc-text">2 所有不可约表示的构造</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%81%E6%98%8E%E4%B8%8D%E5%8F%AF%E7%BA%A6%E8%A1%A8%E7%A4%BA%E4%BA%92%E4%B8%8D%E7%AD%89%E4%BB%B7"><span class="toc-text">证明不可约表示互不等价</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%81%E6%98%8E%E5%BE%97%E5%88%B0%E6%89%80%E6%9C%89%E4%B8%8D%E5%8F%AF%E7%BA%A6%E8%A1%A8%E7%A4%BA"><span class="toc-text">证明得到所有不可约表示</span></a></li></ol></li></ol>
     </div>
   </section>
 
@@ -3402,7 +3456,7 @@ $$\begin{equation}G&#x3D;\sum_{\alpha}r_{\alpha}T, \t...</p>
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"零碎学习记录","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"个人日常"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"零碎学习记录"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"零碎学习记录","url":"http://example.com/","keywords":null,"description":"个人日常","author":{"@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"个人日常"},"publisher":{"@type":"Organization","name":"零碎学习记录","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"小群理论","description":"个人日常","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/notes/normal_subgroup/3_little_group_theory"},"author":{"@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"零碎学习记录","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/notes/normal_subgroup/3_little_group_theory","wordCount":0,"datePublished":"2023-09-21T16:00:00.000Z","dateModified":"2023-10-02T02:24:38.000Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"零碎学习记录","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"个人日常"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"零碎学习记录"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"零碎学习记录","url":"http://example.com/","keywords":null,"description":"个人日常","author":{"@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"个人日常"},"publisher":{"@type":"Organization","name":"零碎学习记录","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"小群理论","description":"个人日常","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/notes/normal_subgroup/3_little_group_theory"},"author":{"@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"零碎学习记录","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/notes/normal_subgroup/3_little_group_theory","wordCount":0,"datePublished":"2023-09-21T16:00:00.000Z","dateModified":"2023-10-03T15:55:46.000Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
