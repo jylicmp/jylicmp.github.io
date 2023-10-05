@@ -46,7 +46,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2023-09-14T16:00:00.000Z">
-<meta property="article:modified_time" content="2023-10-03T13:45:35.000Z">
+<meta property="article:modified_time" content="2023-10-04T14:14:29.000Z">
 <meta property="article:author" content="Jiayu Li">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
@@ -63,7 +63,7 @@
   --color-card: #fff;
   --color-text: #444;
   --color-block: #f6f6f6;
-  --color-inlinecode: #c74f00;
+  --color-inlinecode: #666;
   --color-codeblock: #fff7ea;
   --color-h1: #3a3a3a;
   --color-h2: #3a3a3a;
@@ -1745,7 +1745,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1696412173836),
+    lastupdate: new Date(1696472912057),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate","webinfo"],
       for_post: ["toc"],
@@ -2223,19 +2223,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                 href="/" onclick="return false;" title="索引"
-                  
-                  
-                  >
-                  <i class='fa-solid fa-bars fa-fw'></i>索引
-                </a>
-                
-                  <ul class="list-v">
-                    
-                      
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover"
                 href="/notes/" title="笔记"
                   
                   
@@ -2248,6 +2235,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               </li>
             
           
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                 href="/" onclick="return false;" title="索引"
+                  
+                  
+                  >
+                  <i class='fa-solid fa-bars fa-fw'></i>索引
+                </a>
+                
+                  <ul class="list-v">
                     
                       
             
@@ -2363,19 +2363,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                 href="/" onclick="return false;" title="索引"
-                  
-                  
-                  >
-                  <i class='fa-solid fa-bars fa-fw'></i>索引
-                </a>
-                
-                  <ul class="list-v">
-                    
-                      
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover"
                 href="/notes/" title="笔记"
                   
                   
@@ -2388,6 +2375,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               </li>
             
           
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                 href="/" onclick="return false;" title="索引"
+                  
+                  
+                  >
+                  <i class='fa-solid fa-bars fa-fw'></i>索引
+                </a>
+                
+                  <ul class="list-v">
                     
                       
             
@@ -2503,7 +2503,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
               
               active-action="action-home">
-              <img src='https://gcore.jsdelivr.net/gh/jylicmp/blog_static/images/icons/logos/files/icons8-document-100.png'><p>文档</p>
+              <img src='https://gcore.jsdelivr.net/gh/jylicmp/blog_static/images/icons/logos/files/icons8-document-100.png'><p>博客</p>
+            </a>
+          
+            <a href="/notes/"
+              
+              
+              active-action="action-notes">
+              <img src='https://gcore.jsdelivr.net/gh/jylicmp/blog_static/images/icons/logos/files/icons8-copybook-2-100.png'><p>笔记</p>
             </a>
           
             <a href="/archives/"
@@ -2637,17 +2644,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>证明：显然有$(r _\alpha t _a)(r _{\bar{\alpha}} [t _a ^{-1}] _{\bar{\alpha}} t _{\alpha \bar{\alpha}}^{-1}) &#x3D; (r _1 t _1)$。更重要的是证明$(r _{\bar{\alpha}} [t _a ^{-1}] _{\bar{\alpha}} t _{\alpha \bar{\alpha}}^{-1})(r _\alpha t _a) &#x3D; (r _1 t _1)$</p>
 <p>$$<br>(r _{\bar{\alpha}}[t _{a}^{-1}] _{\bar{\alpha}}t _{\alpha\bar{\alpha}}^{-1})(r _{\alpha}t _{a})&#x3D;r _{\bar{\alpha}\alpha}t _{\bar{\alpha}\alpha}[[t _{a}^{-1}] _{\bar{\alpha}}] _{\alpha}[t _{\alpha\bar{\alpha}}^{-1}] _{\alpha}t _{a}$$</p>
 <p>根据Eq.(2.12)和(2.13)有$[[t _a^{-1}] _{\bar{\alpha}}] _{\alpha}&#x3D;t _{\bar{\alpha}\alpha}^{-1}t _{a}^{-1}t _{\bar{\alpha} \alpha}$，$[t _{\alpha \bar{\alpha}} ^{-1}] _{\alpha}&#x3D;t _{\bar{\alpha}\alpha} ^{-1}$，因此上式等于$(r _1 t _1)$。</p>
-<div class='checkbox'><input type="checkbox" />
-            <hr>
-            </div>
+<span class='p right'>$\blacksquare$</span>
 
 <h2 id="3-小群与伴随小群"><a href="#3-小群与伴随小群" class="headerlink" title="3 小群与伴随小群"></a>3 小群与伴随小群</h2><blockquote>
 <p><strong>定理2.2</strong>：陪集代表元的指标构成一个阶为$|G|&#x2F;|T|$的群，记作$R$，$R$同构于商群$G&#x2F;T$。</p>
 </blockquote>
 <p>证明：$R$中的群乘法定义为如果$r _{\alpha}r _{\beta} \in r _{\gamma}T$，则$\alpha \beta &#x3D; \gamma$。封闭性是显然的，而Eq.(2.7)表明满足结合律，恒等元为$1$，$\alpha$的逆元为$\bar{\alpha}$。容易证明$R\cong G&#x2F;T$，因为$\alpha$与$r _{\alpha}T$一一对应且满足相同的乘法。</p>
-<div class='checkbox'><input type="checkbox" />
-            <hr>
-            </div>
+<span class='p right'>$\blacksquare$</span>
 
 <p><em><strong>注</strong></em>：若$G&#x3D;T\rtimes F$，则$F \cong R \cong G&#x2F;T$，因为$r _{\alpha} \leftrightarrow \alpha \leftrightarrow r _{\alpha}T$。</p>
 <p>现在将<a href="1_induced_representation">上一节</a>的结果应用至$T$是$G$的不变子群的情况。设$\Gamma ^{i}$是$T$的一个$d _i$维不可约表示，基函数为$\phi _r$，则</p>
@@ -2663,7 +2666,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               </div>
             </details>
 
-<p>使得$\Gamma ^{i,\gamma}\equiv \Gamma ^{i}$的指标$\gamma \in R$构成的群称为伴随小群（little co-group）<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="通常也被称作小共群，但我个人觉得把“co”翻译成“共”有点奇怪，而little co-group是辅助我们构建little group，即小群的，co-group总是<span class='p blue bold'>伴随</span>另一个群出现。因此我倾向将其称为伴随小群，感觉更像小群的跟班。同样的问题也出现在磁群的co-representation中，BC书的中译本（[Bradley, Cracknell, 2013](https://book.douban.com/subject/26139962/)）也将其称作“共表示”。这里暂时不涉及到磁群，因此先不讨论磁群co-representation的翻译问题。">[1]</span></a></sup>，记作$\bar{K} ^i$。这里的$\equiv$代表两个表示是等价的。同理可以证明$\bar{K} ^{i,\alpha}$是$\Gamma ^{i, \alpha}$在$G$中的伴随小群。如果共轭表示集合中所有的表示互不等价，则伴随小群只包含元素$1$。这对应于$\mathbf{k}$是布里渊区中一般点的情况。</p>
+<p>使得$\Gamma ^{i,\gamma}\equiv \Gamma ^{i}$的指标$\gamma \in R$构成的群称为<span class='p yellow'>伴随小群（little co-group）</span>，记作$\bar{K} ^i$。这里的$\equiv$代表两个表示是等价的。同理可以证明$\bar{K} ^{i,\alpha}$是$\Gamma ^{i, \alpha}$在$G$中的伴随小群。如果共轭表示集合中所有的表示互不等价，则伴随小群只包含元素$1$。这对应于$\mathbf{k}$是布里渊区中一般点的情况。</p>
+<div class="note radiation yellow"><p>伴随小群：通常也被称作小共群，但我个人觉得把“co”翻译成“共”有点奇怪，而little co-group是辅助我们构建little group，即小群的，co-group总是<strong>伴随</strong>另一个群出现。因此我倾向将其称为伴随小群，感觉更像小群的跟班。同样的问题也出现在磁群的co-representation中，BC书的中译本（<a target="_blank" rel="noopener" href="https://book.douban.com/subject/26139962/">Bradley, Cracknell, 2013</a>）也将其称作“共表示”。这里暂时不涉及到磁群，因此先不讨论磁群co-representation的翻译问题。</p></div>
+
 <p>定义群$K^{i}$为</p>
 <p>$$\begin{equation}<br>K^{i} &#x3D; \sum _{\gamma \in \bar{K} ^{i}} r _{\gamma} T, \tag{2.20}<br>\end{equation}$$</p>
 <p>其中$\gamma$的求和取遍伴随小群。$K ^{i}$称为$i$在$G$中的小群（little group）。伴随小群同构于商群$K^{i}&#x2F;T$。</p>
@@ -2678,7 +2683,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>(1) 当$\Gamma ^i \uparrow G$是不可约时，所有$\Gamma ^{i,\tau}$（$\tau &#x3D; 1,\cdots, |G|&#x2F;|T|$）都是不等价的，因此Eq.(2.23)等号右边为$\Gamma ^i$的轨道。由Frobenius互易定理，$\Gamma ^i \uparrow G$分导至$T$包含一次$\Gamma ^{i,\tau}$，因此$\Gamma ^{i,\tau}$诱导至$G$，即$\Gamma ^{i,\tau}\uparrow G$包含一次$\Gamma ^i \uparrow G$，由于两者都是不可约且维数相等，因此$\Gamma ^i \uparrow G$与$\Gamma ^{i,\tau} \uparrow G$等价。</p>
 <p>(2) 一般情况下$\Gamma ^i \uparrow G$是可约的，则伴随小群$\bar{K} ^i$包含不止$1$的元素。此时Eq.(2.20)包含$ |\bar{K} ^i | &#x3D; |K^i|&#x2F;|T|$个陪集，则$\sum _\tau \Gamma ^{i,\tau}$的求和中将出现$|K^i|&#x2F;|T|$次$\Gamma ^i$的轨道，即在所有指标$\tau &#x3D; 1,2,\cdots,|G|&#x2F;|T|$中，有$|K^i|&#x2F;|T|$个指标将$\Gamma ^i$变为其等价的表示。</p>
 <p>至此可知当伴随小群只有一个元素时，$\Gamma ^i \uparrow G$是不可约的，而且这个不可约表示可由$\Gamma ^i$轨道中任意一个表示诱导出来。这样一个诱导表示在分导至$T$中时包含所有$\Gamma ^i$轨道的表示各一次。然而并非$G$的所有表示都是这样诱导出的，因为$T$的一些表示的轨道可以包含等价表示，此时表示的伴随小群不止包含一个元素。这种情况对应于$\mathbf{k}$是高对称点、线、或面，这种情况将在下节完整讨论。</p>
-<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">通常也被称作小共群，但我个人觉得把“co”翻译成“共”有点奇怪，而little co-group是辅助我们构建little group，即小群的，co-group总是<span class='p blue bold'>伴随</span>另一个群出现。因此我倾向将其称为伴随小群，感觉更像小群的跟班。同样的问题也出现在磁群的co-representation中，BC书的中译本（<a target="_blank" rel="noopener" href="https://book.douban.com/subject/26139962/">Bradley, Cracknell, 2013</a>）也将其称作“共表示”。这里暂时不涉及到磁群，因此先不讨论磁群co-representation的翻译问题。<a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>
+
   </div>
   
   
@@ -2702,10 +2707,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-10-03T21:45:35+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-10-04T22:14:29+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2023年10月3日</p>
+    <p>更新于：2023年10月4日</p>
   </a>
 </div>
 
@@ -3504,7 +3509,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"零碎学习记录","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"个人日常"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"零碎学习记录"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"零碎学习记录","url":"http://example.com/","keywords":null,"description":"个人日常","author":{"@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"个人日常"},"publisher":{"@type":"Organization","name":"零碎学习记录","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"伴随小群","description":"个人日常","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/notes/normal_subgroup/2_little_cogroup"},"author":{"@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"零碎学习记录","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/notes/normal_subgroup/2_little_cogroup","wordCount":0,"datePublished":"2023-09-14T16:00:00.000Z","dateModified":"2023-10-03T13:45:35.000Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"零碎学习记录","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"个人日常"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"零碎学习记录"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"零碎学习记录","url":"http://example.com/","keywords":null,"description":"个人日常","author":{"@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"个人日常"},"publisher":{"@type":"Organization","name":"零碎学习记录","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"伴随小群","description":"个人日常","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/notes/normal_subgroup/2_little_cogroup"},"author":{"@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"零碎学习记录","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/notes/normal_subgroup/2_little_cogroup","wordCount":0,"datePublished":"2023-09-14T16:00:00.000Z","dateModified":"2023-10-04T14:14:29.000Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

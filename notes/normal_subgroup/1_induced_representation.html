@@ -46,7 +46,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2023-09-13T16:00:00.000Z">
-<meta property="article:modified_time" content="2023-10-03T13:16:16.000Z">
+<meta property="article:modified_time" content="2023-10-04T14:13:27.000Z">
 <meta property="article:author" content="Jiayu Li">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
@@ -63,7 +63,7 @@
   --color-card: #fff;
   --color-text: #444;
   --color-block: #f6f6f6;
-  --color-inlinecode: #c74f00;
+  --color-inlinecode: #666;
   --color-codeblock: #fff7ea;
   --color-h1: #3a3a3a;
   --color-h2: #3a3a3a;
@@ -1745,7 +1745,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1696412173836),
+    lastupdate: new Date(1696472912057),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate","webinfo"],
       for_post: ["toc"],
@@ -2223,19 +2223,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                 href="/" onclick="return false;" title="索引"
-                  
-                  
-                  >
-                  <i class='fa-solid fa-bars fa-fw'></i>索引
-                </a>
-                
-                  <ul class="list-v">
-                    
-                      
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover"
                 href="/notes/" title="笔记"
                   
                   
@@ -2248,6 +2235,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               </li>
             
           
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                 href="/" onclick="return false;" title="索引"
+                  
+                  
+                  >
+                  <i class='fa-solid fa-bars fa-fw'></i>索引
+                </a>
+                
+                  <ul class="list-v">
                     
                       
             
@@ -2363,19 +2363,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                 href="/" onclick="return false;" title="索引"
-                  
-                  
-                  >
-                  <i class='fa-solid fa-bars fa-fw'></i>索引
-                </a>
-                
-                  <ul class="list-v">
-                    
-                      
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover"
                 href="/notes/" title="笔记"
                   
                   
@@ -2388,6 +2375,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               </li>
             
           
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                 href="/" onclick="return false;" title="索引"
+                  
+                  
+                  >
+                  <i class='fa-solid fa-bars fa-fw'></i>索引
+                </a>
+                
+                  <ul class="list-v">
                     
                       
             
@@ -2503,7 +2503,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
               
               active-action="action-home">
-              <img src='https://gcore.jsdelivr.net/gh/jylicmp/blog_static/images/icons/logos/files/icons8-document-100.png'><p>文档</p>
+              <img src='https://gcore.jsdelivr.net/gh/jylicmp/blog_static/images/icons/logos/files/icons8-document-100.png'><p>博客</p>
+            </a>
+          
+            <a href="/notes/"
+              
+              
+              active-action="action-notes">
+              <img src='https://gcore.jsdelivr.net/gh/jylicmp/blog_static/images/icons/logos/files/icons8-copybook-2-100.png'><p>笔记</p>
             </a>
           
             <a href="/archives/"
@@ -2582,11 +2589,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p><strong>定理1.1</strong>：任意$g\in G$都可以唯一分解为$g&#x3D;k_b p_\lambda^{-1}$，其中$b$和$\lambda$都由$g$唯一确定。</p>
 </blockquote>
 <p>证明：根据Eq.(1.1)有$g^{-1}&#x3D;p_\lambda k_s$，取逆有$g&#x3D;k_s^{-1}p_\lambda^{-1}&#x3D;k_bp_\lambda^{-1}$，其中$k_b &#x3D; k_s^{-1}\in K_1$，因为$K_1$是一个群。注意$p_\lambda^{-1}$本身不一定为陪集代表元。 </p>
-<div class='checkbox'><input type="checkbox" />
-            <hr>
-            </div>
-
-
+<span class='p right'>$\blacksquare$</span>
 
 
 <p>假设$\Omega_1$是一个$d_j$维线性空间，且在$K_1$下是不可约的。取定基函数为$\phi_r$，$r&#x3D;1,\cdots,d_j$，对于任意$k_a\in K_1$，有</p>
@@ -2598,9 +2601,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </blockquote>
 <p>证明：考虑任意$g\in G$作用至$\Omega$的基函数上，$g&#x3D;p_\lambda k_s$，则$g\phi_{\tau r}&#x3D;p_\lambda k_s p_\tau \phi_r &#x3D; p_\gamma k_t \phi_r$，其中$\gamma$和$t$由$g$和$\tau$唯一确定，因此</p>
 <p>$$\begin{equation}<br>g\phi_{\tau r} &#x3D; p_\gamma\sum_p\phi_p\Gamma^{j}_{pr}(k_t)&#x3D;\sum_p\phi _{\gamma p}\Gamma^{j} _{pr}(k_t). \tag{1.4}<br>\end{equation}$$</p>
-<div class='checkbox'><input type="checkbox" />
-            <hr>
-            </div>
+<span class='p right'>$\blacksquare$</span>
 
 
 <p>定理1.2给出$G$的一个表示，称为$\Gamma^{j}$在$G$中的<strong>诱导表示</strong>，记为$\Gamma^{j}\uparrow G$。诱导表示是一个$d_j |G|&#x2F;|K_1|$维表示。Eq.(1.4)表明，仅有当$gp_\tau &#x3D; p_\gamma k_t$，即$p_\gamma^{-1}gp_\tau &#x3D;k_t \in K_1$时，$g$的诱导表示矩阵的第$(\gamma,\tau)$块才为$d_j \times d_j$的矩阵$\Gamma^{j}(p_\gamma^{-1}gp_\tau)$，否则该块为零矩阵。由于分解的唯一性，诱导表示的分块矩阵每一行每一列只有一块为非零矩阵。</p>
@@ -2610,9 +2611,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>证明：显然</p>
 <p>$$\begin{equation}<br>p_\alpha k_a p_\alpha^{-1} \phi_{\alpha r} &#x3D; p_\alpha k_a \phi_r &#x3D; \sum_{s} \phi_{\alpha s} \Gamma^{j}_{sr}(k_a). \tag{1.5}<br>\end{equation}$$</p>
 <p>因此$p_\alpha k_a p_\alpha^{-1}$在$\phi_{\alpha r}$下的表示矩阵为$\Gamma^{j}(k_a)$，由于$\Gamma^{j}$是不可约的，所以$\Omega_\alpha$对于$K_\alpha$是不可约的。</p>
-<div class='checkbox'><input type="checkbox" />
-            <hr>
-            </div>
+<span class='p right'>$\blacksquare$</span>
 
 <p>子群$K_\alpha$可以写作$p_\alpha K_1 p_\alpha^{-1}$，因此对于每一个这样的子群$K_\alpha$，$\alpha &#x3D; 1,\dots,|G|&#x2F;|K_1|$，都有以下性质：</p>
 <p>① $|K_\alpha| &#x3D; |K_1|$；</p>
@@ -2634,9 +2633,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>因此若对于任意$\alpha \neq \beta$，如果</p>
 <p>$$\begin{equation}<br>\sum _{g\in G} \chi _{\alpha} ^* (g) \chi _\beta (g) &#x3D; \sum _{t \in K _{\alpha} \cap K _{\beta}} \chi _{\alpha} ^*(t)\chi _\beta (t) &#x3D; 0，\tag{1.11}<br>\end{equation}$$</p>
 <p>则$\Gamma^j \uparrow G$是不可约的。</p>
-<div class='checkbox'><input type="checkbox" />
-            <hr>
-            </div>
+<span class='p right'>$\blacksquare$</span>
 
 <h3 id="推论-i"><a href="#推论-i" class="headerlink" title="推论(i)"></a>推论(i)</h3><p>如果 $K _{1}$ 是$G$的不变子群，则$K _{\alpha}&#x3D;K _{1}$，Eq.(1.6)变为</p>
 <p>$$\begin{equation}<br>\sum_{k _a \in K _{1}} \chi _{\alpha}^{*}(k _a)\chi _{\beta}(k _a)&#x3D;0, \tag{1.12}<br>\end{equation}$$</p>
@@ -2677,9 +2674,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>$$\begin{equation}<br>&#x3D;\frac{1}{|G|}\sum_{k_a\in K_{1}}\sum_{\alpha}\chi^{j}(k_{a})\chi^{\Gamma}(p_{\alpha}k_{a}^{-1}p_{\alpha}^{-1}) \tag{1.15}<br>\end{equation}$$</p>
 <p>$$\begin{equation}<br>&#x3D;\frac{1}{|K_{1}|}\sum_{k_a\in K_{1}}\chi^{j}(k_{a})\chi^{\Gamma}(k_{a}^{-1}) \tag{1.16}<br>\end{equation}$$</p>
 <p>即等于$\Gamma^{j}$在分导表示中在分导表示$\Gamma \downarrow K_{1}$中的重复度。</p>
-<div class='checkbox'><input type="checkbox" />
-            <hr>
-            </div>
+<span class='p right'>$\blacksquare$</span>
 
 
 
@@ -2706,10 +2701,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-10-03T21:16:16+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-10-04T22:13:27+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2023年10月3日</p>
+    <p>更新于：2023年10月4日</p>
   </a>
 </div>
 
@@ -2740,15 +2735,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 从不变子群构造不可约表示
 
 
-
-
-利用不变子群的不可约表示构造母群不可约表示的技术发展自空间群的表示理论，有助于理解不可约表示之间的关系，本笔记主要参考BC书[1]。
-
+笔记完成进度：60%
 
 
 
-    
-  ...</p>
+
+
+
+利用不变子群的不可约表示构造母群不可约表示的技术发展自空间群的表示理论，有助于理解不可约表示之间的关系，本笔记主要参考BC书[...</p>
           </a>
         
         
@@ -3519,7 +3513,7 @@ $$\begin{equation}G&#x3D;\sum_{\alpha}r_{\alpha}T, \t...</p>
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"零碎学习记录","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"个人日常"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"零碎学习记录"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"零碎学习记录","url":"http://example.com/","keywords":null,"description":"个人日常","author":{"@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"个人日常"},"publisher":{"@type":"Organization","name":"零碎学习记录","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"诱导表示","description":"个人日常","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/notes/normal_subgroup/1_induced_representation"},"author":{"@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"零碎学习记录","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/notes/normal_subgroup/1_induced_representation","wordCount":0,"datePublished":"2023-09-13T16:00:00.000Z","dateModified":"2023-10-03T13:16:16.000Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"零碎学习记录","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"个人日常"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"零碎学习记录"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"零碎学习记录","url":"http://example.com/","keywords":null,"description":"个人日常","author":{"@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"个人日常"},"publisher":{"@type":"Organization","name":"零碎学习记录","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"诱导表示","description":"个人日常","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/notes/normal_subgroup/1_induced_representation"},"author":{"@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"零碎学习记录","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/notes/normal_subgroup/1_induced_representation","wordCount":0,"datePublished":"2023-09-13T16:00:00.000Z","dateModified":"2023-10-04T14:13:27.000Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

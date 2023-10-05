@@ -46,7 +46,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2023-09-21T16:00:00.000Z">
-<meta property="article:modified_time" content="2023-10-03T15:55:46.000Z">
+<meta property="article:modified_time" content="2023-10-04T14:16:45.000Z">
 <meta property="article:author" content="Jiayu Li">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
@@ -63,7 +63,7 @@
   --color-card: #fff;
   --color-text: #444;
   --color-block: #f6f6f6;
-  --color-inlinecode: #c74f00;
+  --color-inlinecode: #666;
   --color-codeblock: #fff7ea;
   --color-h1: #3a3a3a;
   --color-h2: #3a3a3a;
@@ -1745,7 +1745,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1696412173836),
+    lastupdate: new Date(1696472912057),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate","webinfo"],
       for_post: ["toc"],
@@ -2223,19 +2223,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                 href="/" onclick="return false;" title="索引"
-                  
-                  
-                  >
-                  <i class='fa-solid fa-bars fa-fw'></i>索引
-                </a>
-                
-                  <ul class="list-v">
-                    
-                      
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover"
                 href="/notes/" title="笔记"
                   
                   
@@ -2248,6 +2235,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               </li>
             
           
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                 href="/" onclick="return false;" title="索引"
+                  
+                  
+                  >
+                  <i class='fa-solid fa-bars fa-fw'></i>索引
+                </a>
+                
+                  <ul class="list-v">
                     
                       
             
@@ -2363,19 +2363,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                 href="/" onclick="return false;" title="索引"
-                  
-                  
-                  >
-                  <i class='fa-solid fa-bars fa-fw'></i>索引
-                </a>
-                
-                  <ul class="list-v">
-                    
-                      
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover"
                 href="/notes/" title="笔记"
                   
                   
@@ -2388,6 +2375,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               </li>
             
           
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                 href="/" onclick="return false;" title="索引"
+                  
+                  
+                  >
+                  <i class='fa-solid fa-bars fa-fw'></i>索引
+                </a>
+                
+                  <ul class="list-v">
                     
                       
             
@@ -2503,7 +2503,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
               
               active-action="action-home">
-              <img src='https://gcore.jsdelivr.net/gh/jylicmp/blog_static/images/icons/logos/files/icons8-document-100.png'><p>文档</p>
+              <img src='https://gcore.jsdelivr.net/gh/jylicmp/blog_static/images/icons/logos/files/icons8-document-100.png'><p>博客</p>
+            </a>
+          
+            <a href="/notes/"
+              
+              
+              active-action="action-notes">
+              <img src='https://gcore.jsdelivr.net/gh/jylicmp/blog_static/images/icons/logos/files/icons8-copybook-2-100.png'><p>笔记</p>
             </a>
           
             <a href="/archives/"
@@ -2594,9 +2601,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             </details>
 
 <p>证明：首先由Frobenisu互易定理知$\Gamma ^{i,j} \downarrow T$包含$\Gamma ^{i}$当且仅当$\Gamma ^{i} \uparrow K ^{i}$包含$\Gamma ^{i,j}$。假设$\Gamma ^{i} \uparrow K ^{i} &#x3D; \sum _{j} \lambda ^{i,j} \Gamma ^{i,j} \equiv \Gamma$，我们需要证明$\Gamma ^{i,j} \downarrow T &#x3D; \lambda ^{i,j} \Gamma ^{i}$。因为$K ^{i} &#x3D; \sum _{\gamma} r _{\gamma}T$而$\gamma \in \bar{K} ^{i}$，因此根据<a href="2_little_cogroup">上一节</a>Eq.(2.23)有$\Gamma \downarrow T &#x3D; \sum _{\gamma} \Gamma ^{i,\gamma}$。显然对任意$\gamma \in \bar{K} ^{i}$，$\Gamma ^{i,\gamma} \equiv \Gamma ^{i}$（伴随小群的定义），因此$\Gamma \downarrow T &#x3D; |\bar{K} ^{i}| \Gamma ^{i} &#x3D; ( |K ^{i}| &#x2F; |T| ) \Gamma ^{i}$，意味着即便考虑$K ^{i}$所有不可约表示的直和，分导到$T$都只包含$\Gamma ^{i}$。可见$K ^{i}$的任意一个不可约表示$\Gamma ^{i,j}$分导至$T$要么不包含$\Gamma ^{i}$，要么只包含$\Gamma ^{i}$。所以$\Gamma ^{i,j} \downarrow T &#x3D; \lambda ^{i,j} \Gamma ^{i}$。</p>
-<div class='checkbox'><input type="checkbox" />
-            <hr>
-            </div>
+<span class='p right'>$\blacksquare$</span>
 
 
 <p>同时，我们证明了$|\bar{K} ^{i}| \Gamma ^{i} &#x3D; \gamma \downarrow T &#x3D; (\sum _{j} \lambda ^{i,j} \Gamma ^{i,j}) \downarrow T &#x3D;\sum _{j} (\lambda ^{i,j}) ^2 \Gamma ^{i}$，即$\sum _{j} (\lambda ^{i,j}) ^2 &#x3D; |\bar{K} ^{i}|$。因此，$K ^{i}$所有不可约表示维度的平方和为$\sum _{j} (\lambda ^{i,j}d _{i})^2 &#x3D; |\bar{K} ^{i}| d _{i}^{2}$。</p>
@@ -2637,7 +2642,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>$$\sum _{i,j} (\dim \Delta ^{i,j}) ^2 &#x3D; \sum _{i,j} (\lambda ^{i,j}) ^2 d _{i}^2 q _{i} ^2 &#x3D; \sum _{i} \frac{|G| }{|K ^{i}| } |\bar{K} ^{i}| d _{i}^2 q _{i} &#x3D; \frac{|G| }{|T| } \sum _{i} q _{i} d _{i}^2 &#x3D; \frac{|G| }{|T| } |T| &#x3D; |G|. $$</p>
 <p>其中利用到$\sum _{i} q _{i} d _{i}^2 &#x3D; \sum _{k} d _{k}^2 &#x3D; |T|$，即将对轨道求和变为对$T$所有的不可约表示求和。</p>
 <p>至此，我们完成了<strong>定理3.1</strong>的证明。</p>
-
+<span class='p right'>$\blacksquare$</span>
   </div>
   
   
@@ -2661,10 +2666,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-10-03T23:55:46+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-10-04T22:16:45+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2023年10月3日</p>
+    <p>更新于：2023年10月4日</p>
   </a>
 </div>
 
@@ -3456,7 +3461,7 @@ $$\begin{equation}G&#x3D;\sum_{\alpha}r_{\alpha}T, \t...</p>
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"零碎学习记录","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"个人日常"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"零碎学习记录"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"零碎学习记录","url":"http://example.com/","keywords":null,"description":"个人日常","author":{"@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"个人日常"},"publisher":{"@type":"Organization","name":"零碎学习记录","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"小群理论","description":"个人日常","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/notes/normal_subgroup/3_little_group_theory"},"author":{"@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"零碎学习记录","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/notes/normal_subgroup/3_little_group_theory","wordCount":0,"datePublished":"2023-09-21T16:00:00.000Z","dateModified":"2023-10-03T15:55:46.000Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"零碎学习记录","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"个人日常"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"零碎学习记录"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"零碎学习记录","url":"http://example.com/","keywords":null,"description":"个人日常","author":{"@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"个人日常"},"publisher":{"@type":"Organization","name":"零碎学习记录","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"小群理论","description":"个人日常","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/notes/normal_subgroup/3_little_group_theory"},"author":{"@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"零碎学习记录","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/notes/normal_subgroup/3_little_group_theory","wordCount":0,"datePublished":"2023-09-21T16:00:00.000Z","dateModified":"2023-10-04T14:16:45.000Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
