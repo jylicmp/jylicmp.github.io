@@ -30,13 +30,15 @@
     <link rel="shortcut icon" type='image/x-icon' href="https://gcore.jsdelivr.net/gh/jylicmp/blog_static/images/icons/logos/characters/icons8-stich-100.png">
   <link rel="preload" href="/css/style.css" as="style">
   <link rel="preload" href="https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
-<link rel="preload" href="https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/Dosis/Dosis-Medium.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
   <!-- feed -->
   <!-- 页面元数据 -->
   <title>WannierBerri软件使用 - 零碎学习记录</title>
-  <meta name="keywords" content="null">
-  <meta desc name="description" content="WannierBerri是一款开源的wannier函数插值计算包，利用wannier函数可以在第一性原理层面计算Berry曲率、轨道磁矩等物理量和相关输运性质，特点是利用对称性加速物理量在布里渊区的积分过程。
+  <meta name="keywords" content="python,null">
+  <meta desc name="description" content="
+
+WannierBerri是一款开源的wannier函数插值计算包，利用wannier函数可以在第一性原理层面计算Berry曲率、轨道磁矩等物理量和相关输运性质，特点是利用对称性加速物理量在布里渊区的积分过程。
 
 主页
 
@@ -50,8 +52,9 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2023-09-24T16:00:00.000Z">
-<meta property="article:modified_time" content="2023-10-03T01:43:35.000Z">
+<meta property="article:modified_time" content="2023-10-09T02:16:24.000Z">
 <meta property="article:author" content="Jiayu Li">
+<meta property="article:tag" content="python">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -837,8 +840,8 @@ button {
   }
 }
 @font-face {
-  font-family: 'UbuntuMono';
-  src: url("https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf");
+  font-family: 'Dosis-Medium.ttf';
+  src: url("https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/Dosis/Dosis-Medium.ttf");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
@@ -1749,7 +1752,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1696472912057),
+    lastupdate: new Date(1696859501180),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate","webinfo"],
       for_post: ["toc"],
@@ -2227,6 +2230,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
+                 href="/" onclick="return false;" title="索引"
+                  
+                  
+                  >
+                  <i class='fa-solid fa-bars fa-fw'></i>索引
+                </a>
+                
+                  <ul class="list-v">
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
                 href="/notes/" title="笔记"
                   
                   
@@ -2239,19 +2255,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               </li>
             
           
-          
-            
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover"
-                 href="/" onclick="return false;" title="索引"
-                  
-                  
-                  >
-                  <i class='fa-solid fa-bars fa-fw'></i>索引
-                </a>
-                
-                  <ul class="list-v">
                     
                       
             
@@ -2281,6 +2284,42 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                     active-action="action-archives"
                   >
                   <i class='fa-solid fa-archive fa-fw'></i>归档
+                </a>
+                
+              </li>
+            
+          
+                    
+                  </ul>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                 href="/" onclick="return false;" title="收藏"
+                  
+                  
+                  >
+                  <i class='fa-solid fa-star fa-fw'></i>收藏
+                </a>
+                
+                  <ul class="list-v">
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/collects/switch/" title="switch"
+                  
+                  
+                  
+                    active-action="action-collectsswitch"
+                  >
+                  <i class='fa-solid fa-gamepad fa-fw'></i>switch
                 </a>
                 
               </li>
@@ -2367,6 +2406,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
+                 href="/" onclick="return false;" title="索引"
+                  
+                  
+                  >
+                  <i class='fa-solid fa-bars fa-fw'></i>索引
+                </a>
+                
+                  <ul class="list-v">
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
                 href="/notes/" title="笔记"
                   
                   
@@ -2379,19 +2431,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               </li>
             
           
-            
-              
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover"
-                 href="/" onclick="return false;" title="索引"
-                  
-                  
-                  >
-                  <i class='fa-solid fa-bars fa-fw'></i>索引
-                </a>
-                
-                  <ul class="list-v">
                     
                       
             
@@ -2421,6 +2460,42 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                     active-action="action-archives"
                   >
                   <i class='fa-solid fa-archive fa-fw'></i>归档
+                </a>
+                
+              </li>
+            
+          
+                    
+                  </ul>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                 href="/" onclick="return false;" title="收藏"
+                  
+                  
+                  >
+                  <i class='fa-solid fa-star fa-fw'></i>收藏
+                </a>
+                
+                  <ul class="list-v">
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/collects/switch/" title="switch"
+                  
+                  
+                  
+                    active-action="action-collectsswitch"
+                  >
+                  <i class='fa-solid fa-gamepad fa-fw'></i>switch
                 </a>
                 
               </li>
@@ -2651,7 +2726,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>WannierBerri是一款开源的wannier函数插值计算包，利用wannier函数可以在第一性原理层面计算Berry曲率、轨道磁矩等物理量和相关输运性质，特点是利用对称性加速物理量在布里渊区的积分过程。</p>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://gcore.jsdelivr.net/gh/jylicmp/blog_static/images/icons/logos/programming/icons8-python-100.png" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/jylicmp/blog_static/images/icons/logos/programming/icons8-python-100.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image"/></div></div>
+
+<p>WannierBerri是一款开源的wannier函数插值计算包，利用wannier函数可以在第一性原理层面计算Berry曲率、轨道磁矩等物理量和相关输运性质，特点是利用对称性加速物理量在布里渊区的积分过程。</p>
 <ul>
 <li><a target="_blank" rel="noopener" href="https://romerogroup.github.io/pyprocar/index.html">主页</a></li>
 </ul>
@@ -2687,10 +2764,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-10-03T09:43:35+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-10-09T10:16:24+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2023年10月3日</p>
+    <p>更新于：2023年10月9日</p>
   </a>
 </div>
 
@@ -2698,6 +2775,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         
           
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/python/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>python</p></a></div>
+  <span hidden itemprop="keywords">python</span>
+
 
         
       
@@ -2716,20 +2797,26 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class='prev' href='/post/5e2fe0d4b3a9/'>
           <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>同态正合序列</p>
-          <p class='content'>最近开始接触到一点同调代数的知识，因此粗略学习一下相关的知识。首先从短正合序列开始，这个概念在最近的工作中也涉及到。
+          <p class='content'>
+
+最近开始接触到一点同调代数的知识，因此粗略学习一下相关的知识。首先从短正合序列开始，这个概念在最近的工作中也涉及到。
 
 
-正规子群与商群设$H$是群$G$的子群，若对任意$g \in G$都有$...</p>
+正规子群与商群设$H$是群$G$的子群，若对任意$g \in G$都...</p>
         </a>
       
       
         <a class='next' href='/post/7c34241b0551/'>
-          <p class='title'>网页前端学习<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>制作网站需要使用网页前端语言，主要就是HTML5+CSS3+JavaScript。在这里总结一些可能会用到的资料。
+          <p class='title'>Web开发学习<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>
+
+制作网站需要使用网页前端语言，主要就是HTML5+CSS3+JavaScript。在这里总结一些可能会用到的资料。
 
 
-Levi - 知识库：从基础到入门
-</p>
+Web开发的基本逻辑是
+
+HTML 定义了网页的内容
+CSS 描述了网...</p>
         </a>
       
     </div>
@@ -3361,7 +3448,7 @@ Levi - 知识库：从基础到入门
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"零碎学习记录","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"个人日常"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"零碎学习记录"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/第一性原理计算/","name":"第一性原理计算"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/post/bce7c2fb8e64/","name":"WannierBerri软件使用"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"零碎学习记录","url":"http://example.com/","keywords":null,"description":"个人日常","author":{"@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"个人日常"},"publisher":{"@type":"Organization","name":"零碎学习记录","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"WannierBerri软件使用","description":"WannierBerri是一款开源的wannier函数插值计算包，利用wannier函数可以在第一性原理层面计算Berry曲率、轨道磁矩等物理量和相关输运性质，特点是利用对称性加速物理量在布里渊区的积分过程。\n\n主页\n\n","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/post/bce7c2fb8e64/"},"author":{"@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"零碎学习记录","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/post/bce7c2fb8e64/","wordCount":110,"datePublished":"2023-09-24T16:00:00.000Z","dateModified":"2023-10-03T01:43:35.000Z","articleSection":"第一性原理计算","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"零碎学习记录","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"个人日常"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"零碎学习记录"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/第一性原理计算/","name":"第一性原理计算"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/post/bce7c2fb8e64/","name":"WannierBerri软件使用"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"零碎学习记录","url":"http://example.com/","keywords":null,"description":"个人日常","author":{"@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"个人日常"},"publisher":{"@type":"Organization","name":"零碎学习记录","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"WannierBerri软件使用","description":"\n\nWannierBerri是一款开源的wannier函数插值计算包，利用wannier函数可以在第一性原理层面计算Berry曲率、轨道磁矩等物理量和相关输运性质，特点是利用对称性加速物理量在布里渊区的积分过程。\n\n主页\n\n","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/post/bce7c2fb8e64/"},"author":{"@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"零碎学习记录","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/post/bce7c2fb8e64/","wordCount":112,"datePublished":"2023-09-24T16:00:00.000Z","dateModified":"2023-10-09T02:16:24.000Z","articleSection":"第一性原理计算","keywords":"python","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

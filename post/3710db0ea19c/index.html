@@ -30,7 +30,7 @@
     <link rel="shortcut icon" type='image/x-icon' href="https://gcore.jsdelivr.net/gh/jylicmp/blog_static/images/icons/logos/characters/icons8-stich-100.png">
   <link rel="preload" href="/css/style.css" as="style">
   <link rel="preload" href="https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
-<link rel="preload" href="https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/Dosis/Dosis-Medium.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
   <!-- feed -->
   <!-- 页面元数据 -->
@@ -833,8 +833,8 @@ button {
   }
 }
 @font-face {
-  font-family: 'UbuntuMono';
-  src: url("https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf");
+  font-family: 'Dosis-Medium.ttf';
+  src: url("https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/Dosis/Dosis-Medium.ttf");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
@@ -1745,7 +1745,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1696472912057),
+    lastupdate: new Date(1696859501180),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate","webinfo"],
       for_post: ["toc"],
@@ -2223,6 +2223,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
+                 href="/" onclick="return false;" title="索引"
+                  
+                  
+                  >
+                  <i class='fa-solid fa-bars fa-fw'></i>索引
+                </a>
+                
+                  <ul class="list-v">
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
                 href="/notes/" title="笔记"
                   
                   
@@ -2235,19 +2248,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               </li>
             
           
-          
-            
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover"
-                 href="/" onclick="return false;" title="索引"
-                  
-                  
-                  >
-                  <i class='fa-solid fa-bars fa-fw'></i>索引
-                </a>
-                
-                  <ul class="list-v">
                     
                       
             
@@ -2277,6 +2277,42 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                     active-action="action-archives"
                   >
                   <i class='fa-solid fa-archive fa-fw'></i>归档
+                </a>
+                
+              </li>
+            
+          
+                    
+                  </ul>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                 href="/" onclick="return false;" title="收藏"
+                  
+                  
+                  >
+                  <i class='fa-solid fa-star fa-fw'></i>收藏
+                </a>
+                
+                  <ul class="list-v">
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/collects/switch/" title="switch"
+                  
+                  
+                  
+                    active-action="action-collectsswitch"
+                  >
+                  <i class='fa-solid fa-gamepad fa-fw'></i>switch
                 </a>
                 
               </li>
@@ -2363,6 +2399,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
+                 href="/" onclick="return false;" title="索引"
+                  
+                  
+                  >
+                  <i class='fa-solid fa-bars fa-fw'></i>索引
+                </a>
+                
+                  <ul class="list-v">
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
                 href="/notes/" title="笔记"
                   
                   
@@ -2375,19 +2424,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               </li>
             
           
-            
-              
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover"
-                 href="/" onclick="return false;" title="索引"
-                  
-                  
-                  >
-                  <i class='fa-solid fa-bars fa-fw'></i>索引
-                </a>
-                
-                  <ul class="list-v">
                     
                       
             
@@ -2417,6 +2453,42 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                     active-action="action-archives"
                   >
                   <i class='fa-solid fa-archive fa-fw'></i>归档
+                </a>
+                
+              </li>
+            
+          
+                    
+                  </ul>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                 href="/" onclick="return false;" title="收藏"
+                  
+                  
+                  >
+                  <i class='fa-solid fa-star fa-fw'></i>收藏
+                </a>
+                
+                  <ul class="list-v">
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/collects/switch/" title="switch"
+                  
+                  
+                  
+                    active-action="action-collectsswitch"
+                  >
+                  <i class='fa-solid fa-gamepad fa-fw'></i>switch
                 </a>
                 
               </li>
@@ -2632,22 +2704,24 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class='prev' href='/post/9ffbff227327/'>
           <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>代码块样式测试</p>
-          <p class='content'>Post for code style testing.
+          <p class='content'>
+
+Post for code style testing.
 
 
-
-这是一段行内代码import，用于导入包。
-以下是一个代码块
-123456789101112131415# -*- coding:...</p>
+行内代码测试在Python中使用import可以导入程序包。
+代码块测试 python代码1234567891011121314...</p>
         </a>
       
       
         <a class='next' href='/post/5e2fe0d4b3a9/'>
           <p class='title'>同态正合序列<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>最近开始接触到一点同调代数的知识，因此粗略学习一下相关的知识。首先从短正合序列开始，这个概念在最近的工作中也涉及到。
+          <p class='content'>
+
+最近开始接触到一点同调代数的知识，因此粗略学习一下相关的知识。首先从短正合序列开始，这个概念在最近的工作中也涉及到。
 
 
-正规子群与商群设$H$是群$G$的子群，若对任意$g \in G$都有$...</p>
+正规子群与商群设$H$是群$G$的子群，若对任意$g \in G$都...</p>
         </a>
       
     </div>

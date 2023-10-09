@@ -30,7 +30,7 @@
     <link rel="shortcut icon" type='image/x-icon' href="https://gcore.jsdelivr.net/gh/jylicmp/blog_static/images/icons/logos/characters/icons8-stich-100.png">
   <link rel="preload" href="/css/style.css" as="style">
   <link rel="preload" href="https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
-<link rel="preload" href="https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/Dosis/Dosis-Medium.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
   <!-- feed -->
   <!-- 页面元数据 -->
@@ -831,8 +831,8 @@ button {
   }
 }
 @font-face {
-  font-family: 'UbuntuMono';
-  src: url("https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf");
+  font-family: 'Dosis-Medium.ttf';
+  src: url("https://unpkg.com/volantis-static@0.0.1654736714924/media/fonts/Dosis/Dosis-Medium.ttf");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
@@ -1743,7 +1743,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1696472912057),
+    lastupdate: new Date(1696859501180),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate","webinfo"],
       for_post: ["toc"],
@@ -2221,6 +2221,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
+                 href="/" onclick="return false;" title="索引"
+                  
+                  
+                  >
+                  <i class='fa-solid fa-bars fa-fw'></i>索引
+                </a>
+                
+                  <ul class="list-v">
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
                 href="/notes/" title="笔记"
                   
                   
@@ -2233,19 +2246,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               </li>
             
           
-          
-            
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover"
-                 href="/" onclick="return false;" title="索引"
-                  
-                  
-                  >
-                  <i class='fa-solid fa-bars fa-fw'></i>索引
-                </a>
-                
-                  <ul class="list-v">
                     
                       
             
@@ -2275,6 +2275,42 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                     active-action="action-archives"
                   >
                   <i class='fa-solid fa-archive fa-fw'></i>归档
+                </a>
+                
+              </li>
+            
+          
+                    
+                  </ul>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                 href="/" onclick="return false;" title="收藏"
+                  
+                  
+                  >
+                  <i class='fa-solid fa-star fa-fw'></i>收藏
+                </a>
+                
+                  <ul class="list-v">
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/collects/switch/" title="switch"
+                  
+                  
+                  
+                    active-action="action-collectsswitch"
+                  >
+                  <i class='fa-solid fa-gamepad fa-fw'></i>switch
                 </a>
                 
               </li>
@@ -2361,6 +2397,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
+                 href="/" onclick="return false;" title="索引"
+                  
+                  
+                  >
+                  <i class='fa-solid fa-bars fa-fw'></i>索引
+                </a>
+                
+                  <ul class="list-v">
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
                 href="/notes/" title="笔记"
                   
                   
@@ -2373,19 +2422,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               </li>
             
           
-            
-              
-            
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover"
-                 href="/" onclick="return false;" title="索引"
-                  
-                  
-                  >
-                  <i class='fa-solid fa-bars fa-fw'></i>索引
-                </a>
-                
-                  <ul class="list-v">
                     
                       
             
@@ -2415,6 +2451,42 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                     active-action="action-archives"
                   >
                   <i class='fa-solid fa-archive fa-fw'></i>归档
+                </a>
+                
+              </li>
+            
+          
+                    
+                  </ul>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                 href="/" onclick="return false;" title="收藏"
+                  
+                  
+                  >
+                  <i class='fa-solid fa-star fa-fw'></i>收藏
+                </a>
+                
+                  <ul class="list-v">
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/collects/switch/" title="switch"
+                  
+                  
+                  
+                    active-action="action-collectsswitch"
+                  >
+                  <i class='fa-solid fa-gamepad fa-fw'></i>switch
                 </a>
                 
               </li>
@@ -2573,6 +2645,12 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
         
+          
+        
+          
+        
+        
+          
         
           
         
@@ -2591,6 +2669,77 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
     
     
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://example.com/post/200b0d8fc392/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="零碎学习记录">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="零碎学习记录">
+    <meta itemprop="description" content="个人日常">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/post/200b0d8fc392/"  itemprop="url">
+        获取Switch游戏记录
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      <div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://gcore.jsdelivr.net/gh/jylicmp/blog_static/images/icons/logos/gamming/icons8-nintendo-switch-96.png" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/jylicmp/blog_static/images/icons/logos/gamming/icons8-nintendo-switch-96.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image"/></div></div>
+
+<p>通过账号登陆页面解析得到的任天堂会员同步到云服务器的web API，获取玩家游玩数据，以便整理和记录。</p>
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' href='about/'><img src='https://gcore.jsdelivr.net/gh/jylicmp/blog_static/images/icons/logos/characters/icons8-stich-100.png'></a>
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://gcore.jsdelivr.net/gh/jylicmp/blog_static/images/icons/logos/characters/icons8-stich-100.png">
+            <meta itemprop="name" content="Jiayu Li">
+            <meta itemprop="url" content="about/">
+          </span>
+        
+        <time itemprop="dateCreated datePublished" datetime="2023-10-09T00:00:00+08:00">2023-10-09</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/%E6%B8%B8%E6%88%8F/">游戏</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/%E6%B8%B8%E6%88%8F/" itemprop="url"><span itemprop="name">游戏</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/post/200b0d8fc392/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
       
         
           <div class='post-wrapper'>
@@ -2620,7 +2769,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   <div class='md article-desc' itemprop="articleBody">
     
-      <p>Post for code style testing.</p>
+      <div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://gcore.jsdelivr.net/gh/jylicmp/blog_static/images/icons/logos/programming/icons8-code-100.png" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/jylicmp/blog_static/images/icons/logos/programming/icons8-code-100.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image"/></div></div>
+
+<p>Post for code style testing.</p>
     
   </div>
   
@@ -2762,7 +2913,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   <div class='md article-desc' itemprop="articleBody">
     
-      <p>最近开始接触到一点同调代数的知识，因此粗略学习一下相关的知识。首先从短正合序列开始，这个概念在最近的工作中也涉及到。</p>
+      <div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://gcore.jsdelivr.net/gh/jylicmp/blog_static/images/icons/logos/academic/icons8-formula-fx-100.png" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/jylicmp/blog_static/images/icons/logos/academic/icons8-formula-fx-100.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image"/></div></div>
+
+<p>最近开始接触到一点同调代数的知识，因此粗略学习一下相关的知识。首先从短正合序列开始，这个概念在最近的工作中也涉及到。</p>
     
   </div>
   
@@ -2831,7 +2984,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   <div class='md article-desc' itemprop="articleBody">
     
-      <p>WannierBerri是一款开源的wannier函数插值计算包，利用wannier函数可以在第一性原理层面计算Berry曲率、轨道磁矩等物理量和相关输运性质，特点是利用对称性加速物理量在布里渊区的积分过程。</p>
+      <div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://gcore.jsdelivr.net/gh/jylicmp/blog_static/images/icons/logos/programming/icons8-python-100.png" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/jylicmp/blog_static/images/icons/logos/programming/icons8-python-100.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image"/></div></div>
+
+<p>WannierBerri是一款开源的wannier函数插值计算包，利用wannier函数可以在第一性原理层面计算Berry曲率、轨道磁矩等物理量和相关输运性质，特点是利用对称性加速物理量在布里渊区的积分过程。</p>
 <ul>
 <li><a target="_blank" rel="noopener" href="https://romerogroup.github.io/pyprocar/index.html">主页</a></li>
 </ul>
@@ -2898,13 +3053,15 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     <h2 class="article-title"  itemprop="name headline">
       <a href="/post/7c34241b0551/"  itemprop="url">
-        网页前端学习
+        Web开发学习
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
-      <p>制作网站需要使用网页前端语言，主要就是HTML5+CSS3+JavaScript。在这里总结一些可能会用到的资料。</p>
+      <div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://gcore.jsdelivr.net/gh/jylicmp/blog_static/images/icons/logos/programming/icons8-web-design-100.png" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/jylicmp/blog_static/images/icons/logos/programming/icons8-web-design-100.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image"/></div></div>
+
+<p>制作网站需要使用网页前端语言，主要就是HTML5+CSS3+JavaScript。在这里总结一些可能会用到的资料。</p>
     
   </div>
   
@@ -2973,7 +3130,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   <div class='md article-desc' itemprop="articleBody">
     
-      <p>pyprocar软件可以处理可以处理PROCAR文件，画能带图、投影能带图等，并且可以挑选特定能带、k点数据。</p>
+      <div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://gcore.jsdelivr.net/gh/jylicmp/blog_static/images/icons/logos/programming/icons8-python-100.png" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/jylicmp/blog_static/images/icons/logos/programming/icons8-python-100.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image"/></div></div>
+
+<p>pyprocar软件可以处理可以处理PROCAR文件，画能带图、投影能带图等，并且可以挑选特定能带、k点数据。</p>
 <ul>
 <li><a target="_blank" rel="noopener" href="https://romerogroup.github.io/pyprocar/">主页</a></li>
 </ul>
@@ -3174,6 +3333,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             ><div class='name'>测试</div><div class='badge'>(1)</div></a></li>
         
           <li><a class="flat-box"
+            title="/categories/%E6%B8%B8%E6%88%8F/" href="/categories/%E6%B8%B8%E6%88%8F/"
+            active-action="action-categoriesE6B8B8E6888F"
+            ><div class='name'>游戏</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
             title="/categories/%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E8%AE%A1%E7%AE%97/" href="/categories/%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E8%AE%A1%E7%AE%97/"
             active-action="action-categoriesE7ACACE4B880E680A7E58E9FE79086E8AEA1E7AE97"
             ><div class='name'>第一性原理计算</div><div class='badge'>(2)</div></a></li>
@@ -3200,6 +3364,21 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
+  
+  <section class="widget tagcloud desktop mobile pjax">
+    
+  <header>
+    
+      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
+    
+  </header>
+
+
+    <div class='content'>
+      <a href="/tags/python/" style="font-size: 14px; color: #999">python</a>
+    </div>
+  </section>
+
 
     
   
@@ -3224,7 +3403,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div class="webinfo-item">
           <div>文章数目：</div>
-          <div>7 篇</div>
+          <div>8 篇</div>
         </div>
       
 
@@ -3239,7 +3418,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div class="webinfo-item">
           <div>本站总字数：</div>
-          <div>2.2k 字</div>
+          <div>4.7k 字</div>
         </div>
       
 
@@ -3250,7 +3429,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div class="webinfo-item">
           <div>最后活动时间：</div>
-          <div id="last-update-show">2023-10-05 日</div>
+          <div id="last-update-show">2023-10-09 日</div>
         </div>
       
     </div>

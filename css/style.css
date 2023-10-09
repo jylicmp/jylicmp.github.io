@@ -253,6 +253,13 @@ td,
 th {
   padding: 0;
 }
+@font-face {
+  font-family: 'Hack-Regular';
+  src: url("https://cdn.jsdelivr.net/gh/jylicmp/blog_static/fonts/Hack/Hack-Regular.ttf");
+  font-weight: 'normal';
+  font-style: 'normal';
+  font-display: swap;
+}
 article#arc,
 article#cat,
 article#tag {
@@ -593,7 +600,7 @@ article#tag .all-tags ul li span:before {
   overflow: auto;
   background: var(--color-codeblock);
   font-size: 0.8125rem;
-  font-family: Menlo, Hack-Regular, Anonymous-Pro, Monaco, CascadiaMono, UbuntuMono, monospace, courier, sans-serif;
+  font-family: Hack-Regular, FiraCode-Regular, Menlo, Monaco, CascadiaMono, UbuntuMono, monospace, courier, sans-serif;
   border: 1px solid #ffebcb;
   padding: 16px;
   border-radius: 8px;
@@ -613,7 +620,7 @@ article#tag .all-tags ul li span:before {
   color: rgba(68,68,68,0.9);
 }
 .article code {
-  font-family: Menlo, Hack-Regular, Anonymous-Pro, Monaco, CascadiaMono, UbuntuMono, monospace, courier, sans-serif;
+  font-family: Hack-Regular, FiraCode-Regular, Menlo, Monaco, CascadiaMono, UbuntuMono, monospace, courier, sans-serif;
   font-size: 0.8125rem;
   margin: 2px;
 }
@@ -5854,7 +5861,7 @@ p.p.logo {
 }
 span.p.code,
 p.p.code {
-  font-family: Menlo, Hack-Regular, Anonymous-Pro, Monaco, CascadiaMono, UbuntuMono, monospace, courier, sans-serif;
+  font-family: Hack-Regular, FiraCode-Regular, Menlo, Monaco, CascadiaMono, UbuntuMono, monospace, courier, sans-serif;
 }
 span.p.left,
 p.p.left {
@@ -6339,7 +6346,7 @@ div.timenode:hover .meta:after {
   -ms-transform: scale(1);
 }
 .article mjx-container {
-  font-family: Menlo, Hack-Regular, Anonymous-Pro, Monaco, CascadiaMono, UbuntuMono, monospace, courier, sans-serif;
+  font-family: Hack-Regular, FiraCode-Regular, Menlo, Monaco, CascadiaMono, UbuntuMono, monospace, courier, sans-serif;
   padding: 16px 8px;
   border-radius: 8px;
   -webkit-border-radius: 8px;
@@ -6798,7 +6805,7 @@ div.timenode:hover .meta:after {
   -moz-user-select: none;
   -ms-user-select: none;
   -webkit-appearance: none;
-  font-family: Menlo, Menlo, Hack-Regular, Anonymous-Pro, Monaco, CascadiaMono, UbuntuMono, monospace, courier, sans-serif;
+  font-family: Menlo, Hack-Regular, FiraCode-Regular, Menlo, Monaco, CascadiaMono, UbuntuMono, monospace, courier, sans-serif;
   font-size: 11px;
   font-weight: bold;
   padding: 4px 8px;
@@ -6952,6 +6959,10 @@ div.timenode:hover .meta:after {
 .hljs.typescript:before,
 .highlight.typescript:before {
   content: "TypeScript";
+}
+.hljs.mathematica:before,
+.highlight.mathematica:before {
+  content: "MATHEMATICA";
 }
 .highlight pre .line,
 .highlight pre .params {
@@ -7144,7 +7155,7 @@ pre {
   display: block;
   background: var(--color-block);
   font-size: 0.8125rem;
-  font-family: Menlo, Hack-Regular, Anonymous-Pro, Monaco, CascadiaMono, UbuntuMono, monospace, courier, sans-serif;
+  font-family: Hack-Regular, FiraCode-Regular, Menlo, Monaco, CascadiaMono, UbuntuMono, monospace, courier, sans-serif;
   border-radius: 8px;
   -webkit-border-radius: 8px;
   line-height: 1.5;
