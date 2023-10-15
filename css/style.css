@@ -4790,6 +4790,17 @@ details[open] >div.content > details:last-child {
 .md .frame-wrap[part='bottom'] .frame {
   bottom: 0;
 }
+.md .frame-wrap#switchredblue img,
+.md .frame-wrap#switchredblue video {
+  width: 345px;
+  margin-top: 30px;
+  margin-bottom: 35px;
+}
+.md .frame-wrap#switchredblue .frame {
+  background-image: url("https://cdn.jsdelivr.net/gh/jylicmp/blog_static/images/sources/frame_switch.png");
+  width: 600px;
+  height: 262px;
+}
 @media screen and (max-width: 500px) {
   .md .frame-wrap#iphone11 img,
   .md .frame-wrap#iphone11 video {
@@ -4800,6 +4811,16 @@ details[open] >div.content > details:last-child {
   .md .frame-wrap#iphone11 .frame {
     width: 238px;
     height: 476px;
+  }
+  .md .frame-wrap#switchredblue img,
+  .md .frame-wrap#switchredblue video {
+    width: 173px;
+    margin-top: 16px;
+    margin-bottom: 18px;
+  }
+  .md .frame-wrap#switchredblue .frame {
+    width: 300px;
+    height: 131px;
   }
 }
 .users-wrap {
@@ -7320,7 +7341,7 @@ pre {
   display: -webkit-flex /* NEW - Chrome */;
   display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
   display: flex;
-  align-items: center;
+  \align-items: center;
 }
 .wrap img {
   width: 18%;
