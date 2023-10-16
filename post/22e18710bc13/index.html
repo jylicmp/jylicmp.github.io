@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.8.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="http://example.com/categories/"/>
+  
+  <link rel="canonical" href="http://example.com/post/22e18710bc13/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -34,18 +34,25 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>所有分类 - 零碎学习记录</title>
-  <meta name="keywords" content="null">
-  <meta desc name="description" content="个人日常 - Jiayu Li - 零碎学习记录">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="所有分类">
-<meta property="og:url" content="http://example.com/categories/index.html">
+  <title>构建Switch游戏数据库 - 零碎学习记录</title>
+  <meta name="keywords" content="数据库,MariaDB,python,null">
+  <meta desc name="description" content="
+
+上一篇文章通过解析任天堂会员登陆页面得到web API和游玩数据，但每次都从网页获取数据不太方便；另一方面，通过日服账号获得的游戏信息中，游戏名称都是日文的，如果想要获得中文名称的话需要建立一个游戏名的翻译表。这两个因素导致了我对数据库的需求。 - Jiayu Li - 零碎学习记录">
+  
+<meta property="og:type" content="article">
+<meta property="og:title" content="构建Switch游戏数据库">
+<meta property="og:url" content="http://example.com/post/22e18710bc13/index.html">
 <meta property="og:site_name" content="零碎学习记录">
+<meta property="og:description" content="上一篇文章通过解析任天堂会员登陆页面得到web API和游玩数据，但每次都从网页获取数据不太方便；另一方面，通过日服账号获得的游戏信息中，游戏名称都是日文的，如果想要获得中文名称的话需要建立一个游戏名的翻译表。这两个因素导致了我对数据库的需求。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2023-10-03T01:47:27.924Z">
-<meta property="article:modified_time" content="2023-10-03T01:03:19.000Z">
+<meta property="article:published_time" content="2023-10-14T16:00:00.000Z">
+<meta property="article:modified_time" content="2023-10-16T05:41:07.000Z">
 <meta property="article:author" content="Jiayu Li">
+<meta property="article:tag" content="数据库">
+<meta property="article:tag" content="MariaDB">
+<meta property="article:tag" content="python">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2550,7 +2557,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="none" class='cover-wrapper category dock' style="display: none;">
+      <div id="none" class='cover-wrapper post dock' style="display: none;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://gcore.jsdelivr.net/gh/jylicmp/blog_static/images/wallpapers/wallpaper_1.jpg"></div>
 
@@ -2619,59 +2626,416 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="safearea">
         <div class="body-wrapper">
           
-
 <div id="l_main" class=''>
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="http://example.com/post/22e18710bc13/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="零碎学习记录">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="零碎学习记录">
+    <meta itemprop="description" content="个人日常">
+  </span>
   
+
+
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  <div class="article-meta" id="top">
     
-      <div class='post-wrapper'>
-        <article id="cat" class="post article white-box reveal shadow floatable blur">
-          <h2>所有分类</h2>
-          <div class="all-cats">
+    
+    
+      <h1 class="title" itemprop="name headline">
+        构建Switch游戏数据库
+      </h1>
+      <div class='new-meta-box'>
+        
+          
             
-              
-                <a class="" href="/categories/%E6%B5%8B%E8%AF%95/">
-                  <span><i class='fa-solid fa-folder-open fa-fw' aria-hidden="true"></i>&nbsp;&nbsp;测试</span>
-                  <span class="title">
-                    (1)
-                  </span>
-                </a>
-              
-                <a class="" href="/categories/%E6%B8%B8%E6%88%8F/">
-                  <span><i class='fa-solid fa-folder-open fa-fw' aria-hidden="true"></i>&nbsp;&nbsp;游戏</span>
-                  <span class="title">
-                    (2)
-                  </span>
-                </a>
-              
-                <a class="" href="/categories/%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E8%AE%A1%E7%AE%97/">
-                  <span><i class='fa-solid fa-folder-open fa-fw' aria-hidden="true"></i>&nbsp;&nbsp;第一性原理计算</span>
-                  <span class="title">
-                    (2)
-                  </span>
-                </a>
-              
-                <a class="" href="/categories/%E7%BD%91%E9%A1%B5/">
-                  <span><i class='fa-solid fa-folder-open fa-fw' aria-hidden="true"></i>&nbsp;&nbsp;网页</span>
-                  <span class="title">
-                    (1)
-                  </span>
-                </a>
-              
-                <a class="" href="/categories/%E7%BE%A4%E8%AE%BA/">
-                  <span><i class='fa-solid fa-folder-open fa-fw' aria-hidden="true"></i>&nbsp;&nbsp;群论</span>
-                  <span class="title">
-                    (2)
-                  </span>
-                </a>
-              
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="about/" rel="nofollow">
+    <img itemprop="image" src="https://gcore.jsdelivr.net/gh/jylicmp/blog_static/images/icons/logos/characters/icons8-stich-100.png" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/jylicmp/blog_static/images/icons/logos/characters/icons8-stich-100.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">Jiayu Li</p>
+  </a>
+</div>
+
+          
+        
+          
             
-          </div>
-          <br>
-          <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css">
-        </article>
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/%E6%B8%B8%E6%88%8F/">游戏</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/%E6%B8%B8%E6%88%8F/" itemprop="url"><span itemprop="name">游戏</span></a>
+      </span>
+    
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-10-15T00:00:00+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2023年10月15日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
+      <p>字数：3.8k 字</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
+      <p>时长：18 分钟</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            
+
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
       </div>
     
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://gcore.jsdelivr.net/gh/jylicmp/blog_static/images/icons/logos/files/icons8-add-database-100.png" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/jylicmp/blog_static/images/icons/logos/files/icons8-add-database-100.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image"/></div></div>
+
+<a href="/post/200b0d8fc392/" title="获取Switch游戏记录">上一篇文章</a>通过解析任天堂会员登陆页面得到web API和游玩数据，但每次都从网页获取数据不太方便；另一方面，通过日服账号获得的游戏信息中，游戏名称都是日文的，如果想要获得中文名称的话需要建立一个游戏名的翻译表。这两个因素导致了我对数据库的需求。
+
+<span id="more"></span>
+
+<h2 id="MariaDB安装和设置"><a href="#MariaDB安装和设置" class="headerlink" title="MariaDB安装和设置"></a>MariaDB安装和设置</h2><p>由于我拥有一台威联通的NAS，我选择将数据库配置在NAS上。<a target="_blank" rel="noopener" href="https://docs.qnap.com/operating-system/qts/5.0.x/en-us/configuring-the-mariadb-database-2A42A487.html">QTS 5.0.x系统</a>把默认的数据库软件从mySQL改变为MariaDB，因此我选择安装MariaDB 5.0作为我的数据库。</p>
+<p><img src="/images/post/switch-database-1.png" class="lazyload" data-srcset="/images/post/switch-database-1.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="QNAP的默认数据库软件" title="QNAP的默认数据库软件"></p>
+<p>成功安装MariaDB 5.0，默认端口是3306</p>
+<p><img src="/images/post/switch-database-2.png" class="lazyload" data-srcset="/images/post/switch-database-2.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="在QNAP上安装MariaDB" title="在QNAP上安装MariaDB"></p>
+<p>安装后如果想在电脑端使用<code>MySQL Shell</code>或者<code>MySQL Workbench</code>远程连接NAS上的数据库，需要按照<a target="_blank" rel="noopener" href="https://www.qnap.com/en/how-to/faq/article/how-to-access-mariadb-remotely">官方提供的教程</a>操作。我这里主要使用<code>MySQL Workbench</code>操作数据库。</p>
+<h2 id="数据库创建"><a href="#数据库创建" class="headerlink" title="数据库创建"></a>数据库创建</h2><p>我这里主要需要创建两个表格，分别用来存放游玩历史信息和游戏名翻译信息，表格的创建方法主要参考siriyang的文章<span class="hidden-anchor" id="referto_[1]"></span><sup class="reference"><a href="#referfrom_[1]">[1]</a></sup><span class="reference-bubble"><span class="reference-item"><span class="reference-literature"> 个人数据中心：获取Switch游戏记录</span><span class="reference-title">参考资料</span></span></span>。</p>
+<div class="note green"><p>dim_switch_game_play_history: 存放游玩历史的维度表</p></div>
+<div class="tabs" id="tab-tab-1"><ul class="nav-tabs"><li class="tab active"><a class="#tab-1-1">表格字段</a></li><li class="tab"><a class="#tab-1-2">建表命令</a></li></ul><div class="tab-content"><div class="tab-pane active" id="tab-1-1"><table>
+<thead>
+<tr>
+<th>字段</th>
+<th>数据类型</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>titleId</td>
+<td>varchar(255)</td>
+<td>游戏id</td>
+</tr>
+<tr>
+<td>titleName</td>
+<td>varchar(255)</td>
+<td>游戏名（日语）</td>
+</tr>
+<tr>
+<td>deviceType</td>
+<td>varchar(255)</td>
+<td>设备型号</td>
+</tr>
+<tr>
+<td>imageUrl</td>
+<td>varchar(255)</td>
+<td>游戏图标链接</td>
+</tr>
+<tr>
+<td>lastUpdatedAt</td>
+<td>datetime</td>
+<td>最后更新时间</td>
+</tr>
+<tr>
+<td>firstPlayedAt</td>
+<td>datetime</td>
+<td>第一次游玩时间</td>
+</tr>
+<tr>
+<td>lastPlayedAt</td>
+<td>datetime</td>
+<td>最后一次游玩时间</td>
+</tr>
+<tr>
+<td>totalPlayedDays</td>
+<td>int</td>
+<td>总游玩天数</td>
+</tr>
+<tr>
+<td>totalPlayedMinutes</td>
+<td>int</td>
+<td>总游玩分钟数</td>
+</tr>
+</tbody></table></div><div class="tab-pane" id="tab-1-2"><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> `dim_switch_game_play_history` (</span><br><span class="line">    `titleId` <span class="type">varchar</span>(<span class="number">100</span>) <span class="type">CHARACTER</span> <span class="keyword">SET</span> utf8mb4 <span class="keyword">COLLATE</span> utf8mb4_general_ci <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">    `titleName` <span class="type">varchar</span>(<span class="number">100</span>) <span class="type">CHARACTER</span> <span class="keyword">SET</span> utf8mb4 <span class="keyword">COLLATE</span> utf8mb4_general_ci <span class="keyword">DEFAULT</span> <span class="keyword">NULL</span>,</span><br><span class="line">    `deviceType` <span class="type">varchar</span>(<span class="number">100</span>) <span class="type">CHARACTER</span> <span class="keyword">SET</span> utf8mb4 <span class="keyword">COLLATE</span> utf8mb4_general_ci <span class="keyword">DEFAULT</span> <span class="keyword">NULL</span>,</span><br><span class="line">    `imageUrl` <span class="type">varchar</span>(<span class="number">100</span>) <span class="type">CHARACTER</span> <span class="keyword">SET</span> utf8mb4 <span class="keyword">COLLATE</span> utf8mb4_general_ci <span class="keyword">DEFAULT</span> <span class="keyword">NULL</span>,</span><br><span class="line">    `lastUpdatedAt` datetime <span class="keyword">DEFAULT</span> <span class="keyword">NULL</span>,</span><br><span class="line">    `firstPlayedAt` datetime <span class="keyword">DEFAULT</span> <span class="keyword">NULL</span>,</span><br><span class="line">    `lastPlayedAt` datetime <span class="keyword">DEFAULT</span> <span class="keyword">NULL</span>,</span><br><span class="line">    `totalPlayedDays` <span class="type">int</span> <span class="keyword">DEFAULT</span> <span class="keyword">NULL</span>,</span><br><span class="line">    `totalPlayedMinutes` <span class="type">int</span> <span class="keyword">DEFAULT</span> <span class="keyword">NULL</span>,</span><br><span class="line">    <span class="keyword">PRIMARY</span> KEY (`titleId`)</span><br><span class="line">) ;</span><br></pre></td></tr></table></figure></div></div></div>
+
+<p>这里采用<code>titleId</code>作为主键，唯一识别每个游戏。</p>
+<div class="note green"><p>dim_switch_game_name_translate_man: 游戏名的翻译表</p></div>
+<div class="tabs" id="tab-tab-2"><ul class="nav-tabs"><li class="tab active"><a class="#tab-2-1">表格字段</a></li><li class="tab"><a class="#tab-2-2">建表命令</a></li></ul><div class="tab-content"><div class="tab-pane active" id="tab-2-1"><table>
+<thead>
+<tr>
+<th>字段</th>
+<th>数据类型</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>titleId</td>
+<td>varchar(255)</td>
+<td>游戏id</td>
+</tr>
+<tr>
+<td>titleName</td>
+<td>varchar(255)</td>
+<td>日语游戏名</td>
+</tr>
+<tr>
+<td>CHTName</td>
+<td>varchar(255)</td>
+<td>繁体中文游戏名</td>
+</tr>
+<tr>
+<td>CHSName</td>
+<td>varchar(255)</td>
+<td>简体中文游戏名</td>
+</tr>
+</tbody></table></div><div class="tab-pane" id="tab-2-2"><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> `dim_switch_game_name_translate_man` (</span><br><span class="line">    `titleId` <span class="type">varchar</span>(<span class="number">100</span>) <span class="type">CHARACTER</span> <span class="keyword">SET</span> utf8mb4 <span class="keyword">COLLATE</span> utf8mb4_general_ci <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">    `titleName` <span class="type">varchar</span>(<span class="number">100</span>) <span class="type">CHARACTER</span> <span class="keyword">SET</span> utf8mb4 <span class="keyword">COLLATE</span> utf8mb4_general_ci <span class="keyword">DEFAULT</span> <span class="keyword">NULL</span>,</span><br><span class="line">    `CHTName` <span class="type">varchar</span>(<span class="number">100</span>) <span class="keyword">COLLATE</span> utf8mb4_general_ci <span class="keyword">DEFAULT</span> <span class="keyword">NULL</span>,</span><br><span class="line">    `CHSName` <span class="type">varchar</span>(<span class="number">100</span>) <span class="keyword">COLLATE</span> utf8mb4_general_ci <span class="keyword">DEFAULT</span> <span class="keyword">NULL</span>,</span><br><span class="line">    <span class="keyword">PRIMARY</span> KEY  (`titleId`)</span><br><span class="line">) ENGINE<span class="operator">=</span>InnoDB <span class="keyword">DEFAULT</span> CHARSET<span class="operator">=</span>utf8mb4 <span class="keyword">COLLATE</span><span class="operator">=</span>utf8mb4_general_ci ;</span><br></pre></td></tr></table></figure></div></div></div>
+
+<p>我这里包括游戏的繁体中文名和简体中文名，繁体中文名需要在<a target="_blank" rel="noopener" href="https://store.nintendo.com.hk/games/all-released-games">港服eshop网站</a>抓取，简体中文名需要人工维护。</p>
+<h2 id="导入数据"><a href="#导入数据" class="headerlink" title="导入数据"></a>导入数据</h2><p>在<a href="/post/200b0d8fc392/" title="获取Switch游戏记录">上一篇文章</a>中我用<code>NS_GetPlayHistory</code>函数获得了游玩记录，格式为</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#x27;playHistories&#x27;: [&#123;&#x27;titleId&#x27;: &#x27;01008F6008C5E000&#x27;,</span><br><span class="line">   &#x27;titleName&#x27;: &#x27;ポケットモンスター バイオレット&#x27;,</span><br><span class="line">   &#x27;deviceType&#x27;: &#x27;HAC&#x27;,</span><br><span class="line">   &#x27;imageUrl&#x27;: &#x27;https://atum-img-lp1.cdn.nintendo.net/i/c/9b5c3d78793f406fbc8c566f982f9cca_256&#x27;,</span><br><span class="line">   &#x27;lastUpdatedAt&#x27;: &#x27;2023-10-09T09:11:16+09:00&#x27;,</span><br><span class="line">   &#x27;firstPlayedAt&#x27;: &#x27;2022-12-01T00:32:51+09:00&#x27;,</span><br><span class="line">   &#x27;lastPlayedAt&#x27;: &#x27;2023-10-08T08:37:44+09:00&#x27;,</span><br><span class="line">   &#x27;totalPlayedDays&#x27;: 60,</span><br><span class="line">   &#x27;totalPlayedMinutes&#x27;: 4772&#125;,</span><br><span class="line">  &#123;&#x27;titleId&#x27;: &#x27;010015F008C54000&#x27;,</span><br><span class="line">   &#x27;titleName&#x27;: &#x27;Pokemon HOME&#x27;,</span><br><span class="line">   &#x27;deviceType&#x27;: &#x27;HAC&#x27;,</span><br><span class="line">   &#x27;imageUrl&#x27;: &#x27;https://atum-img-lp1.cdn.nintendo.net/i/c/f90cad5a6a9d4565bceed324d881c28f_256&#x27;,</span><br><span class="line">   &#x27;lastUpdatedAt&#x27;: &#x27;2023-10-09T09:11:16+09:00&#x27;,</span><br><span class="line">   &#x27;firstPlayedAt&#x27;: &#x27;2020-10-26T23:13:22+09:00&#x27;,</span><br><span class="line">   &#x27;lastPlayedAt&#x27;: &#x27;2023-10-08T00:05:45+09:00&#x27;,</span><br><span class="line">   &#x27;totalPlayedDays&#x27;: 40,</span><br><span class="line">   &#x27;totalPlayedMinutes&#x27;: 865&#125;,</span><br><span class="line">  &#123;&#x27;titleId&#x27;: &#x27;0100939011ED4000&#x27;,</span><br><span class="line">   &#x27;titleName&#x27;: &#x27;Pokemon UNITE&#x27;,</span><br><span class="line">   &#x27;deviceType&#x27;: &#x27;HAC&#x27;,</span><br><span class="line">   &#x27;imageUrl&#x27;: &#x27;https://atum-img-lp1.cdn.nintendo.net/i/c/940d52a6125e40e1a3dfde6478305ae2_256&#x27;,</span><br><span class="line">   &#x27;lastUpdatedAt&#x27;: &#x27;2023-10-09T09:11:16+09:00&#x27;,</span><br><span class="line">   &#x27;firstPlayedAt&#x27;: &#x27;2021-07-21T20:47:56+09:00&#x27;,</span><br><span class="line">   &#x27;lastPlayedAt&#x27;: &#x27;2023-10-07T00:54:29+09:00&#x27;,</span><br><span class="line">...</span><br><span class="line">     &#x27;titleName&#x27;: &#x27;ポケットモンスター シールド&#x27;,</span><br><span class="line">     &#x27;imageUrl&#x27;: &#x27;https://atum-img-lp1.cdn.nintendo.net/i/c/c724c05d06fc4b748f31f8c06a6051ab_256&#x27;,</span><br><span class="line">     &#x27;totalPlayedMinutes&#x27;: 8&#125;]&#125;,</span><br><span class="line">  &#123;&#x27;playedDate&#x27;: &#x27;2023-10-03T00:00:00+09:00&#x27;, &#x27;dailyPlayHistories&#x27;: []&#125;],</span><br><span class="line"> &#x27;lastUpdatedAt&#x27;: &#x27;2023-10-09T09:11:16+09:00&#x27;&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这些信息需要存到数据库<code>dim_switch_game_play_history</code>中，封装的函数为</p>
+<figure class="highlight python"><figcaption><span>SwitchDB.py</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> SwitchWebAPI <span class="keyword">as</span> NSAPI</span><br><span class="line"><span class="keyword">import</span> pymysql</span><br><span class="line"><span class="keyword">from</span> sqlalchemy <span class="keyword">import</span> create_engine,types</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd </span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="keyword">import</span> urllib.parse</span><br><span class="line"><span class="keyword">from</span> datetime <span class="keyword">import</span> datetime,timedelta</span><br><span class="line"></span><br><span class="line">db_user = 用于连接数据库的用户名</span><br><span class="line">db_passwd = 用于连接数据库的用户密码</span><br><span class="line">db_dbname = 数据库中待连接的库名</span><br><span class="line">db_hostname = 数据库主机地址</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">SwitchDB_GamePlayHistory</span>(<span class="params">history</span>):</span><br><span class="line">    titleId=[]</span><br><span class="line">    titleName=[]</span><br><span class="line">    deviceType=[]</span><br><span class="line">    imageUrl=[]</span><br><span class="line">    lastUpdatedAt=[]</span><br><span class="line">    firstPlayedAt=[]</span><br><span class="line">    lastPlayedAt=[]</span><br><span class="line">    totalPlayedDays=[]</span><br><span class="line">    totalPlayedMinutes=[]</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> history:</span><br><span class="line">        titleId.append(i[<span class="string">&quot;titleId&quot;</span>])</span><br><span class="line">        titleName.append(i[<span class="string">&quot;titleName&quot;</span>])</span><br><span class="line">        deviceType.append(i[<span class="string">&quot;deviceType&quot;</span>])</span><br><span class="line">        imageUrl.append(i[<span class="string">&quot;imageUrl&quot;</span>])</span><br><span class="line">        lastUpdatedAt.append(i[<span class="string">&quot;lastUpdatedAt&quot;</span>])</span><br><span class="line">        firstPlayedAt.append(i[<span class="string">&quot;firstPlayedAt&quot;</span>])</span><br><span class="line">        lastPlayedAt.append(i[<span class="string">&quot;lastPlayedAt&quot;</span>])</span><br><span class="line">        totalPlayedDays.append(i[<span class="string">&quot;totalPlayedDays&quot;</span>])</span><br><span class="line">        totalPlayedMinutes.append(i[<span class="string">&quot;totalPlayedMinutes&quot;</span>])</span><br><span class="line">    </span><br><span class="line">    df=pd.DataFrame(&#123;<span class="string">&quot;titleId&quot;</span>:titleId,<span class="string">&quot;titleName&quot;</span>:titleName,<span class="string">&quot;deviceType&quot;</span>:deviceType,<span class="string">&quot;imageUrl&quot;</span>:imageUrl,<span class="string">&quot;lastUpdatedAt&quot;</span>:lastUpdatedAt,<span class="string">&quot;firstPlayedAt&quot;</span>:firstPlayedAt,<span class="string">&quot;lastPlayedAt&quot;</span>:lastPlayedAt,<span class="string">&quot;totalPlayedDays&quot;</span>:totalPlayedDays,<span class="string">&quot;totalPlayedMinutes&quot;</span>:totalPlayedMinutes&#125;)</span><br><span class="line">    UTC9to8=<span class="keyword">lambda</span> x: (datetime.strptime(x,<span class="string">&quot;%Y-%m-%dT%H:%M:%S+09:00&quot;</span>)-timedelta(hours=<span class="number">1</span>)).strftime(<span class="string">&quot;%Y-%m-%d %H:%M:%S&quot;</span>)</span><br><span class="line">    df[<span class="string">&quot;lastUpdatedAt&quot;</span>]=df[<span class="string">&quot;lastUpdatedAt&quot;</span>].<span class="built_in">map</span>(UTC9to8)</span><br><span class="line">    df[<span class="string">&quot;firstPlayedAt&quot;</span>]=df[<span class="string">&quot;firstPlayedAt&quot;</span>].<span class="built_in">map</span>(UTC9to8)</span><br><span class="line">    df[<span class="string">&quot;lastPlayedAt&quot;</span>]=df[<span class="string">&quot;lastPlayedAt&quot;</span>].<span class="built_in">map</span>(UTC9to8)</span><br><span class="line">    <span class="comment"># print(df)</span></span><br><span class="line"></span><br><span class="line">    con_engine = create_engine(<span class="string">&#x27;mysql+pymysql://&#x27;</span>+db_user+<span class="string">&#x27;:&#x27;</span>+db_passwd+<span class="string">&#x27;@&#x27;</span>+db_hostname+<span class="string">&#x27;:3306/&#x27;</span>+db_dbname+<span class="string">&#x27;?charset=utf8&#x27;</span>)</span><br><span class="line">    dtype=&#123;<span class="string">&quot;titleId&quot;</span>:types.String(length=<span class="number">255</span>),</span><br><span class="line">            <span class="string">&quot;titleName&quot;</span>:types.String(length=<span class="number">255</span>),</span><br><span class="line">            <span class="string">&quot;deviceType&quot;</span>:types.String(length=<span class="number">255</span>),</span><br><span class="line">            <span class="string">&quot;imageUrl&quot;</span>:types.String(length=<span class="number">255</span>),</span><br><span class="line">            <span class="string">&quot;lastUpdatedAt&quot;</span>:types.DateTime(),</span><br><span class="line">            <span class="string">&quot;firstPlayedAt&quot;</span>:types.DateTime(),</span><br><span class="line">            <span class="string">&quot;lastPlayedAt&quot;</span>:types.DateTime(),</span><br><span class="line">            <span class="string">&quot;totalPlayedDays&quot;</span>:types.Integer(),</span><br><span class="line">            <span class="string">&quot;totalPlayedMinutes&quot;</span>:types.Integer()</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    df.to_sql(<span class="string">&#x27;dim_switch_game_play_history&#x27;</span>, con_engine, dtype=dtype, if_exists=<span class="string">&#x27;append&#x27;</span>, index = <span class="literal">False</span>)</span><br></pre></td></tr></table></figure>
+
+<p>需要注意的点有</p>
+<ol>
+<li>时间需要从东9区转换为东8区</li>
+<li><code>create_engine</code>需要注明<code>?charset=utf8</code>，否则无法识别Unicode编码</li>
+<li><code>df.to_sql</code>里需要设置<code>if_exists=&#39;append&#39;</code>，如果采用<code>&#39;replace&#39;</code>，则输入的Unicode还是会显示乱码</li>
+</ol>
+<p>在MariaDB里查看导入的表格<br><img src="/images/post/switch-database-3.png" class="lazyload" data-srcset="/images/post/switch-database-3.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="MariaDB导入的游玩历史表" title="MariaDB导入的游玩历史表"></p>
+<p>接下来需要导入游戏名翻译表，由于获取游戏中文名需要频繁解析第三方网站和港服eshop，我这里的策略是先只建立部分游戏的翻译表（比如最近游玩的和最常游玩的几个），给定一个<code>titleId</code>，先在翻译表中查找，若已经存在，则不解析游戏名，否则就搜索对应的中文名。整个流程用函数<code>SwitchDB_CollectName</code>封装，里面调用到<code>SwitchDB_QueryGame</code>和<code>SwitchDB_GetChineseName</code>两个函数。</p>
+<p><img src="/images/post/switch-database-4.png" class="lazyload" data-srcset="/images/post/switch-database-4.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="SwitchDB_CollectName函数运行流程" title="SwitchDB_CollectName函数运行流程"></p>
+<p>三个函数的代码为</p>
+<div class="tabs" id="tab-tab-3"><ul class="nav-tabs"><li class="tab"><a class="#tab-3-1">SwitchDB_QueryGame</a></li><li class="tab"><a class="#tab-3-2">SwitchDB_GetChineseName</a></li><li class="tab active"><a class="#tab-3-3">SwitchDB_CollectName</a></li></ul><div class="tab-content"><div class="tab-pane" id="tab-3-1"><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">SwitchDB_QueryGame</span>(<span class="params">titleId</span>):</span><br><span class="line">    <span class="comment"># 连接数据库</span></span><br><span class="line">    conn = pymysql.connect(host=db_hostname, </span><br><span class="line">                           user=db_user, </span><br><span class="line">                           passwd=db_passwd, </span><br><span class="line">                           db=db_dbname,</span><br><span class="line">                           charset=<span class="string">&#x27;utf8&#x27;</span>)</span><br><span class="line">    <span class="comment"># 创建cursor</span></span><br><span class="line">    cursor = conn.cursor()</span><br><span class="line">    sql = <span class="string">&#x27;&#x27;&#x27;SELECT * from dim_switch_game_name_translate_man where titleId = &#x27;&#x27;&#x27;</span> + <span class="string">&quot;&#x27;&quot;</span> + titleId + <span class="string">&quot;&#x27;&quot;</span></span><br><span class="line">    <span class="comment"># print(sql)</span></span><br><span class="line">    <span class="comment"># 执行sql语句</span></span><br><span class="line">    cursor.execute(sql)</span><br><span class="line">    re = cursor.fetchall()</span><br><span class="line">    <span class="comment"># print(re)</span></span><br><span class="line">    <span class="keyword">if</span> re==():</span><br><span class="line">        output = <span class="literal">False</span></span><br><span class="line">    <span class="keyword">elif</span> re[<span class="number">0</span>][<span class="number">0</span>]==titleId:</span><br><span class="line">        output = <span class="literal">True</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        output = <span class="literal">False</span></span><br><span class="line">    cursor.close()</span><br><span class="line">    conn.close()</span><br><span class="line">    <span class="keyword">return</span> output</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="tab-3-2"><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">SwitchDB_GetChineseName</span>(<span class="params">titleId</span>):</span><br><span class="line">    url = <span class="string">&#x27;https://tinfoil.io/Title/&#x27;</span> + titleId</span><br><span class="line">    headers = &#123;<span class="string">&#x27;User-Agent&#x27;</span>:<span class="string">&#x27;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36&#x27;</span>&#125;</span><br><span class="line">    <span class="comment"># 在第三方站点finfoil根据titleId查找游戏页面</span></span><br><span class="line">    page = requests.get(url=url, headers=headers)</span><br><span class="line">    pattern = <span class="string">r&#x27;url=(.+?)%2FHK&quot;&#x27;</span></span><br><span class="line">    matches = re.findall(pattern, page.text)</span><br><span class="line">    <span class="comment"># 判断是否包含港服跳转页面</span></span><br><span class="line">    <span class="keyword">if</span> matches!=[]:</span><br><span class="line">        url_hk =  urllib.parse.unquote(matches[<span class="number">0</span>]+<span class="string">&#x27;%2FHK&#x27;</span>)</span><br><span class="line">        page_hk = requests.get(url=url_hk, headers=headers)</span><br><span class="line">        pattern_hk = <span class="string">r&#x27;購買下載版軟體｜(.+?)&quot;&gt;\n&#x27;</span></span><br><span class="line">        matches_hk = re.findall(pattern_hk, page_hk.text)</span><br><span class="line">        output = matches_hk[<span class="number">0</span>]</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        output = <span class="string">&#x27;请输入中文游戏名&#x27;</span></span><br><span class="line">    <span class="keyword">return</span> output</span><br></pre></td></tr></table></figure></div><div class="tab-pane active" id="tab-3-3"><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">SwitchDB_CollectName</span>(<span class="params">dictAll</span>):</span><br><span class="line">    str_insert = <span class="string">&#x27;&#x27;</span></span><br><span class="line">    <span class="keyword">for</span> <span class="built_in">dict</span> <span class="keyword">in</span> dictAll:</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> SwitchDB_QueryGame(<span class="built_in">dict</span>[<span class="string">&#x27;titleId&#x27;</span>]):</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&#x27;Add: &#x27;</span> + <span class="built_in">dict</span>[<span class="string">&#x27;titleName&#x27;</span>])</span><br><span class="line">            tmp_cht=SwitchDB_GetChineseName(<span class="built_in">dict</span>[<span class="string">&#x27;titleId&#x27;</span>])</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&#x27;Found: &#x27;</span> + tmp_cht)</span><br><span class="line">            str_insert = str_insert + <span class="string">&quot;(&#x27;&quot;</span> + <span class="built_in">dict</span>[<span class="string">&#x27;titleId&#x27;</span>] + <span class="string">&quot;&#x27;,&#x27;&quot;</span> + <span class="built_in">dict</span>[<span class="string">&#x27;titleName&#x27;</span>] + <span class="string">&quot;&#x27;,&#x27;&quot;</span> + tmp_cht + <span class="string">&quot;&#x27;),&quot;</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&#x27;Skip: &#x27;</span> + <span class="built_in">dict</span>[<span class="string">&#x27;titleName&#x27;</span>])</span><br><span class="line">    str_insert = str_insert[:-<span class="number">1</span>]</span><br><span class="line">    <span class="comment"># print(str_insert)</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 连接数据库</span></span><br><span class="line">    conn = pymysql.connect(host=db_hostname, </span><br><span class="line">                           user=db_user, </span><br><span class="line">                           passwd=db_passwd, </span><br><span class="line">                           db=db_dbname,</span><br><span class="line">                           charset=<span class="string">&#x27;utf8&#x27;</span>)</span><br><span class="line">    <span class="comment"># 创建cursor</span></span><br><span class="line">    cursor = conn.cursor()</span><br><span class="line">    sql = <span class="string">&#x27;&#x27;&#x27;INSERT into dim_switch_game_name_translate_man (titleId, titleName, CHTName) values &#x27;&#x27;&#x27;</span> + str_insert + <span class="string">&#x27; ;&#x27;</span></span><br><span class="line">    <span class="comment"># print(sql)</span></span><br><span class="line">    <span class="comment"># 尝试写入数据库</span></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        conn.begin()</span><br><span class="line">        cursor.execute(sql)</span><br><span class="line">        conn.commit()</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;done: add to translate table&#x27;</span>)</span><br><span class="line">    <span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">        conn.rollback()</span><br><span class="line">        <span class="built_in">print</span>(e)</span><br><span class="line">    conn.close()</span><br></pre></td></tr></table></figure></div></div></div>
+
+
+
+
+<h2 id="生成index-md文件"><a href="#生成index-md文件" class="headerlink" title="生成index.md文件"></a>生成index.md文件</h2><p>这里采用<code>python</code>生成收藏页面的<code>index.md</code>文件，我主要想获取最常游玩和最近游玩的游戏，因此整个流程分为三个步骤</p>
+<ol>
+<li>生成<code>font_matter</code>和自定义文字</li>
+<li>展示最常游玩的10个游戏，并且将游玩时长以进度条的形式呈现，游玩时间最长的游戏进度条设为100%，其他等比例调整</li>
+<li>展示最近游玩的10个游戏，以按钮标签的形式呈现</li>
+</ol>
+<p>这里面核心的函数是<code>SwitchMD_GetHistoryDB(type, n)</code>，接收两个参数<code>type</code>和<code>n</code>，返回dataframe格式</p>
+<ul>
+<li><code>type</code>：默认为<code>&#39;All&#39;</code>，即查询所有历史数据，可选<code>&#39;MostPlayed&#39;</code>和<code>&#39;RecentPlayed&#39;</code>，分别查询最常游玩和最近游玩的前n个游戏历史</li>
+<li><code>n</code>：查询游戏历史个数，默认为10</li>
+</ul>
+<p>代码为</p>
+<figure class="highlight python"><figcaption><span>SwitchToMD.py</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pymysql</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">SwitchMD_GetHistoryDB</span>(<span class="params"><span class="built_in">type</span>=<span class="string">&#x27;All&#x27;</span>, n=<span class="number">10</span></span>):</span><br><span class="line">    <span class="comment"># 连接数据库</span></span><br><span class="line">    conn = pymysql.connect(host=db_hostname, </span><br><span class="line">                           user=db_user, </span><br><span class="line">                           passwd=db_passwd, </span><br><span class="line">                           db=db_dbname,</span><br><span class="line">                           charset=<span class="string">&#x27;utf8&#x27;</span>)</span><br><span class="line">    <span class="comment"># 创建cursor</span></span><br><span class="line">    cursor = conn.cursor()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">type</span> == <span class="string">&#x27;MostPlayed&#x27;</span>:</span><br><span class="line">        <span class="comment"># 获取游玩时间最多的n个游戏</span></span><br><span class="line">        sql = <span class="string">&#x27;&#x27;&#x27;SELECT * from dim_switch_game_play_history</span></span><br><span class="line"><span class="string">        order by totalPlayedMinutes desc</span></span><br><span class="line"><span class="string">        limit 0,</span></span><br><span class="line"><span class="string">        &#x27;&#x27;&#x27;</span> + <span class="built_in">str</span>(n) + <span class="string">&#x27;;&#x27;</span></span><br><span class="line">    <span class="keyword">elif</span> <span class="built_in">type</span> == <span class="string">&#x27;RecentPlayed&#x27;</span>:</span><br><span class="line">        <span class="comment"># 获取最近游玩的n个游戏</span></span><br><span class="line">        sql = <span class="string">&#x27;&#x27;&#x27;SELECT * from dim_switch_game_play_history</span></span><br><span class="line"><span class="string">        order by lastPlayedAt desc</span></span><br><span class="line"><span class="string">        limit 0,</span></span><br><span class="line"><span class="string">        &#x27;&#x27;&#x27;</span> + <span class="built_in">str</span>(n) + <span class="string">&#x27;;&#x27;</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="comment"># 获取全部游戏</span></span><br><span class="line">        sql = <span class="string">&#x27;SELECT * from dim_switch_game_play_history ;&#x27;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 执行sql语句</span></span><br><span class="line">    cursor.execute(sql)</span><br><span class="line">    <span class="comment"># 获取数据库列表信息</span></span><br><span class="line">    col = cursor.description</span><br><span class="line">    <span class="comment"># print(col)</span></span><br><span class="line">    <span class="comment"># 获取全部查询信息</span></span><br><span class="line">    re = cursor.fetchall()</span><br><span class="line">    <span class="comment"># print(re)</span></span><br><span class="line">    <span class="comment"># 获取的信息默认为tuple类型，将columns转换成DataFrame类型</span></span><br><span class="line">    columns = pd.DataFrame(<span class="built_in">list</span>(col))</span><br><span class="line">    <span class="comment"># 将数据转换成DataFrame类型，并匹配columns</span></span><br><span class="line">    df = pd.DataFrame(<span class="built_in">list</span>(re), columns=columns[<span class="number">0</span>])</span><br><span class="line">    cursor.close()</span><br><span class="line">    conn.close()</span><br><span class="line">    <span class="keyword">return</span> df</span><br></pre></td></tr></table></figure>
+
+<p>写入最常游玩的历史我采用自定义的<code>warp</code>样式<span class="hidden-anchor" id="referto_[2]"></span><sup class="reference"><a href="#referfrom_[2]">[2]</a></sup><span class="reference-bubble"><span class="reference-item"><span class="reference-literature"> 左图右文版面，文字做垂直居中-2</span><span class="reference-title">参考资料</span></span></span>，并结合了外挂的进度条标签<code>progress</code><span class="hidden-anchor" id="referto_[3]"></span><sup class="reference"><a href="#referfrom_[3]">[3]</a></sup><span class="reference-bubble"><span class="reference-item"><span class="reference-literature"> Tag Plugins Plus</span><span class="reference-title">参考资料</span></span></span>，而最近游玩的历史采用Volantis自带的<code>button</code>标签<span class="hidden-anchor" id="referto_[4]"></span><sup class="reference"><a href="#referfrom_[4]">[4]</a></sup><span class="reference-bubble"><span class="reference-item"><span class="reference-literature"> Volantis 标签插件</span><span class="reference-title">参考资料</span></span></span>。</p>
+<div class="tabs" id="tab-tab-4"><ul class="nav-tabs"><li class="tab active"><a class="#tab-4-1">warp样式</a></li><li class="tab"><a class="#tab-4-2">button样式</a></li></ul><div class="tab-content"><div class="tab-pane active" id="tab-4-1"><br> 
+<div class="wrap"> 
+<img src="https://atum-img-lp1.cdn.nintendo.net/i/c/940d52a6125e40e1a3dfde6478305ae2_256" class="lazyload" data-srcset="https://atum-img-lp1.cdn.nintendo.net/i/c/940d52a6125e40e1a3dfde6478305ae2_256" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image"> 
+<div class="txt">
+<p><div class="progress"><div class="progress-bar-animated progress-bar progress-bar-striped bg-red"  style="width: 100.0%" aria-valuenow="100.0" aria-valuemin="0" aria-valuemax="100"><p>256小时12分钟</p></div></div></p> 
+<p>宝可梦大集结<br>游玩天数：131</p> 
+</div> 
+</div> 
+
+<div class="wrap"> 
+<img src="https://atum-img-lp1.cdn.nintendo.net/i/c/46f38b3fdcf34c16a415ea439e4dab34_256" class="lazyload" data-srcset="https://atum-img-lp1.cdn.nintendo.net/i/c/46f38b3fdcf34c16a415ea439e4dab34_256" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image"> 
+<div class="txt">
+<p><div class="progress"><div class="progress-bar-animated progress-bar progress-bar-striped bg-red"  style="width: 99.71%" aria-valuenow="99.71" aria-valuemin="0" aria-valuemax="100"><p>255小时28分钟</p></div></div></p> 
+<p>异度神剑2<br>游玩天数：81</p> 
+</div> 
+</div> 
+
+<div class="wrap"> 
+<img src="https://atum-img-lp1.cdn.nintendo.net/i/c/76cd1f216fd0499684d6b91da15550a7_256" class="lazyload" data-srcset="https://atum-img-lp1.cdn.nintendo.net/i/c/76cd1f216fd0499684d6b91da15550a7_256" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image"> 
+<div class="txt">
+<p><div class="progress"><div class="progress-bar-animated progress-bar progress-bar-striped bg-blue"  style="width: 47.22%" aria-valuenow="47.22" aria-valuemin="0" aria-valuemax="100"><p>120小时59分钟</p></div></div></p> 
+<p>异度神剑3<br>游玩天数：35</p> 
+</div> 
+</div></div><div class="tab-pane" id="tab-4-2"><div class="btns circle center grid5">
+             
+<a> 
+<b>宝可梦 紫</b> 
+<p class='p center'>最后游玩日期</p> 
+<p class='p center'>2023-10-08</p> 
+<img src='https://atum-img-lp1.cdn.nintendo.net/i/c/9b5c3d78793f406fbc8c566f982f9cca_256'> 
+</a> 
+<a> 
+<b>Pokémon HOME</b> 
+<p class='p center'>最后游玩日期</p> 
+<p class='p center'>2023-10-07</p> 
+<img src='https://atum-img-lp1.cdn.nintendo.net/i/c/f90cad5a6a9d4565bceed324d881c28f_256'> 
+</a> 
+<a> 
+<b>宝可梦大集结</b> 
+<p class='p center'>最后游玩日期</p> 
+<p class='p center'>2023-10-06</p> 
+<img src='https://atum-img-lp1.cdn.nintendo.net/i/c/940d52a6125e40e1a3dfde6478305ae2_256'> 
+</a> 
+<a> 
+<b>宝可梦 盾</b> 
+<p class='p center'>最后游玩日期</p> 
+<p class='p center'>2023-10-06</p> 
+<img src='https://atum-img-lp1.cdn.nintendo.net/i/c/c724c05d06fc4b748f31f8c06a6051ab_256'> 
+</a> 
+<a> 
+<b>健身环大冒险</b> 
+<p class='p center'>最后游玩日期</p> 
+<p class='p center'>2023-09-02</p> 
+<img src='https://atum-img-lp1.cdn.nintendo.net/i/c/a2f8dbb01af449648c86575ea2e3fa4a_256'> 
+</a> 
+          </div></div></div></div>
+
+
+
+
+
+<details green><summary> 展开查看SwitchToMD.py完整代码 </summary>
+              <div class='content'>
+              <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pymysql</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line"><span class="comment">## 数据库相关变量</span></span><br><span class="line">db_user= <span class="comment"># 用于连接数据库的用户名</span></span><br><span class="line">db_passwd= <span class="comment"># 用于连接数据库的用户密码</span></span><br><span class="line">db_dbname= <span class="comment"># 数据库中待连接的库名</span></span><br><span class="line">db_hostname= <span class="comment"># 数据库主机地址</span></span><br><span class="line"></span><br><span class="line"><span class="comment">## 网页相关变量</span></span><br><span class="line">MDfile=<span class="string">&#x27;your-link/index.md&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">## font_matter</span></span><br><span class="line">font_matter = <span class="string">&quot;&quot;&quot;---</span></span><br><span class="line"><span class="string">layout: docs</span></span><br><span class="line"><span class="string">index: true</span></span><br><span class="line"><span class="string">seo_title: switch游戏记录</span></span><br><span class="line"><span class="string">---</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&lt;p&gt;</span></span><br><span class="line"><span class="string">&#123;% image https://gcore.jsdelivr.net/gh/jylicmp/blog_static/images/icons/logos/gamming/icons8-nintendo-switch-96.png %&#125;</span></span><br><span class="line"><span class="string">&#123;% span logo large center, switch游玩记录 %&#125;</span></span><br><span class="line"><span class="string">&lt;/p&gt;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&#123;% frame switchredblue | img=https://gcore.jsdelivr.net/gh/jylicmp/blog_static/images/sources/switch_id_20231014.png %&#125;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&lt;br&gt;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">## 从数据库获取最近游玩的n个游戏，或者游玩时间最多的n个游戏</span></span><br><span class="line"><span class="comment">## n默认取10</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">SwitchMD_GetHistoryDB</span>(<span class="params"><span class="built_in">type</span>=<span class="string">&#x27;All&#x27;</span>, n=<span class="number">10</span></span>):</span><br><span class="line">    <span class="comment"># 连接数据库</span></span><br><span class="line">    conn = pymysql.connect(host=db_hostname, </span><br><span class="line">                           user=db_user, </span><br><span class="line">                           passwd=db_passwd, </span><br><span class="line">                           db=db_dbname,</span><br><span class="line">                           charset=<span class="string">&#x27;utf8&#x27;</span>)</span><br><span class="line">    <span class="comment"># 创建cursor</span></span><br><span class="line">    cursor = conn.cursor()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">type</span> == <span class="string">&#x27;MostPlayed&#x27;</span>:</span><br><span class="line">        <span class="comment"># 获取游玩时间最多的n个游戏</span></span><br><span class="line">        sql = <span class="string">&#x27;&#x27;&#x27;SELECT * from dim_switch_game_play_history</span></span><br><span class="line"><span class="string">        order by totalPlayedMinutes desc</span></span><br><span class="line"><span class="string">        limit 0,</span></span><br><span class="line"><span class="string">        &#x27;&#x27;&#x27;</span> + <span class="built_in">str</span>(n) + <span class="string">&#x27;;&#x27;</span></span><br><span class="line">    <span class="keyword">elif</span> <span class="built_in">type</span> == <span class="string">&#x27;RecentPlayed&#x27;</span>:</span><br><span class="line">        <span class="comment"># 获取最近游玩的n个游戏</span></span><br><span class="line">        sql = <span class="string">&#x27;&#x27;&#x27;SELECT * from dim_switch_game_play_history</span></span><br><span class="line"><span class="string">        order by lastPlayedAt desc</span></span><br><span class="line"><span class="string">        limit 0,</span></span><br><span class="line"><span class="string">        &#x27;&#x27;&#x27;</span> + <span class="built_in">str</span>(n) + <span class="string">&#x27;;&#x27;</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="comment"># 获取全部游戏</span></span><br><span class="line">        sql = <span class="string">&#x27;SELECT * from dim_switch_game_play_history ;&#x27;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 执行sql语句</span></span><br><span class="line">    cursor.execute(sql)</span><br><span class="line">    <span class="comment"># 获取数据库列表信息</span></span><br><span class="line">    col = cursor.description</span><br><span class="line">    <span class="comment"># print(col)</span></span><br><span class="line">    <span class="comment"># 获取全部查询信息</span></span><br><span class="line">    re = cursor.fetchall()</span><br><span class="line">    <span class="comment"># print(re)</span></span><br><span class="line">    <span class="comment"># 获取的信息默认为tuple类型，将columns转换成DataFrame类型</span></span><br><span class="line">    columns = pd.DataFrame(<span class="built_in">list</span>(col))</span><br><span class="line">    <span class="comment"># 将数据转换成DataFrame类型，并匹配columns</span></span><br><span class="line">    df = pd.DataFrame(<span class="built_in">list</span>(re), columns=columns[<span class="number">0</span>])</span><br><span class="line">    cursor.close()</span><br><span class="line">    conn.close()</span><br><span class="line">    <span class="keyword">return</span> df</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">SwitchMD_QueryName</span>(<span class="params">titleId</span>):</span><br><span class="line">    <span class="comment"># 连接数据库</span></span><br><span class="line">    conn = pymysql.connect(host=db_hostname, </span><br><span class="line">                           user=db_user, </span><br><span class="line">                           passwd=db_passwd, </span><br><span class="line">                           db=db_dbname,</span><br><span class="line">                           charset=<span class="string">&#x27;utf8&#x27;</span>)</span><br><span class="line">    <span class="comment"># 创建cursor</span></span><br><span class="line">    cursor = conn.cursor()</span><br><span class="line">    sql = <span class="string">&#x27;&#x27;&#x27;SELECT * from dim_switch_game_name_translate_man where titleId = &#x27;&#x27;&#x27;</span> + <span class="string">&quot;&#x27;&quot;</span> + titleId + <span class="string">&quot;&#x27; ;&quot;</span></span><br><span class="line">    <span class="comment"># print(sql)</span></span><br><span class="line">    cursor.execute(sql)</span><br><span class="line">    col = cursor.description</span><br><span class="line">    re = cursor.fetchall()</span><br><span class="line">    columns = pd.DataFrame(<span class="built_in">list</span>(col))</span><br><span class="line">    df = pd.DataFrame(<span class="built_in">list</span>(re), columns=columns[<span class="number">0</span>])</span><br><span class="line">    cursor.close()</span><br><span class="line">    conn.close()</span><br><span class="line">    <span class="keyword">return</span> df</span><br><span class="line"></span><br><span class="line"><span class="comment">## 利用btns标签生成最近游玩游戏</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">SwitchMD_PrintBtns</span>(<span class="params"><span class="built_in">dict</span>, chs=<span class="literal">False</span></span>):</span><br><span class="line">    output = <span class="string">&#x27;&lt;a&gt; \n&#x27;</span></span><br><span class="line">    name = <span class="built_in">dict</span>[<span class="string">&#x27;titleName&#x27;</span>]</span><br><span class="line">    <span class="keyword">if</span> chs:</span><br><span class="line">        query_name = SwitchMD_QueryName(<span class="built_in">dict</span>[<span class="string">&#x27;titleId&#x27;</span>]).to_dict(<span class="string">&#x27;records&#x27;</span>)</span><br><span class="line">        <span class="comment"># 判断翻译表中是否有该游戏</span></span><br><span class="line">        <span class="keyword">if</span> query_name==[]:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&#x27;=== Not exist in translate table ===&#x27;</span>)</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&#x27;titleId: &#x27;</span> + <span class="built_in">dict</span>[<span class="string">&#x27;titleId&#x27;</span>])</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&#x27;titleName: &#x27;</span> + <span class="built_in">dict</span>[<span class="string">&#x27;titleName&#x27;</span>])</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&#x27;=== Using titleName ===&#x27;</span>)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            name = query_name[<span class="number">0</span>][<span class="string">&#x27;CHSName&#x27;</span>]</span><br><span class="line">    output = output + <span class="string">&#x27;&lt;b&gt;&#x27;</span> + name + <span class="string">&#x27;&lt;/b&gt; \n&#x27;</span></span><br><span class="line">    output = output + <span class="string">&#x27;&#123;% p center ::最后游玩日期 %&#125; \n&#x27;</span></span><br><span class="line">    output = output + <span class="string">&#x27;&#123;% p center ::&#x27;</span> + <span class="built_in">dict</span>[<span class="string">&#x27;lastPlayedAt&#x27;</span>].strftime(<span class="string">&#x27;%Y-%m-%d&#x27;</span>) + <span class="string">&#x27;%&#125; \n&#x27;</span></span><br><span class="line">    output = output + <span class="string">&quot;&lt;img src=&#x27;&quot;</span> + <span class="built_in">dict</span>[<span class="string">&#x27;imageUrl&#x27;</span>] + <span class="string">&quot;&#x27;&gt; \n&quot;</span></span><br><span class="line">    output = output + <span class="string">&#x27;&lt;/a&gt; \n&#x27;</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;done: &#x27;</span> + name)</span><br><span class="line">    <span class="keyword">return</span> output</span><br><span class="line"></span><br><span class="line"><span class="comment">## 利用wrap样式类生成最常游玩游戏</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">SwitchMD_PrintWrap</span>(<span class="params"><span class="built_in">dict</span>, progress, color=<span class="string">&#x27;blue&#x27;</span>, chs=<span class="literal">False</span></span>):</span><br><span class="line">    output = <span class="string">&#x27;&lt;div class=&quot;wrap&quot;&gt; \n&#x27;</span></span><br><span class="line">    name = <span class="built_in">dict</span>[<span class="string">&#x27;titleName&#x27;</span>]</span><br><span class="line">    <span class="keyword">if</span> chs:</span><br><span class="line">        query_name = SwitchMD_QueryName(<span class="built_in">dict</span>[<span class="string">&#x27;titleId&#x27;</span>]).to_dict(<span class="string">&#x27;records&#x27;</span>)</span><br><span class="line">        <span class="comment"># 判断翻译表中是否有该游戏</span></span><br><span class="line">        <span class="keyword">if</span> query_name==[]:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&#x27;=== Not exist in translate table ===&#x27;</span>)</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&#x27;titleId: &#x27;</span> + <span class="built_in">dict</span>[<span class="string">&#x27;titleId&#x27;</span>])</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&#x27;titleName: &#x27;</span> + <span class="built_in">dict</span>[<span class="string">&#x27;titleName&#x27;</span>])</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&#x27;=== Using titleName ===&#x27;</span>)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            name = query_name[<span class="number">0</span>][<span class="string">&#x27;CHSName&#x27;</span>]</span><br><span class="line">    output = output + <span class="string">&#x27;&lt;img src=&quot;&#x27;</span>+ <span class="built_in">dict</span>[<span class="string">&#x27;imageUrl&#x27;</span>] + <span class="string">&#x27;&quot; alt=&quot;image&quot;&gt; \n&#x27;</span></span><br><span class="line">    output = output + <span class="string">&#x27;&lt;div class=&quot;txt&quot;&gt;\n&lt;p&gt;&#123;% progress &#x27;</span> + <span class="built_in">str</span>(progress) + <span class="string">&#x27; &#x27;</span> + color + <span class="string">&#x27; &quot;&#x27;</span> + <span class="built_in">str</span>(<span class="built_in">dict</span>[<span class="string">&#x27;totalPlayedMinutes&#x27;</span>]//<span class="number">60</span>) + <span class="string">&#x27;小时&#x27;</span> + <span class="built_in">str</span>(<span class="built_in">dict</span>[<span class="string">&#x27;totalPlayedMinutes&#x27;</span>]%<span class="number">60</span>) + <span class="string">&#x27;分钟&#x27;</span> + <span class="string">&#x27;&quot;  %&#125;&lt;/p&gt; \n&#x27;</span></span><br><span class="line">    output = output + <span class="string">&#x27;&lt;p&gt;&#x27;</span> + name + <span class="string">&#x27;&lt;br&gt;游玩天数：&#x27;</span> + <span class="built_in">str</span>(<span class="built_in">dict</span>[<span class="string">&#x27;totalPlayedDays&#x27;</span>]) + <span class="string">&#x27;&lt;/p&gt; \n&#x27;</span></span><br><span class="line">    output = output + <span class="string">&#x27;&lt;/div&gt; \n&lt;/div&gt; \n&#x27;</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;done: &#x27;</span> + name)</span><br><span class="line">    <span class="keyword">return</span> output</span><br><span class="line"></span><br><span class="line"><span class="comment">## 最常游玩游戏中，以成比例的进度条代表游玩时间，前三个游戏用红色进度条表示</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">SwitchMD_PrintWrapAll</span>(<span class="params">dictAll, chs=<span class="literal">False</span></span>):</span><br><span class="line">    output = <span class="string">&quot;&lt;br&gt; \n&quot;</span></span><br><span class="line">    i = <span class="number">0</span></span><br><span class="line">    maxtime=dictAll[<span class="number">0</span>][<span class="string">&#x27;totalPlayedMinutes&#x27;</span>]</span><br><span class="line">    <span class="keyword">for</span> <span class="built_in">dict</span> <span class="keyword">in</span> dictAll:</span><br><span class="line">        progress = <span class="built_in">round</span>(<span class="built_in">dict</span>[<span class="string">&#x27;totalPlayedMinutes&#x27;</span>]*<span class="number">100</span> / maxtime, <span class="number">2</span>)</span><br><span class="line">        <span class="keyword">if</span> i&lt;=<span class="number">2</span>:</span><br><span class="line">            color = <span class="string">&#x27;red&#x27;</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            color = <span class="string">&#x27;blue&#x27;</span></span><br><span class="line">        output = output + SwitchMD_PrintWrap(<span class="built_in">dict</span>, progress, color, chs)</span><br><span class="line">        output = output + <span class="string">&#x27;\n&#x27;</span></span><br><span class="line">        i += <span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> output</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;=== Markdown file ===&#x27;</span>)</span><br><span class="line">    <span class="built_in">print</span>(MDfile)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;=== Routines ===&#x27;</span>)</span><br><span class="line">    dict_most = SwitchMD_GetHistoryDB(<span class="built_in">type</span>=<span class="string">&#x27;MostPlayed&#x27;</span>, n=<span class="number">10</span>).to_dict(<span class="string">&#x27;records&#x27;</span>)</span><br><span class="line">    dict_recent = SwitchMD_GetHistoryDB(<span class="built_in">type</span>=<span class="string">&#x27;RecentPlayed&#x27;</span>, n=<span class="number">10</span>).to_dict(<span class="string">&#x27;records&#x27;</span>)</span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(MDfile, <span class="string">&quot;w&quot;</span>) <span class="keyword">as</span> f:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;Writing: font matter&quot;</span>)</span><br><span class="line">        f.write(font_matter)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;========================================&quot;</span>)</span><br><span class="line"></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;Writing: most played games&quot;</span>)</span><br><span class="line">        f.write(<span class="string">&quot;&#123;% span logo large, 最常游玩 %&#125; \n&lt;br&gt;\n\n&quot;</span>)</span><br><span class="line">        f.write(SwitchMD_PrintWrapAll(dict_most, chs=<span class="literal">True</span>))</span><br><span class="line">        f.write(<span class="string">&quot;\n&lt;br&gt; \n \n&quot;</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;========================================&quot;</span>)</span><br><span class="line"></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;Writing: recent played games&quot;</span>)</span><br><span class="line">        f.write(<span class="string">&quot;&#123;% span logo large, 最近游玩 %&#125; \n \n&quot;</span>)</span><br><span class="line">        f.write(<span class="string">&quot;&#123;% btns circle center grid5 %&#125; \n&quot;</span>)</span><br><span class="line">        <span class="keyword">for</span> <span class="built_in">dict</span> <span class="keyword">in</span> dict_recent:</span><br><span class="line">            f.write(SwitchMD_PrintBtns(<span class="built_in">dict</span>, chs=<span class="literal">True</span>))</span><br><span class="line">        f.write(<span class="string">&quot;&#123;% endbtns %&#125;&quot;</span>)</span><br><span class="line">        f.close</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;========================================&quot;</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;index.md written.&quot;</span>)</span><br></pre></td></tr></table></figure>
+              </div>
+            </details>
+
+<p>写入样式的函数<code>SwitchMD_PrintWrap</code>和<code>SwitchMD_PrintBtns</code>接收可选的参数<code>chs</code>，默认为<code>False</code>，即使用日文游戏名；若为<code>True</code>，则通过<code>SwitchMD_QueryName</code>函数从翻译表中获取中文名。</p>
+<p>最后生成的<code>index.md</code>文件，页面效果见<a href="/collects/switch/">收藏页</a>，所有代码均已托管到github上。</p>
+<a class="ghcard" rel="external nofollow noopener noreferrer noopener" target="_blank" href="https://github.com/jylicmp/CollectHistory"><img src="https://github-readme-stats.vercel.app/api/pin/?username=jylicmp&repo=CollectHistory&theme=vue&show_owner=true" class="lazyload" data-srcset="https://github-readme-stats.vercel.app/api/pin/?username=jylicmp&repo=CollectHistory&theme=vue&show_owner=true" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></a>
+
+
+<br>
+<br>
+
+<hr>
+<span class='p logo center large'>References</span>
+<br>
+
+<div class="reference-source"><span class="hidden-anchor" id="referfrom_[1]"></span><a class="reference-anchor" href="#referto_[1]">[1]<div class="reference-anchor-up fa-solid fa-angles-up"></div></a><a class="reference-link" href=" https://blog.siriyang.cn/posts/20230130130150id.html"> 个人数据中心：获取Switch游戏记录</a></div>
+<div class="reference-source"><span class="hidden-anchor" id="referfrom_[2]"></span><a class="reference-anchor" href="#referto_[2]">[2]<div class="reference-anchor-up fa-solid fa-angles-up"></div></a><a class="reference-link" href=" https://codepen.io/whjin/pen/vPVvNb/"> 左图右文版面，文字做垂直居中-2</a></div>
+<div class="reference-source"><span class="hidden-anchor" id="referfrom_[3]"></span><a class="reference-anchor" href="#referto_[3]">[3]<div class="reference-anchor-up fa-solid fa-angles-up"></div></a><a class="reference-link" href=" https://akilar.top/posts/615e2dec/"> Tag Plugins Plus</a></div>
+<div class="reference-source"><span class="hidden-anchor" id="referfrom_[4]"></span><a class="reference-anchor" href="#referto_[4]">[4]<div class="reference-anchor-up fa-solid fa-angles-up"></div></a><a class="reference-link" href=" https://volantis.js.org/v6/tag-plugins/#button"> Volantis 标签插件</a></div>
+  </div>
   
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
+      
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
+      
+    </div>
+  
+  
+    
+
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-10-16T13:41:07+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2023年10月16日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>数据库</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/MariaDB/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>MariaDB</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/python/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>python</p></a></div>
+  <span hidden itemprop="keywords">数据库 MariaDB python</span>
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/post/200b0d8fc392/'>
+          <p class='title'>获取Switch游戏记录<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>
+
+通过账号登陆页面解析得到的任天堂会员同步到云服务器的web API，获取玩家游玩数据，以便整理和记录。
+
+
+获取流程获取流程比较复杂，主要参考了以下两篇文章，大致的流程图[1] 个人数据中心...</p>
+        </a>
+      
+    </div>
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
+  
+
+
+  <article class="post white-box shadow floatable blur" id="comments">
+    <span hidden>
+      <meta itemprop="discussionUrl" content="/post/22e18710bc13/index.html#comments">
+    </span>
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
+    
+
+    <div id="layoutHelper-comments"></div>
+
+  </article>
+
+
+
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2690,9 +3054,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
 
 
-  <div class="">
-    <!-- pjax占位 -->
-  </div>
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#MariaDB%E5%AE%89%E8%A3%85%E5%92%8C%E8%AE%BE%E7%BD%AE"><span class="toc-text">MariaDB安装和设置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E5%88%9B%E5%BB%BA"><span class="toc-text">数据库创建</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%BC%E5%85%A5%E6%95%B0%E6%8D%AE"><span class="toc-text">导入数据</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%9F%E6%88%90index-md%E6%96%87%E4%BB%B6"><span class="toc-text">生成index.md文件</span></a></li></ol>
+    </div>
+  </section>
 
   
 
@@ -2743,13 +3117,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3263,7 +3638,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"零碎学习记录","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"个人日常"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"零碎学习记录"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"零碎学习记录","url":"http://example.com/","keywords":null,"description":"个人日常","author":{"@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"个人日常"},"publisher":{"@type":"Organization","name":"零碎学习记录","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"所有分类","description":"个人日常","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/categories/index.html"},"author":{"@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"零碎学习记录","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/categories/index.html","wordCount":0,"datePublished":"2023-10-03T01:47:27.924Z","dateModified":"2023-10-03T01:03:19.000Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"零碎学习记录","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"个人日常"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"零碎学习记录"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/游戏/","name":"游戏"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/post/22e18710bc13/","name":"构建Switch游戏数据库"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"零碎学习记录","url":"http://example.com/","keywords":null,"description":"个人日常","author":{"@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"个人日常"},"publisher":{"@type":"Organization","name":"零碎学习记录","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"构建Switch游戏数据库","description":"\n\n上一篇文章通过解析任天堂会员登陆页面得到web API和游玩数据，但每次都从网页获取数据不太方便；另一方面，通过日服账号获得的游戏信息中，游戏名称都是日文的，如果想要获得中文名称的话需要建立一个游戏名的翻译表。这两个因素导致了我对数据库的需求。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/post/22e18710bc13/"},"author":{"@type":"Person","name":"Jiayu Li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"零碎学习记录","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/post/22e18710bc13/","wordCount":124,"datePublished":"2023-10-14T16:00:00.000Z","dateModified":"2023-10-16T05:41:07.000Z","articleSection":"游戏","keywords":"数据库,MariaDB,python","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

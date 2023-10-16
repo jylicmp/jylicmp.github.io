@@ -1743,7 +1743,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1697337083967),
+    lastupdate: new Date(1697435110617),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate","webinfo"],
       for_post: ["toc"],
@@ -2642,9 +2642,82 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
         
+          
+        
       
     
     
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="http://example.com/post/22e18710bc13/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="零碎学习记录">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="零碎学习记录">
+    <meta itemprop="description" content="个人日常">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/post/22e18710bc13/"  itemprop="url">
+        构建Switch游戏数据库
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      <div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="https://gcore.jsdelivr.net/gh/jylicmp/blog_static/images/icons/logos/files/icons8-add-database-100.png" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/jylicmp/blog_static/images/icons/logos/files/icons8-add-database-100.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image"/></div></div>
+
+<a href="/post/200b0d8fc392/" title="获取Switch游戏记录">上一篇文章</a>通过解析任天堂会员登陆页面得到web API和游玩数据，但每次都从网页获取数据不太方便；另一方面，通过日服账号获得的游戏信息中，游戏名称都是日文的，如果想要获得中文名称的话需要建立一个游戏名的翻译表。这两个因素导致了我对数据库的需求。
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' href='about/'><img src='https://gcore.jsdelivr.net/gh/jylicmp/blog_static/images/icons/logos/characters/icons8-stich-100.png'></a>
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://gcore.jsdelivr.net/gh/jylicmp/blog_static/images/icons/logos/characters/icons8-stich-100.png">
+            <meta itemprop="name" content="Jiayu Li">
+            <meta itemprop="url" content="about/">
+          </span>
+        
+        <time itemprop="dateCreated datePublished" datetime="2023-10-15T00:00:00+08:00">2023-10-15</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/%E6%B8%B8%E6%88%8F/">游戏</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/%E6%B8%B8%E6%88%8F/" itemprop="url"><span itemprop="name">游戏</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/post/22e18710bc13/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
       
         
           <div class='post-wrapper'>
@@ -3312,7 +3385,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           <li><a class="flat-box"
             title="/categories/%E6%B8%B8%E6%88%8F/" href="/categories/%E6%B8%B8%E6%88%8F/"
             active-action="action-categoriesE6B8B8E6888F"
-            ><div class='name'>游戏</div><div class='badge'>(1)</div></a></li>
+            ><div class='name'>游戏</div><div class='badge'>(2)</div></a></li>
         
           <li><a class="flat-box"
             title="/categories/%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E8%AE%A1%E7%AE%97/" href="/categories/%E7%AC%AC%E4%B8%80%E6%80%A7%E5%8E%9F%E7%90%86%E8%AE%A1%E7%AE%97/"
@@ -3352,7 +3425,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-      <a href="/tags/python/" style="font-size: 14px; color: #999">python</a>
+      <a href="/tags/MariaDB/" style="font-size: 14px; color: #999">MariaDB</a> <a href="/tags/python/" style="font-size: 24px; color: #555">python</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" style="font-size: 14px; color: #999">数据库</a>
     </div>
   </section>
 
@@ -3380,7 +3453,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div class="webinfo-item">
           <div>文章数目：</div>
-          <div>8 篇</div>
+          <div>9 篇</div>
         </div>
       
 
@@ -3395,7 +3468,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div class="webinfo-item">
           <div>本站总字数：</div>
-          <div>4.7k 字</div>
+          <div>8.4k 字</div>
         </div>
       
 
@@ -3406,7 +3479,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div class="webinfo-item">
           <div>最后活动时间：</div>
-          <div id="last-update-show">2023-10-15 日</div>
+          <div id="last-update-show">2023-10-16 日</div>
         </div>
       
     </div>
