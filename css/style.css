@@ -325,11 +325,12 @@ iframe {
     color: #c9a86c !important;
 }
 
-/* ========== 成长时间线 ========== */
+/* ========== 成长时间线（Stellar 风格：每行 = 轴线列 + 内容列，flex 布局） ========== */
 .timeline-page {
     max-width: 720px;
     margin: 0 auto;
     padding: 1em 0 3em;
+    box-sizing: border-box;
 }
 
 .timeline-title {
@@ -342,68 +343,87 @@ iframe {
 
 .timeline {
     position: relative;
-    padding-left: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding-left: 32px;
 }
 
 .timeline::before {
     content: '';
     position: absolute;
-    left: 7px;
+    left: 15px;
     top: 0;
     bottom: 0;
     width: 2px;
     background: #c9b8a8;
     border-radius: 1px;
+    z-index: 0;
 }
 
-.timeline-year {
+.timeline-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-left: -32px;
     position: relative;
-    padding-left: 28px;
-    margin-bottom: 0.75em;
+    z-index: 1;
+}
+
+.timeline-item__axis {
+    width: 32px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 6px;
+}
+
+.timeline-item__body {
+    flex: 1;
+    min-width: 0;
+}
+
+.timeline-item--year {
     margin-top: 1.5em;
+    margin-bottom: 0.75em;
+}
+
+.timeline-item--year:first-child {
+    margin-top: 0;
+}
+
+.timeline-year-marker {
+    display: block;
+    width: 2px;
+    height: 8px;
+    background: #c9a86c;
+    border-radius: 1px;
+}
+
+.timeline-year-text {
     font-size: 22px;
     font-weight: 600;
     color: #c9a86c;
     letter-spacing: 0.05em;
 }
 
-.timeline-year:first-child {
-    margin-top: 0;
-}
-
-.timeline-year::before {
-    content: '';
-    position: absolute;
-    left: 7px;
-    top: 50%;
-    width: 2px;
-    height: 8px;
-    margin-top: -4px;
-    background: #c9a86c;
-    border-radius: 1px;
-}
-
-.timeline-node {
-    position: relative;
+.timeline-item--node {
     padding-bottom: 2em;
 }
 
-.timeline-node:last-child {
+.timeline .timeline-item:last-child {
     padding-bottom: 0;
 }
 
 .timeline-dot {
-    position: absolute;
-    left: -28px;
-    top: 6px;
+    display: block;
     width: 16px;
     height: 16px;
-    margin-left: -1px;
     background: #c9a86c;
     border: 3px solid #ebe5dc;
     border-radius: 50%;
     box-sizing: border-box;
-    z-index: 1;
 }
 
 .timeline-content {
